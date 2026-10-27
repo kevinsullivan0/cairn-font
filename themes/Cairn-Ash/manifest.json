@@ -2,7 +2,7 @@
   "files": [
     {
       "path": "DESIGN-NOTES.md",
-      "sha256": "a6c9a335699f0e66a14bf9b1e07023272308e5f7c933de706582c5ceb690b8ac"
+      "sha256": "bbeaec726c537b0d0c0d65178a8c32b1c866ba98b16703aa9f2d460d30558b80"
     },
     {
       "path": "README.html",
@@ -10,7 +10,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "5370eebc72bf9392f499cd676771ffecf24e09fd50f45c0d834292a507c345f5"
+      "sha256": "cf64ce5721d4749459440aebfd9eb68614187113307e239a1371bf5e48daed31"
     },
     {
       "path": "Try Hearthstone.command",
@@ -21,12 +21,24 @@
       "sha256": "f89e6c357040dd0cabd09f639a4f0445d2ae73ef50eee794690fbf70ecbb47d2"
     },
     {
+      "path": "bronze-light-proof.png",
+      "sha256": "bffcf1bb6cb9642694a071c95596b959740176e4ee17687cde71d1656677f620"
+    },
+    {
+      "path": "bronze-proof.png",
+      "sha256": "e3f84420c5c9af1d9250077d57ecaa87504645b7db9489e057b400ba3493916c"
+    },
+    {
+      "path": "bronze.css",
+      "sha256": "33163f247325f386ca43d5469b1599c914e59590ff4e37ad83bb970b41a9e19b"
+    },
+    {
       "path": "compare-nord.html",
-      "sha256": "5da3ca8bf6842941a81818f0b7f5434ee5cf9a7bd0dcd6c0423e1bf65c71d901"
+      "sha256": "c702aa4d74c0121c06b3f512804eba3f1c04a2c1fc99177cf83f4ed0a1f5b55a"
     },
     {
       "path": "comparison-source.json",
-      "sha256": "82d9d4bc33fef7adb0456e49b556e322186e9c29197cc3dc136d09bf35f64b69"
+      "sha256": "9d4aa5293bfd5c40224870aa4462f624f6faa9a27dfdd0ff01826fe4b1701deb"
     },
     {
       "path": "contrast.json",
@@ -50,23 +62,31 @@
     },
     {
       "path": "material.css",
-      "sha256": "c90628415ad8a17510d10e458315b856d5cd1ff51649b7540b5cb100933db686"
+      "sha256": "cb174f4bd2ceae858b64c6381f92dd4e279862f17a433b23db6c2bfaf87aba67"
     },
     {
       "path": "material.json",
-      "sha256": "e62cf9af1e0e523123e038106b18123a41584e5f739bd52b36e14d8a5941c169"
+      "sha256": "0c20f3c82b77942479f2999403b142c06ca1b51175c37539816fe3260739bcb8"
     },
     {
       "path": "materials/basalt-chrome.png",
-      "sha256": "8f215d824f1252db25537f75d43997b76cd9b4f101e137d5e8916965348f5cc7"
+      "sha256": "b6539becafeca765c26de9b361e225bb4fef158b3f5c6e1160f4b08729ed1211"
     },
     {
       "path": "materials/basalt-grain.png",
       "sha256": "2338bc21e523574aef6faf390bdde2f024f742ed313dadf34d1fa1bc954dc126"
     },
     {
+      "path": "materials/bronze-contrast.json",
+      "sha256": "eaa9ed7ec408469a79bd8f49b8f7f26e110a1a54fd37e165a780d39b7f678b98"
+    },
+    {
+      "path": "materials/bronze-editor.png",
+      "sha256": "d6b93a47ed9ffc33ba276dbfabd29327c6f420a9ac488d0ee30aab2f7b1eb539"
+    },
+    {
       "path": "materials/contrast.json",
-      "sha256": "4984b5f4ca42c58bdcc99c230445ce7a91e368166c10f9e70fcf9342ee7a7216"
+      "sha256": "3c9c595f851ba7d48678dbadf43f8c74c97a7cd5ce1e17d652ae8529574a69f7"
     },
     {
       "path": "materials/ledges.json",
@@ -74,7 +94,11 @@
     },
     {
       "path": "materials/limestone-chrome.png",
-      "sha256": "abcdcf871bc487d5dc738bb3523edd5c429daa2bfb3ee3639527bd69b7d4d063"
+      "sha256": "57f907bffb792197fa192b7ec3c1b3691c84a231ec7763dfb2068782614bb36a"
+    },
+    {
+      "path": "materials/limestone-editor.png",
+      "sha256": "7117db36c0f1084d6bbf8e7f603a1bdffec7f2c0fef6ab0b159b1b7730d35d5a"
     },
     {
       "path": "materials/limestone-grain.png",
@@ -82,7 +106,7 @@
     },
     {
       "path": "materials/texture.json",
-      "sha256": "1a1e4970dd63b12e2a853fcd79ed1b7cc865eb07d6ff887b77f6bcae744a76f8"
+      "sha256": "0c1c2536050a4483016678602f41ec778a5c4a8b91ce7875574f1b22ccf3214b"
     },
     {
       "path": "native-proof.png",
@@ -90,19 +114,27 @@
     },
     {
       "path": "obsidian/Cairn Ash/manifest.json",
-      "sha256": "9086db77d9e01f682ef06ba7350fd8deb38786ac9b6203b24cbdb23c9954562a"
+      "sha256": "0b7eaed27911f41f36314c941b699d21911301e6b8bf6ab132f19341f427b638"
     },
     {
       "path": "obsidian/Cairn Ash/theme.css",
-      "sha256": "d3b083ab10af5c3d2daa943b3c30cfb040cccfdfb96015bcf5b00a58d7313d0f"
+      "sha256": "1d503aaaec433e065f12037eedf415e9c340f874d1fc2cab7fd2a3bbea1d6c26"
+    },
+    {
+      "path": "obsidian/Cairn Ash Bronze/manifest.json",
+      "sha256": "978530f566db58e39e49c1fc11318e506c3ceb093373e0e805b4c979b9a972ef"
+    },
+    {
+      "path": "obsidian/Cairn Ash Bronze/theme.css",
+      "sha256": "c0412509823bedf8420a327c8acccb5f23d496820fa4dfad676e114fe0516030"
     },
     {
       "path": "obsidian/Cairn Ash Relic/manifest.json",
-      "sha256": "3a5024d9154ac35c2e77d99d5132c545321a919582be253d9fa21889e18bc240"
+      "sha256": "971c85528f4efdd8a99bfb5ed5552d96207dc47c9cf2a9660f0d06822a7968da"
     },
     {
       "path": "obsidian/Cairn Ash Relic/theme.css",
-      "sha256": "bfbd690d4a5b27551755453b737ac2fb278953894a1cf571b204da0941d379c1"
+      "sha256": "242b04faf0c08a1cca86a84bc37f6cc1930f56f1a91063c253a54a25e528315f"
     },
     {
       "path": "optimization.json",
@@ -114,7 +146,7 @@
     },
     {
       "path": "preview.html",
-      "sha256": "350072991169fe1bbc01405bed6e83bd727fbd28469cf198518fb96f00d34925"
+      "sha256": "757511d5cfdf1be831166f00df25a869ab596d0a45af58f61b58446c6d2a593a"
     },
     {
       "path": "quality.json",
@@ -122,19 +154,27 @@
     },
     {
       "path": "relic.css",
-      "sha256": "d280a9f967ec10c41ab8c52288ec334de6e7c286adecd9ea2bcab4aac9edebb7"
+      "sha256": "eb880291558318122083947b59469dd787328adaa08a99af6936952a872e4dab"
+    },
+    {
+      "path": "source/bronze-template.css",
+      "sha256": "3a230465b9742e342960be88f062dab38af0020f15ba07f53c7609117271c337"
     },
     {
       "path": "source/build_relic.py",
-      "sha256": "09c1abfd2496b37807706c5557cf775560948276772c35f9635879dc542eef8f"
+      "sha256": "f7de2fea28a8f4a759ee1eeac10c7b20d38e627c1d13f7b879bc50a8ea4a6339"
     },
     {
       "path": "source/build_theme.py",
-      "sha256": "185a78689c830e43fa619454d87dfbd22155ff69134aeb0dfe0235d051d22fee"
+      "sha256": "6d023c4a9f66f6288e97eef80f7a199dbf0bd8c79fe5465c337fc8009cc63828"
+    },
+    {
+      "path": "source/check_bronze.py",
+      "sha256": "88fe49122f2ff7e43f3231d59f32cce3c01a7e042523f7ccdc99f641ecb0cd10"
     },
     {
       "path": "source/check_material.py",
-      "sha256": "98425338e564bdb63e5d13cd51632f038336dd01e5d9681bf2e2c2b59e830c2b"
+      "sha256": "ec1cc2ecbd3005c0d4d0715857a14733c2f145f0116555087587149e62700e52"
     },
     {
       "path": "source/evaluate_theme.py",
@@ -142,11 +182,11 @@
     },
     {
       "path": "source/generate_stone.py",
-      "sha256": "c499b1c74e476f08fe01d8e955a0a2490a682d7dbc206fefd4d5ac5c087c0334"
+      "sha256": "ee760ca9ff9ac54c9b1ae9602e656ebbd4078a3999c746bf1260d022e6e2a6cd"
     },
     {
       "path": "source/relic-template.css",
-      "sha256": "6b55e3e85b8eaf70e12e79b6a2f80da6bd9f82ef502f2ea67ba3ed99b6a8c95e"
+      "sha256": "67bee83149485f1b6f7c4630656105cdfe53ea9b2c38d67d20b079dc579afe36"
     },
     {
       "path": "source/stone_ledge.py",
@@ -158,7 +198,7 @@
     },
     {
       "path": "validation.json",
-      "sha256": "ce1c68aa7d9a55aec6625218e49c504a103bfb158ab57d65fd8bfecdd08ff4ee"
+      "sha256": "20a1dcc6a89dbb80fd3a0972449d0e9b6c59aab00046452ec6e939fe388f146b"
     }
   ]
 }

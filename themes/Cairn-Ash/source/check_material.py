@@ -2,7 +2,7 @@ from pathlib import Path
 import json,sys,base64,re,zlib,struct,statistics
 root=Path(__file__).resolve().parents[1];sys.path.insert(0,str(root/'source'));from evaluate_theme import contrast,rgb
 palette=json.loads((root/'palette.json').read_text())['modes'];css=(root/'relic.css').read_text();report={}
-def read_tile(name,pigment,cap):
+def read_tile(name,pigment,cap,css_text=css):
  data=(root/'materials'/(name+'.png')).read_bytes();assert data[:8]==b'\x89PNG\r\n\x1a\n';pos=8;packed=b''
  while pos<len(data):
   n=struct.unpack('>I',data[pos:pos+4])[0];kind=data[pos+4:pos+8];chunk=data[pos+8:pos+8+n]
@@ -13,8 +13,8 @@ def read_tile(name,pigment,cap):
  for y in range(h):
   row=raw[y*(w*4+1):(y+1)*(w*4+1)];assert row[0]==0
   for x in range(w):
-   r,g,b,a=row[1+x*4:5+x*4];assert r==g==b==pigment;alpha.append(a)
- assert max(alpha)<=cap and base64.b64encode(data).decode() in css
+   r,g,b,a=row[1+x*4:5+x*4];assert (r,g,b)==((pigment,)*3 if isinstance(pigment,int) else pigment);alpha.append(a)
+ assert max(alpha)<=cap and base64.b64encode(data).decode() in css_text
  return alpha
 for mode,prefix,pigment in [('dark','basalt',0),('light','limestone',255)]:
  alpha=read_tile(prefix+'-grain',pigment,64);chrome=read_tile(prefix+'-chrome',pigment,80);p=palette[mode]
@@ -28,5 +28,5 @@ for mode,prefix,pigment in [('dark','basalt',0),('light','limestone',255)]:
  report[mode]={'minimum_text_contrast':min(pairs.values()),'pairs':pairs,'texture_alpha_extrema':[min(alpha),max(alpha)],'structural_alpha_extrema':[min(chrome),max(chrome)],'structural_mean_alpha_change':mean_change,'structural_variation_ratio':variation,'reading_body_contrast_unchanged':contrast(p['fg'],p['bg'])}
 assert not re.search(r'url\([\"\']?(?:https?:)?//',css)
 assert not any(token in css for token in ['BASALT_GRAIN','LIMESTONE_GRAIN','BASALT_CHROME','LIMESTONE_CHROME'])
-out={'method':'Conservative sRGB compositing extremes across quiet and structural pigment plus 4.5% broad wash. Black-only dark pigment and white-only light pigment. Mean opacity and variation measured from actual PNG pixels. Not a full app/plugin accessibility audit.','reading_surface':'No texture on markdown/editor/code backgrounds.','modes':report}
+out={'method':'Conservative sRGB compositing extremes across quiet and structural pigment plus 4.5% broad wash. Black-only dark pigment and white-only light pigment. Mean opacity and variation measured from actual PNG pixels. Not a full app/plugin accessibility audit.','reading_surface':'Everyday and Relic keep flat reading/editor/code backgrounds. Bronze has a separate measured background field; see bronze-contrast.json.','modes':report}
 (root/'materials/contrast.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({k:{n:v[n] for n in ['minimum_text_contrast','structural_mean_alpha_change','structural_variation_ratio']} for k,v in report.items()},indent=2))

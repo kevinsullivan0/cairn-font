@@ -12,3 +12,12 @@ out=root/'obsidian/Cairn Ash Relic';out.mkdir(exist_ok=True)
 manifest=json.loads((theme/'manifest.json').read_text());manifest['name']='Cairn Ash Relic'
 (out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print('Built independent Cairn Ash Relic theme and reusable overlay.')
+
+bronze=Path(__file__).resolve().with_name('bronze-template.css').read_text()
+for token,name in [('BRONZE_EDITOR','bronze-editor'),('LIMESTONE_EDITOR','limestone-editor')]:
+ bronze=bronze.replace(token,'data:image/png;base64,'+base64.b64encode((root/'materials'/(name+'.png')).read_bytes()).decode())
+(root/'bronze.css').write_text(bronze)
+out=root/'obsidian/Cairn Ash Bronze';out.mkdir(exist_ok=True)
+(out/'theme.css').write_text((theme/'theme.css').read_text()+'\n'+css+'\n'+bronze)
+manifest['name']='Cairn Ash Bronze';(out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+print('Built Bronze as a separate selectable edition.')

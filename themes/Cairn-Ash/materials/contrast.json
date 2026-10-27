@@ -1,6 +1,6 @@
 {
   "method": "Conservative sRGB compositing extremes across quiet and structural pigment plus 4.5% broad wash. Black-only dark pigment and white-only light pigment. Mean opacity and variation measured from actual PNG pixels. Not a full app/plugin accessibility audit.",
-  "reading_surface": "No texture on markdown/editor/code backgrounds.",
+  "reading_surface": "Everyday and Relic keep flat reading/editor/code backgrounds. Bronze has a separate measured background field; see bronze-contrast.json.",
   "modes": {
     "dark": {
       "minimum_text_contrast": 4.517927786166461,
@@ -28,10 +28,10 @@
       ],
       "structural_alpha_extrema": [
         0,
-        65
+        70
       ],
-      "structural_mean_alpha_change": -0.002780914306640625,
-      "structural_variation_ratio": 1.3631232005947413,
+      "structural_mean_alpha_change": 0.00380706787109375,
+      "structural_variation_ratio": 1.5368040994874694,
       "reading_body_contrast_unchanged": 7.196047478606893
     },
     "light": {
@@ -60,10 +60,10 @@
       ],
       "structural_alpha_extrema": [
         0,
-        65
+        70
       ],
-      "structural_mean_alpha_change": -0.002780914306640625,
-      "structural_variation_ratio": 1.3631232005947413,
+      "structural_mean_alpha_change": 0.00380706787109375,
+      "structural_variation_ratio": 1.5368040994874694,
       "reading_body_contrast_unchanged": 8.609532858430212
     }
   }

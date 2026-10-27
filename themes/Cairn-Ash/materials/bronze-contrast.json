@@ -1,0 +1,85 @@
+{
+  "scope": "Bronze only: actual background PNG alpha extrema, sRGB compositing, all text roles and active line. No texture overlay above glyphs. Code panels retain the flat base-theme surface. Not a full app/plugin accessibility audit.",
+  "modes": {
+    "dark": {
+      "base": "#30353c",
+      "pigment": "#8c6945",
+      "alpha_range": [
+        4,
+        14
+      ],
+      "editor_extremes": [
+        "#31363c",
+        "#35383c"
+      ],
+      "body_contrast_minimum": 6.788674496450088,
+      "minimum_text_contrast": 4.706952039479266,
+      "pairs": {
+        "fg/editor": 6.788674496450088,
+        "fg/active_line": 5.976258537443116,
+        "muted/editor": 5.3657625232367865,
+        "muted/active_line": 4.723629643188024,
+        "bold/editor": 5.918295544569893,
+        "bold/active_line": 5.210039794048539,
+        "focus/editor": 5.735700767591659,
+        "focus/active_line": 5.049296545071243,
+        "red/editor": 5.346817756665831,
+        "red/active_line": 4.706952039479266,
+        "orange/editor": 6.207474637115076,
+        "orange/active_line": 5.464612173616437,
+        "gold/editor": 6.69063453813787,
+        "gold/active_line": 5.889951241640329,
+        "green/editor": 6.716275967757872,
+        "green/active_line": 5.912524103656163,
+        "cyan/editor": 6.55856636090069,
+        "cyan/active_line": 5.773687960472411,
+        "blue/editor": 5.897037394491044,
+        "blue/active_line": 5.191325654643946,
+        "purple/editor": 5.377863152010366,
+        "purple/active_line": 4.734282162476487,
+        "pink/editor": 5.484057291226414,
+        "pink/active_line": 4.827767809998429
+      }
+    },
+    "light": {
+      "base": "#eee5d3",
+      "pigment": "#fff9e3",
+      "alpha_range": [
+        4,
+        14
+      ],
+      "editor_extremes": [
+        "#eee5d3",
+        "#efe6d4"
+      ],
+      "body_contrast_minimum": 8.609532858430212,
+      "minimum_text_contrast": 4.612060962996251,
+      "pairs": {
+        "fg/editor": 8.609532858430212,
+        "fg/active_line": 7.771230304871543,
+        "muted/editor": 5.3168876153451885,
+        "muted/active_line": 4.7991869992700655,
+        "bold/editor": 5.5091181552775055,
+        "bold/active_line": 4.972700222578237,
+        "focus/editor": 5.477945293210443,
+        "focus/active_line": 4.944562634352653,
+        "red/editor": 5.2465571739537475,
+        "red/active_line": 4.73570457037603,
+        "orange/editor": 5.450447057553363,
+        "orange/active_line": 4.91974187743324,
+        "gold/editor": 5.443766355830067,
+        "gold/active_line": 4.913711669692172,
+        "green/editor": 5.386612079354877,
+        "green/active_line": 4.862122454260804,
+        "cyan/editor": 5.375535615544128,
+        "cyan/active_line": 4.852124495875335,
+        "blue/editor": 5.377776833230651,
+        "blue/active_line": 4.854147488189985,
+        "purple/editor": 5.109575813382856,
+        "purple/active_line": 4.612060962996251,
+        "pink/editor": 5.613989294925893,
+        "pink/active_line": 5.067360152674672
+      }
+    }
+  }
+}

@@ -29,23 +29,30 @@ for _ in range(4):
    a=angle+r.choice((-1,1))*r.uniform(.65,1.2);l=r.uniform(12,25)
    cut(xx,yy,xx+l*math.cos(a),yy+l*math.sin(a),strength*.6)
   x,y=xx,yy
-alphas=[];broad_values=[]
+alphas=[];broad_values=[];rough_values=[];page_alpha=[]
 for y in range(n):
  row=[]
  for x in range(n):
   warp=(noise(x,y,8)-.5)*70
   broad=noise(x+warp,y-warp*.6,4);middle=noise(x,y,16);fine=noise(x,y,64);grit=r.random()
   broad_values.append(broad)
+  rough_values.append(2.5*(fine-.5)+(grit-.5)+.12*fracture[y][x]+(3 if grit>.993 else 0))
+  page_alpha.append(round(3+12*(.78*noise(x,y,4)+.22*noise(x,y,8))))
   a=round(3+30*broad+10*middle+4*fine+2*grit+fracture[y][x]+max(0,middle-.58)*18)
   if grit>.993:a+=9
   row.append(min(64,a))
  alphas.append(row)
 def chunk(k,b):return struct.pack('>I',len(b))+k+b+struct.pack('>I',zlib.crc32(k+b)&0xffffffff)
-mean_broad=sum(broad_values)/(n*n)
-chrome=[[max(0,min(80,round(alphas[y][x]+14*(broad_values[y*n+x]-mean_broad)))) for x in range(n)] for y in range(n)]
+mean_broad=sum(broad_values)/(n*n);mean_rough=sum(rough_values)/(n*n)
+chrome=[[max(0,min(80,round(alphas[y][x]+20*(broad_values[y*n+x]-mean_broad)+rough_values[y*n+x]-mean_rough))) for x in range(n)] for y in range(n)]
 for name,v,tile in [('basalt-grain',0,alphas),('limestone-grain',255,alphas),('basalt-chrome',0,chrome),('limestone-chrome',255,chrome)]:
  raw=b''.join(b'\0'+b''.join(bytes((v,v,v,a)) for a in row) for row in tile)
  png=b'\x89PNG\r\n\x1a\n'+chunk(b'IHDR',struct.pack('>IIBBBBB',n,n,8,6,0,0,0))+chunk(b'IDAT',zlib.compress(raw,9))+chunk(b'IEND',b'')
  (root/(name+'.png')).write_bytes(png)
-(root/'texture.json').write_text(json.dumps({'tile_pixels':n,'seed':271828,'alpha_range':[min(map(min,alphas)),max(map(max,alphas))],'dark':'Black-only pigment, at most 64/255 opacity.','light':'White-only pigment, same opacity.','vein_opacity':0.045,'structure':'Warped mineral fields at three scales; sparse pits; four localized fractures with long planar runs, occasional angular turns, softened ends, and broad mineral patches. Periodic fields and wrapped fractures avoid tile-edge seams.','structural_variant':{'broad_amplitude_increase':14,'mean_centered':True,'alpha_cap':80,'scope':'Sidebars, ribbon and topbar only; same grit and fractures as the quiet tile.'},'scope':'Static mineral pigment on UI furniture. Note/editor/code reading surfaces excluded. Embedded assets; no network images or animated filters.'},indent=2)+'\n')
+for name,pigment in [('bronze-editor',(140,105,69)),('limestone-editor',(255,249,227))]:
+ raw=b''.join(b'\0'+b''.join(bytes((*pigment,page_alpha[y*n+x])) for x in range(n)) for y in range(n))
+ png=b'\x89PNG\r\n\x1a\n'+chunk(b'IHDR',struct.pack('>IIBBBBB',n,n,8,6,0,0,0))+chunk(b'IDAT',zlib.compress(raw,9))+chunk(b'IEND',b'')
+ (root/(name+'.png')).write_bytes(png)
+
+(root/'texture.json').write_text(json.dumps({'tile_pixels':n,'seed':271828,'alpha_range':[min(map(min,alphas)),max(map(max,alphas))],'dark':'Black-only pigment, at most 64/255 opacity.','light':'White-only pigment, same opacity.','vein_opacity':0.045,'structure':'Warped mineral fields at three scales; sparse pits; four localized fractures with long planar runs, occasional angular turns, softened ends, and broad mineral patches. Periodic fields and wrapped fractures avoid tile-edge seams.','structural_variant':{'broad_amplitude_increase':20,'roughness':'Mean-centered micrograin and slightly deeper existing pits/fractures','mean_centered':True,'alpha_cap':80,'scope':'Sidebars, ribbon and topbar only; stronger broad fields with restrained extra roughness.'},'editor_variant':{'pigment_dark':[140,105,69],'pigment_light':[255,249,227],'alpha_range':[min(page_alpha),max(page_alpha)],'display_tile_pixels':1024,'structure':'Broad periodic clouds only; no grit, pits, fractures, or texture overlay above text. Bronze edition only.'},'scope':'Relic furniture; Bronze additionally paints one low-opacity background behind reading/editor text. Embedded assets; no network images or animated filters.'},indent=2)+'\n')
 print('Built 512px mineral tiles: warped clouds, sparse pits, short branching fractures.')

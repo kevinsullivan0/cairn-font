@@ -10,10 +10,29 @@
   "vein_opacity": 0.045,
   "structure": "Warped mineral fields at three scales; sparse pits; four localized fractures with long planar runs, occasional angular turns, softened ends, and broad mineral patches. Periodic fields and wrapped fractures avoid tile-edge seams.",
   "structural_variant": {
-    "broad_amplitude_increase": 14,
+    "broad_amplitude_increase": 20,
+    "roughness": "Mean-centered micrograin and slightly deeper existing pits/fractures",
     "mean_centered": true,
     "alpha_cap": 80,
-    "scope": "Sidebars, ribbon and topbar only; same grit and fractures as the quiet tile."
+    "scope": "Sidebars, ribbon and topbar only; stronger broad fields with restrained extra roughness."
   },
-  "scope": "Static mineral pigment on UI furniture. Note/editor/code reading surfaces excluded. Embedded assets; no network images or animated filters."
+  "editor_variant": {
+    "pigment_dark": [
+      140,
+      105,
+      69
+    ],
+    "pigment_light": [
+      255,
+      249,
+      227
+    ],
+    "alpha_range": [
+      4,
+      14
+    ],
+    "display_tile_pixels": 1024,
+    "structure": "Broad periodic clouds only; no grit, pits, fractures, or texture overlay above text. Bronze edition only."
+  },
+  "scope": "Relic furniture; Bronze additionally paints one low-opacity background behind reading/editor text. Embedded assets; no network images or animated filters."
 }

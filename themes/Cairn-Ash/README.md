@@ -1,15 +1,14 @@
-# Cairn Ash 1.10.2 — Everyday and Relic
+# Cairn Ash 1.11 — Everyday, Relic, and Bronze
 
 Hearthstone (dark) and Limestone (light), with a quiet Everyday edition and a
-more tactile Relic edition. Both editions share the same typography and control
-scale. Relic adds mineral texture, asymmetric stone chips, inset joints, and
-geometric tool marks. Prose and code surfaces remain flat.
+more tactile Relic edition. All three editions share the same typography and control scale. Relic adds mineral texture, asymmetric stone chips, inset joints, and
+geometric tool marks. Everyday and Relic keep prose and code surfaces flat.
 
 ## Install
 
 1. Install the Cairn fonts from the repository’s `desktop/` directory.
 2. Copy either or both folders inside `obsidian/` into your vault’s `.obsidian/themes/`.
-3. Select **Cairn Ash** or **Cairn Ash Relic** in Settings → Appearance → Themes.
+3. Select **Cairn Ash**, **Cairn Ash Relic**, or **Cairn Ash Bronze** in Settings → Appearance → Themes.
 4. Choose the Dark or Light base scheme.
 
 Choose **Cairn** as the Text font in Appearance to use it for prose. **Cairn Mono**
@@ -56,3 +55,23 @@ proportional letters. Insert mode retains the ordinary caret. The active-line
 rail sits in the margin with a six-pixel gap, rather than covering the first
 character, and adds no line padding. The selector structure was checked against
 the installed Obsidian 1.14.5 editor and exercised in offline state tests.
+
+## Bronze and stronger structural material
+
+Bronze is a third selectable edition with a warmer charcoal editor background
+and faint, broad mineral fields. There is no fine grit or fracture texture on
+the page and no overlay above glyphs; code panels remain flat. The bars share
+Relic’s slightly stronger mottling and restrained extra roughness. The native
+top-left ribbon cap now continues the same finish, preserving its drag area.
+
+Use the edition menu in `compare-nord.html` to switch Bronze, Relic, and Everyday
+beside the same Nord sample. It starts with Bronze. `bronze-proof.png` and
+`bronze-light-proof.png` compare native representative renderings with Relic.
+These are font/material proofs, not live Obsidian screenshots.
+
+Bronze body contrast is at least 6.79:1 dark and 8.61:1 light across the measured
+texture range. Text roles on the page and active line stay over 4.5:1; details
+are in `materials/bronze-contrast.json`. `source/build_relic.py` builds both
+Relic and Bronze after the base builder; `source/check_bronze.py` checks the
+optional editor field. Surface changes preserve fonts, sizes, the native Vim
+cursor, and the clear margin rail.

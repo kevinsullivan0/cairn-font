@@ -1,0 +1,29 @@
+/* Bronze: Relic furniture with a restrained, broad mineral field on the page. */
+body.theme-dark {
+  --background-primary: #30353c;
+  --cursor-line-background: rgba(175,205,146,0.06);
+  --background-secondary: #383c43;
+  --tab-background-active: #30353c;
+  --tab-container-background: #383c43;
+  --titlebar-background: #383c43;
+  --titlebar-background-focused: #383c43;
+  --ribbon-background: #383c43;
+  --ribbon-background-collapsed: #383c43;
+  --status-bar-background: #383c43;
+  --cairn-iron: #827b6e;
+  --cairn-editor-mineral: url("BRONZE_EDITOR");
+}
+body.theme-light {
+  --cairn-editor-mineral: url("LIMESTONE_EDITOR");
+}
+.workspace-leaf-content[data-type="markdown"] .markdown-source-view.mod-cm6 .cm-scroller,
+.workspace-leaf-content[data-type="markdown"] .markdown-preview-view {
+  background-color: var(--background-primary);
+  background-image: var(--cairn-editor-mineral);
+  background-size: 1024px 1024px;
+  background-repeat: repeat;
+}
+@media print {
+  .workspace-leaf-content[data-type="markdown"] .markdown-source-view.mod-cm6 .cm-scroller,
+  .workspace-leaf-content[data-type="markdown"] .markdown-preview-view { background-image: none; }
+}

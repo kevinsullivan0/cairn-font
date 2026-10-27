@@ -293,3 +293,18 @@ button.mod-cta:not(.clickable-icon):not(.mod-warning):not([role="tab"])::after {
   content: none;
   display: none;
 }
+
+/* The native top-left cap is a separate drag surface; continue the ribbon stone
+   through it without changing its size, content, or drag behavior. */
+.workspace-ribbon.mod-primary { background-position: left calc(-1 * var(--header-height)),center; }
+.workspace-ribbon.mod-primary::before, .titlebar,
+.titlebar-button-container.mod-right {
+  background-color: var(--ribbon-background);
+  background-image: var(--cairn-stone-chrome),var(--cairn-stone-strata);
+  background-size: 512px 512px,auto;
+  background-position: left top,center;
+  background-repeat: repeat,no-repeat;
+}
+@media print {
+ .workspace-ribbon.mod-primary::before, .titlebar, .titlebar-button-container.mod-right { background-image: none; }
+}

@@ -131,3 +131,25 @@ Relic also removes the native tab header’s two decorative concave connector
 pseudo-elements. Their rounded fill produced pale square remnants beneath the
 beveled tab corners. Tab labels, close controls, parent drag regions, and focus
 areas retain their geometry.
+
+## 1.11 — continuous corner and Bronze canvas
+
+Obsidian’s primary ribbon paints a separate titlebar-colored cap above its
+margin. It now receives the ribbon’s material; a vertical background offset
+continues the tile across that join. This preserves the cap’s drag behavior and
+native dimensions. Ordinary titlebar surfaces share the finish.
+
+Structural pigment gains modest, mean-centered broad variation and extra fine
+grain, plus slightly deeper existing pits/fractures. Smaller controls retain
+the original quiet tile. Mean alpha changes by less than 0.004 on a 0–255 scale;
+pixel-opacity variation is 1.54 times the quiet tile, versus 1.36 previously.
+These describe the asset, not perceived roughness or optical comfort.
+
+Bronze is a separate selectable edition, with a warmer charcoal base and a
+1024px broad-field background behind reading/editor text. It has no page grit
+or fractures and no overlay above glyphs. Code panels remain flat. A slightly
+softer active-line tint keeps sampled text roles over 4.5:1. Body contrast stays
+at least 6.79:1 dark and 8.61:1 light across texture extrema.
+
+Dark/light native material proofs and offline edition-switch, cursor, and CSS
+checks were reviewed. Live Obsidian window rendering remains unautomated.

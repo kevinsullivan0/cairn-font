@@ -156,6 +156,7 @@ a:focus-visible, [tabindex="0"]:focus-visible {
 .workspace-tab-header.is-active { box-shadow: inset 0 1px var(--cairn-groove-light), inset 1px 0 var(--cairn-groove-dark), inset -1px 0 var(--cairn-groove-dark); }
 .nav-folder-title-content { font-weight: 600; color: var(--text-normal); }
 .workspace-sidedock-vault-profile { border-top: 3px double var(--background-modifier-border); }
+.workspace-ribbon.mod-primary::before { background-color: var(--ribbon-background); }
 .callout:not(.theorem-callout) { box-shadow: inset 0 1px var(--cairn-groove-light); }
 /* Filled stone controls: bevel above, recessed edge below, clear state change.
    Native icons, tabs, warning buttons, and switches keep their own geometry. */
@@ -207,7 +208,7 @@ body .cairn-plain .inline-title { font-family: var(--font-text) !important; }
 }
 ''')
 (ROOT/'obsidian/Cairn Ash/theme.css').write_text('\n'.join(css))
-(ROOT/'obsidian/Cairn Ash/manifest.json').write_text(json.dumps({'name':'Cairn Ash','version':'1.10.2','minAppVersion':'1.6.0','author':'Cairn contributors'},indent=2)+'\n')
+(ROOT/'obsidian/Cairn Ash/manifest.json').write_text(json.dumps({'name':'Cairn Ash','version':'1.11.0','minAppVersion':'1.6.0','author':'Cairn contributors'},indent=2)+'\n')
 (ROOT/'palette.json').write_text(json.dumps({'name':'Cairn Ash','modes':P},indent=2)+'\n')
 (ROOT/'contrast.json').write_text(json.dumps({'minimum_target':4.5,'pairs':contrast,'scope':'Specified text/background pairs only, including small labels, code roles, selections, highlights, and filled buttons. Does not establish readability or contrast for every plugin.'},indent=2)+'\n')
 # A calmer temporary terminal. Existing global Kitty settings are not edited.

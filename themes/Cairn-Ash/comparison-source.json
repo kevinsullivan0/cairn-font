@@ -6,7 +6,8 @@
   "same_markup": true,
   "editions": [
     "Everyday",
-    "Relic"
+    "Relic",
+    "Bronze"
   ],
   "relic_uses_delivered_overlay": true,
   "scope": "Isolated srcdoc panes with shared lightweight mockup layout. Not live Obsidian."

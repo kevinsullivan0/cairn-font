@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "native_theme_variables": 228,
-  "css_rules": 48,
+  "css_rules": 49,
   "checks": [
     "dark and light text contrast",
     "body font, size, display heading controls",
@@ -149,13 +149,17 @@
     "relic_native_variables_and_reading_font_preservation": "passed",
     "scope": "Offline DOM and CSS checks; no visual browser or live Obsidian automation."
   },
-  "version": "1.10.2",
-  "editor_cursor": {
-    "normal_block": "native measured dimensions, accent fill",
-    "insert_caret": "native thin caret retained",
-    "rail_clearance_px": 6,
-    "tab_corner_connectors": "decorative pseudos removed",
-    "offline_state_checks": "passed",
-    "native_proof": "Reviewed; representative font/layout proof, not a live Obsidian screenshot."
+  "version": "1.11.0",
+  "material_pass": {
+    "editions": [
+      "Everyday",
+      "Relic",
+      "Bronze"
+    ],
+    "corner": "Native primary ribbon cap shares structural material; drag geometry retained.",
+    "structural_texture": "Mean-centered increase in broad mottling and restrained roughness.",
+    "bronze_editor": "Broad 1024px color field as a background only; no grain/fracture overlay above glyphs.",
+    "shared_typography_and_cursor": "Retained; mode and margin-rail checks passed.",
+    "verification": "Three-edition switching, portable rebuild, compositing extrema, native dark/light material proofs. Live Obsidian rendering unautomated."
   }
 }
