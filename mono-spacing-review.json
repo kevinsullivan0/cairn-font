@@ -1,0 +1,23 @@
+{
+  "font_version": "1.001",
+  "cell_before": 1536,
+  "cell_after": 1440,
+  "units_per_em": 2048,
+  "width_reduction_percent": 6.25,
+  "critic": "Approved after inspecting dark/light actual-size crops, including final Bold Italic percent counters. Stop at this width.",
+  "font_checks": [
+    "114 characters in all four styles",
+    "equal advances and native monospace recognition",
+    "outline bounds and open counters, including @ and %",
+    "TTF/WOFF round trip",
+    "installed Core Text shaping matches new width"
+  ],
+  "editor_checks": [
+    "native glyph cursor dimensions retained",
+    "normal and insert mode selectors isolated",
+    "margin rail has six-pixel clearance and no line padding changes",
+    "only decorative individual-tab corner connectors removed"
+  ],
+  "visual_scope": "FreeType font comparisons and native Core Text layout proofs reviewed. No live Obsidian screenshot automation.",
+  "limitation": "Dense Bold Italic @ and % are best at 16\u201318px; no manual hinting added."
+}

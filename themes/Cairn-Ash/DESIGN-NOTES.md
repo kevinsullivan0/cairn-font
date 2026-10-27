@@ -116,3 +116,18 @@ inherits the regular edition’s typography and density. Material and decorative
 geometry remain; the folder seal is positioned outside text flow. The comparison
 and native proofs use the shared scale. Offline checks reject typography and
 padding overrides in the Relic overlay.
+
+## 1.10.2 — editor cursor and clear margin
+
+The line marker moves outside the glyph field: a two-pixel rail at an eight-pixel
+negative inline offset leaves six pixels clear of text. No line padding or text
+position changes on focus. The native CodeMirror 6 Vim cursor receives accent
+fill while preserving its measured width; a fixed minimum was rejected because
+proportional i/l/punctuation can be narrower than 1ch. Insert mode remains a thin
+caret. A native font/layout proof includes a cursor over proportional i beside W.
+Offline state checks pass; live Obsidian rendering has not been automated.
+
+Relic also removes the native tab header’s two decorative concave connector
+pseudo-elements. Their rounded fill produced pale square remnants beneath the
+beveled tab corners. Tab labels, close controls, parent drag regions, and focus
+areas retain their geometry.

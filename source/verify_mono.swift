@@ -12,8 +12,8 @@ for style in ["Regular","Italic","Bold","BoldItalic"] {
  let string=NSAttributedString(string:text,attributes:[NSAttributedString.Key(kCTFontAttributeName as String):font])
  let line=CTLineCreateWithAttributedString(string)
  let width=CTLineGetTypographicBounds(line,nil,nil,nil)
- guard abs(width-Double(text.count)*13.5)<0.001 else {fatalError("Shaped advance mismatch: \(width)")}
- report.append(["name":name,"registered":true,"monospace_trait":true,"shaped_advance":width,"expected_advance":Double(text.count)*13.5])
+ guard abs(width-Double(text.count)*18*1440/2048)<0.001 else {fatalError("Shaped advance mismatch: \(width)")}
+ report.append(["name":name,"registered":true,"monospace_trait":true,"shaped_advance":width,"expected_advance":Double(text.count)*18*1440/2048])
  print("Verified native monospace: \(name)")
 }
 let data=try JSONSerialization.data(withJSONObject:report,options:[.prettyPrinted,.sortedKeys])

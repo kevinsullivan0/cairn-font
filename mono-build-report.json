@@ -3,28 +3,28 @@
     "style": "Regular",
     "characters": 114,
     "glyphs": 117,
-    "cell": 1536,
-    "sha256": "6bc81aa394895eed1f4db79f4428ef5cc694a2cf2b52edaebc0a4f5eacccd497"
+    "cell": 1440,
+    "sha256": "d18952cde56e1b90d71b83b2b34ae754627b30f9395ff2c64da0382c79694bfc"
   },
   {
     "style": "Italic",
     "characters": 114,
     "glyphs": 117,
-    "cell": 1536,
-    "sha256": "57e79d6e14ac8ba9c128845e7c8fd92c60147bc67fb4c8afe889ca0f276f68ac"
+    "cell": 1440,
+    "sha256": "b707bc423030dfd90b62d40c1a65ab3027bd89f2b12c8a2d988f5c866ab81eed"
   },
   {
     "style": "Bold",
     "characters": 114,
     "glyphs": 117,
-    "cell": 1536,
-    "sha256": "34b1c7228716b46f78f7ab789765651d6ab767a0d920e81a3df56e6557e111c9"
+    "cell": 1440,
+    "sha256": "c395f391a2174660a3b743e07c7bde0dd077494bb3aa8696d538e5e2e148a3c8"
   },
   {
     "style": "Bold Italic",
     "characters": 114,
     "glyphs": 117,
-    "cell": 1536,
-    "sha256": "fece9ef05f8e42e3f77a9a33e04e19a5c873a56a4e657815be72280756802f2f"
+    "cell": 1440,
+    "sha256": "e5054a31842ff1911abfaf52ead2cc45204b3f258dbad49c5b135740c164742f"
   }
 ]

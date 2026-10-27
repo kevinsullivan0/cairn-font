@@ -52,7 +52,7 @@ No CDN, network service, JavaScript library, or installed font is needed.
 ## Cairn Mono for code
 
 Open **mono-specimen.html** to edit a code sample and try all four styles.
-Every glyph advances **1536/2048 em (0.75 em)**. No kerning or ligatures alter
+Every glyph advances **1440/2048 em (0.703125 em)**. No kerning or ligatures alter
 columns. Narrow letters have purpose-drawn feet; wide letters use compact
 stroke skeletons instead of just stretching the proportional font. The zero
 is slashed and the `i/l/1` shapes remain distinct. Start at **18 px**.

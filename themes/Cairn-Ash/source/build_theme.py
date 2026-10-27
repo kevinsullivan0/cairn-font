@@ -115,14 +115,41 @@ textarea:focus-visible, select:focus-visible, button:focus-visible,
 a:focus-visible, [tabindex="0"]:focus-visible {
   outline: 2px solid var(--background-modifier-border-focus); outline-offset: 2px;
 }
-/* A focused current line, including Vim normal mode. Transparent tint lets
-   native selections remain visible; an inset rail changes no line geometry. */
+/* A focused current line, including Vim normal mode. Keep its rail in the
+   margin, clear of glyphs; do not add padding or shift lines when focus moves. */
 .markdown-source-view.mod-cm6 .cm-editor.cm-focused .cm-line.cm-active {
+  position: relative;
   background-color: var(--cursor-line-background);
-  box-shadow: inset 2px 0 var(--cairn-cursor-rail);
+  box-shadow: none;
   border-radius: 2px;
 }
+.markdown-source-view.mod-cm6 .cm-editor.cm-focused .cm-line.cm-active::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: -8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--cairn-cursor-rail);
+  pointer-events: none;
+}
 .cm-fat-cursor-mark, .cm-animate-fat-cursor { background-color: var(--interactive-accent); color: var(--text-on-accent); }
+/* Native CodeMirror 6 Vim layer: normal/visual/replace use the measured glyph
+   as a block; insert mode keeps Obsidian's ordinary caret. */
+.markdown-source-view.mod-cm6 .cm-editor.cm-focused > .cm-scroller.cm-vimMode > .cm-vimCursorLayer .cm-fat-cursor {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  border: 0;
+  border-radius: 0;
+  opacity: 1;
+}
+.markdown-source-view.mod-cm6 .cm-editor > .cm-scroller.cm-vimMode > .cm-cursorLayer:not(.cm-vimCursorLayer) {
+  display: none;
+}
+.markdown-source-view.mod-cm6 .cm-scroller.cm-vimMode .cm-line {
+  caret-color: transparent;
+}
+
 /* Shallow stone/bevel cues stay in chrome and rules, away from body glyphs. */
 .inline-title { border-bottom-color: var(--cairn-groove-light); box-shadow: 0 1px var(--cairn-groove-dark); }
 .markdown-rendered blockquote { border-block: 1px solid var(--background-modifier-border); }
@@ -180,7 +207,7 @@ body .cairn-plain .inline-title { font-family: var(--font-text) !important; }
 }
 ''')
 (ROOT/'obsidian/Cairn Ash/theme.css').write_text('\n'.join(css))
-(ROOT/'obsidian/Cairn Ash/manifest.json').write_text(json.dumps({'name':'Cairn Ash','version':'1.10.1','minAppVersion':'1.6.0','author':'Cairn contributors'},indent=2)+'\n')
+(ROOT/'obsidian/Cairn Ash/manifest.json').write_text(json.dumps({'name':'Cairn Ash','version':'1.10.2','minAppVersion':'1.6.0','author':'Cairn contributors'},indent=2)+'\n')
 (ROOT/'palette.json').write_text(json.dumps({'name':'Cairn Ash','modes':P},indent=2)+'\n')
 (ROOT/'contrast.json').write_text(json.dumps({'minimum_target':4.5,'pairs':contrast,'scope':'Specified text/background pairs only, including small labels, code roles, selections, highlights, and filled buttons. Does not establish readability or contrast for every plugin.'},indent=2)+'\n')
 # A calmer temporary terminal. Existing global Kitty settings are not edited.

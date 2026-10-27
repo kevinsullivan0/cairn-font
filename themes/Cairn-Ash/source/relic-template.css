@@ -285,3 +285,11 @@ button.mod-cta:not(.clickable-icon):not(.mod-warning):not([role="tab"])::after {
 @media print {
  .workspace-ribbon, .workspace-sidedock-vault-profile { background-image: none; }
 }
+
+/* Obsidian's concave rounded connectors do not match these dressed-stone tabs.
+   Remove only their decorative pseudos, keeping tab content and drag regions. */
+.workspace-tab-header-container .workspace-tab-header::before,
+.workspace-tab-header-container .workspace-tab-header::after {
+  content: none;
+  display: none;
+}

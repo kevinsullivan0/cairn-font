@@ -1,0 +1,34 @@
+[
+  {
+    "cell_at_18px" : 12.65625,
+    "cell_units" : 1440,
+    "monospace_trait" : true,
+    "native_shaping" : "passed",
+    "style" : "Regular",
+    "units_per_em" : 2048
+  },
+  {
+    "cell_at_18px" : 12.65625,
+    "cell_units" : 1440,
+    "monospace_trait" : true,
+    "native_shaping" : "passed",
+    "style" : "Italic",
+    "units_per_em" : 2048
+  },
+  {
+    "cell_at_18px" : 12.65625,
+    "cell_units" : 1440,
+    "monospace_trait" : true,
+    "native_shaping" : "passed",
+    "style" : "Bold",
+    "units_per_em" : 2048
+  },
+  {
+    "cell_at_18px" : 12.65625,
+    "cell_units" : 1440,
+    "monospace_trait" : true,
+    "native_shaping" : "passed",
+    "style" : "BoldItalic",
+    "units_per_em" : 2048
+  }
+]

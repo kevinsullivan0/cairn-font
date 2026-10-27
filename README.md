@@ -16,7 +16,7 @@ See **README.html** for the quick start and **USAGE.md** for building and valida
 - **proofs/**: actual family, code, prose, and native macOS renderings
 
 Both families cover the same 114 encoded characters. Cairn Mono keeps every
-advance at 0.75 em, with no kerning or ligatures, and refits wide-letter
+advance at 0.703125 em, with no kerning or ligatures, and refits wide-letter
 skeletons while preserving the carved stroke weight. It is a first monospace
 edition; no Nerd Font icon patch or manual TrueType hinting is included.
 
@@ -43,3 +43,12 @@ them. Restart Obsidian if needed, then choose **Cairn** in Settings → Appearan
 Text font, and **Cairn Mono** for Monospace font if desired. Theme installation is
 separate: copy the folders under a theme’s `obsidian/` directory into the vault’s
 `.obsidian/themes/` directory, then select the theme in Appearance.
+
+## Compact Mono spacing
+
+Cairn Mono 1.001 reduces the cell from 1536 to 1440 units: **6.25% narrower**,
+with the same vertical size, line metrics, and equal advances in every style.
+Wide glyph skeletons are refitted before their strokes are drawn; the family is
+not globally squeezed. Open [mono-spacing.html](mono-spacing.html) for the
+before/after comparison. Dense Bold Italic symbols remain easier to read at
+16–18px than at 14px.

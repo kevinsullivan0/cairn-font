@@ -22,7 +22,7 @@
     },
     {
       "path": "amber-studies.html",
-      "sha256": "1ce50e0fcd0a4718d9a9e672cf90b02eccdf8d41facce6bcf3c62dfd58e48d85"
+      "sha256": "4f6f1f2c379a8e64234eb9f6e810ccacc1f8d23691aae9f1c06520a39272fa55"
     },
     {
       "path": "contrast.json",
@@ -70,7 +70,7 @@
     },
     {
       "path": "preview.html",
-      "sha256": "cba03226618d2ab96dbaa441b3af8d39ee821c8dee5e64a4a9bc0bb0b622d04f"
+      "sha256": "8c8aee46ffc73e8ca4fd759fcc4b9b2d76a301d160ee50cf81ce21abed0309a0"
     },
     {
       "path": "source/aether-extract.go",

@@ -3,7 +3,7 @@
   "styles": [
     {
       "style": "Regular",
-      "advance_units": 1536,
+      "advance_units": 1440,
       "character_count": 114,
       "glyph_count": 117,
       "all_cells_equal": true,
@@ -19,7 +19,7 @@
     },
     {
       "style": "Italic",
-      "advance_units": 1536,
+      "advance_units": 1440,
       "character_count": 114,
       "glyph_count": 117,
       "all_cells_equal": true,
@@ -35,7 +35,7 @@
     },
     {
       "style": "Bold",
-      "advance_units": 1536,
+      "advance_units": 1440,
       "character_count": 114,
       "glyph_count": 117,
       "all_cells_equal": true,
@@ -51,7 +51,7 @@
     },
     {
       "style": "BoldItalic",
-      "advance_units": 1536,
+      "advance_units": 1440,
       "character_count": 114,
       "glyph_count": 117,
       "all_cells_equal": true,

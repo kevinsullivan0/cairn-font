@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "native_theme_variables": 228,
-  "css_rules": 44,
+  "css_rules": 48,
   "checks": [
     "dark and light text contrast",
     "body font, size, display heading controls",
@@ -148,5 +148,14 @@
     "shared_typography_and_density": "passed",
     "relic_native_variables_and_reading_font_preservation": "passed",
     "scope": "Offline DOM and CSS checks; no visual browser or live Obsidian automation."
+  },
+  "version": "1.10.2",
+  "editor_cursor": {
+    "normal_block": "native measured dimensions, accent fill",
+    "insert_caret": "native thin caret retained",
+    "rail_clearance_px": 6,
+    "tab_corner_connectors": "decorative pseudos removed",
+    "offline_state_checks": "passed",
+    "native_proof": "Reviewed; representative font/layout proof, not a live Obsidian screenshot."
   }
 }

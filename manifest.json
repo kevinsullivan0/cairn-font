@@ -6,7 +6,7 @@
     },
     {
       "path": "USAGE.md",
-      "sha256": "56efb7f872bd07889fcc2559df49691f82303c63df49ef0aa55875ffbe5b1c68"
+      "sha256": "019f938ac2002dd3af067a4dceab8335daf7d3dc2928afe545ff0c29d2f02b36"
     },
     {
       "path": "build-report.json",
@@ -30,19 +30,19 @@
     },
     {
       "path": "desktop/CairnMono-Bold.ttf",
-      "sha256": "34b1c7228716b46f78f7ab789765651d6ab767a0d920e81a3df56e6557e111c9"
+      "sha256": "c395f391a2174660a3b743e07c7bde0dd077494bb3aa8696d538e5e2e148a3c8"
     },
     {
       "path": "desktop/CairnMono-BoldItalic.ttf",
-      "sha256": "fece9ef05f8e42e3f77a9a33e04e19a5c873a56a4e657815be72280756802f2f"
+      "sha256": "e5054a31842ff1911abfaf52ead2cc45204b3f258dbad49c5b135740c164742f"
     },
     {
       "path": "desktop/CairnMono-Italic.ttf",
-      "sha256": "57e79d6e14ac8ba9c128845e7c8fd92c60147bc67fb4c8afe889ca0f276f68ac"
+      "sha256": "b707bc423030dfd90b62d40c1a65ab3027bd89f2b12c8a2d988f5c866ab81eed"
     },
     {
       "path": "desktop/CairnMono-Regular.ttf",
-      "sha256": "6bc81aa394895eed1f4db79f4428ef5cc694a2cf2b52edaebc0a4f5eacccd497"
+      "sha256": "d18952cde56e1b90d71b83b2b34ae754627b30f9395ff2c64da0382c79694bfc"
     },
     {
       "path": "macos-validation.json",
@@ -50,23 +50,39 @@
     },
     {
       "path": "mono-build-report.json",
-      "sha256": "8472835e04e0d45630acebcf81954dd9104fdf693b348a081f75b167556cf990"
+      "sha256": "89a9ed8c041062c2420089f87540352694cb208a53e9401911c4c0f97cb05ff5"
     },
     {
       "path": "mono-macos-validation.json",
-      "sha256": "22eb8a7e1704c75effee88ac989d387ab064dc27f6292581b6d100be737625a9"
+      "sha256": "e1337bd8da125d791a816f5a7c8eda3c453882bb95f66fbcae30eb107e929b15"
+    },
+    {
+      "path": "mono-native-file-validation.json",
+      "sha256": "7405fe89d9ca0ad9ae09503cfcc6fb72e8b412d070120e53dae11cda6d556103"
+    },
+    {
+      "path": "mono-spacing-review.json",
+      "sha256": "ca071314d41145d9d04b797e54c82a7c814cda183bc2e44ddc1a3f0c20444f83"
+    },
+    {
+      "path": "mono-spacing.html",
+      "sha256": "1ca9722ab2f29c7faca8d19dbe160a8f38bdbe89f23b81d171b1df6d36e66b91"
     },
     {
       "path": "mono-specimen.html",
-      "sha256": "190101f082f3e5c956c473d7f057af33ad98a0425538b23e0d5c8775b2f2412f"
+      "sha256": "d3f222b14b295a17d0aaade7f25e21b752e2202762a1b2d6d3b93b082aab25e8"
     },
     {
       "path": "mono-validation.json",
-      "sha256": "09a2a5260a1202d82606aaa7db7a1195766f331547a0ceada88674603b90bcd9"
+      "sha256": "5398c9bc7cccf128c3b539ffebdeb65bd0b796d7fa74ad6152fbb247953f0654"
     },
     {
       "path": "mono-web-validation.json",
       "sha256": "744d151ac114e5ab430c0672c5bd037f791ce306deb2cd77600548a2473f431a"
+    },
+    {
+      "path": "proofs/editor-cursor.png",
+      "sha256": "a4d1621601ad8fc910d0fd19061c450238f2079c76e56be354c38e0f548bbcd0"
     },
     {
       "path": "proofs/family.png",
@@ -81,8 +97,16 @@
       "sha256": "7d02c0129ea66754824a19d0d8f314e8bb274870283233520d5c1af3d8ff6ec7"
     },
     {
+      "path": "proofs/mono-spacing-dark.png",
+      "sha256": "738e4856d572f01189b14b58fbcc98e5222a1472364b2aa105a6a33298f7ef0c"
+    },
+    {
+      "path": "proofs/mono-spacing-light.png",
+      "sha256": "d851b8c7a58970c4d65e2930add61fb330962ce04d5e4f92964c866c24c91d08"
+    },
+    {
       "path": "proofs/mono.png",
-      "sha256": "0e70d85f471c0d19ae2cb96fa5ce7439441277fb7e279b95831b48c2a03db6c3"
+      "sha256": "d1a512295c229815f679fe1f41dc46ff4b151c4c23e356a58f7316157bcc74ab"
     },
     {
       "path": "proofs/prose-interface.png",
@@ -102,7 +126,7 @@
     },
     {
       "path": "source/build_mono.py",
-      "sha256": "79b26b517c79774a8852ab55f4fb3529bbbbac9b1fe50e9cb1c9579dbb55baf1"
+      "sha256": "63df38827b0ae0090ab06f1262caf76a10c47a47d9cb0a3d2eefb25bdaf7e34a"
     },
     {
       "path": "source/cairn.py",
@@ -142,7 +166,7 @@
     },
     {
       "path": "source/package_mono.py",
-      "sha256": "b2488713006bbfc0934e19e2dd7fca1290340a40b08803e8ffd0e2f1309ba71f"
+      "sha256": "50b07cd9bf33b59cc3235d103751648febf696bd4881fec0a61be833499e4fff"
     },
     {
       "path": "source/package_web.py",
@@ -170,11 +194,11 @@
     },
     {
       "path": "source/validate_mono.py",
-      "sha256": "afe39e2c00ecd416902d0f14215c65089089e3050feb5415d9b8675cd887422c"
+      "sha256": "3dbd001847d914cb4ffdc99ea31129950a2e1ce868bb265ac0eb87dd1a5b9ad9"
     },
     {
       "path": "source/verify_mono.swift",
-      "sha256": "bdea73518b000d57e9edf46c3c82a00514851533f38433ad79e8045a65291dc8"
+      "sha256": "b95f8e0d1276c07418dfada521a8be944b247db384124b1fd5dcc257a1bd4568"
     },
     {
       "path": "specimen.html",
@@ -190,7 +214,7 @@
     },
     {
       "path": "web/cairn-mono-embedded.css",
-      "sha256": "129d0cbc8a77616e18331e555f5caf811effde1e70422a36840bff38c5a2a796"
+      "sha256": "490b3d42d63eeaf1b4076f7e15487436edcddbd7ed0c3f35fefb1dc512a7a8ce"
     },
     {
       "path": "web/cairn-mono.css",
@@ -222,19 +246,19 @@
     },
     {
       "path": "web/fonts/CairnMono-Bold.woff",
-      "sha256": "0373d80bdce8895a02a08f7771ee48322a36451109286cd08b0f9d2e2b01d0b5"
+      "sha256": "9de9e0e7be98c2ed97609b634efd577b8e983e9d8f784aaa8b7463418490f16a"
     },
     {
       "path": "web/fonts/CairnMono-BoldItalic.woff",
-      "sha256": "a524dc4b81dfce80a27527f9d5ae772b9e380764f60b98af71f85d23f9288d3a"
+      "sha256": "00e45a12dfc71e0540399afd6f50920f545c0a5fcb16feac76ce69bf88e62bb9"
     },
     {
       "path": "web/fonts/CairnMono-Italic.woff",
-      "sha256": "e11df1dab6da702455387ce13d9776cfc27a9892be1f69c8b0427e81e3f19c1b"
+      "sha256": "38c502213501a8d66eb6882dcac4ba9b986d7d4a9b74cd8b612f6699736a5a69"
     },
     {
       "path": "web/fonts/CairnMono-Regular.woff",
-      "sha256": "270d52c8b2f18fdc234b266db563157751504dadc89ce4a3155d620261472e2e"
+      "sha256": "e990bb65eaf8df11fc53421b1090b8f1486151ac3ab48fcbe033df8ec6318779"
     },
     {
       "path": "web-validation.json",

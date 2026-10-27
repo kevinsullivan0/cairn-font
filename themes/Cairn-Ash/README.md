@@ -1,4 +1,4 @@
-# Cairn Ash 1.10.1 — Everyday and Relic
+# Cairn Ash 1.10.2 — Everyday and Relic
 
 Hearthstone (dark) and Limestone (light), with a quiet Everyday edition and a
 more tactile Relic edition. Both editions share the same typography and control
@@ -47,3 +47,12 @@ To rebuild themes: run `python source/build_theme.py`, then
 frozen specimen of this release. `python source/check_material.py` verifies the
 material assets. No local installation records, personal vault paths, notes,
 preferences, or desktop painting are included.
+
+## Editor cursor
+
+In Vim normal mode, the native block cursor gets the theme’s accent fill and
+contrasting text. Its measured glyph width is preserved, including narrow
+proportional letters. Insert mode retains the ordinary caret. The active-line
+rail sits in the margin with a six-pixel gap, rather than covering the first
+character, and adds no line padding. The selector structure was checked against
+the installed Obsidian 1.14.5 editor and exercised in offline state tests.

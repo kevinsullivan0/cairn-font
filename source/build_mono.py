@@ -14,7 +14,7 @@ from fontTools.ttLib.tables.O_S_2f_2 import Panose
 import build_family as base
 from build_fonts import to_glyph
 
-CELL=1536
+CELL=1440
 MARGIN=90
 CUSTOM={
  'i':['M 160 1010 L 440 1070 L 425 80','M 135 65 L 750 120'],
@@ -51,7 +51,7 @@ def draw(ch,bold,italic):
     width=g.bounds[2]-g.bounds[0]
     if width>CELL-2*MARGIN:
         paths=CUSTOM.get(ch,base.PATHS.get(ch))
-        if paths and ch not in '…©¨':
+        if paths and ch not in '…©¨%':
             sx=1.0
             for _ in range(5):
                 width=g.bounds[2]-g.bounds[0]
@@ -60,7 +60,7 @@ def draw(ch,bold,italic):
                 g=base.draw(ch,bold,italic,{ch:transform_paths(paths,sx)})
     width=g.bounds[2]-g.bounds[0]
     if width>CELL-2*MARGIN:
-        # Composite marks (ellipsis/copyright) have no single skeleton.
+        # Fit composite marks together: preserve the holes in dense percent rings.
         g=affinity.scale(g,xfact=(CELL-2*MARGIN)/width,origin=(0,0))
     if ch.isdigit():
         _,y0,_,y1=g.bounds
@@ -91,10 +91,10 @@ def build(root):
         fb.setupHorizontalMetrics(metrics)
         fb.setupHorizontalHeader(ascent=1800,descent=-600,lineGap=80,caretSlopeRise=1000,caretSlopeRun=158 if italic else 0)
         fb.setupNameTable({'familyName':'Cairn Mono','styleName':style,'typographicFamily':'Cairn Mono','typographicSubfamily':style,
-          'uniqueFontIdentifier':f'Cairn Mono 1.000 {style}', 'fullName':f'Cairn Mono {style}',
-          'psName':f'CairnMono-{key}','version':'Version 1.000',
+          'uniqueFontIdentifier':f'Cairn Mono 1.001 {style}', 'fullName':f'Cairn Mono {style}',
+          'psName':f'CairnMono-{key}','version':'Version 1.001',
           'copyright':'Cairn design project, 2026. All included glyphs drawn for this project.',
-          'description':'Carved monospace companion for code. All advances 1536/2048 em; no kerning or ligatures.',
+          'description':f'Carved monospace companion for code. All advances {CELL}/2048 em; no kerning or ligatures.',
           'licenseDescription':'No distribution license specified. All glyphs generated from included drawing source.'})
         bold=weight==700
         panose=Panose();panose.bFamilyType=2;panose.bProportion=9
@@ -103,7 +103,7 @@ def build(root):
           usWeightClass=weight,usWidthClass=5,fsSelection=(0x20 if bold else 0)|(1 if italic else 0)|(0x40 if not bold and not italic else 0)|0x80,
           fsType=0,yStrikeoutSize=90,yStrikeoutPosition=570,panose=panose)
         fb.setupPost(italicAngle=-9 if italic else 0,isFixedPitch=1,underlinePosition=-230,underlineThickness=85)
-        fb.setupMaxp();fb.font['head'].macStyle=(1 if bold else 0)|(2 if italic else 0)
+        fb.setupMaxp();fb.font['head'].fontRevision=1.001;fb.font['head'].macStyle=(1 if bold else 0)|(2 if italic else 0)
         fb.font.recalcTimestamp=False;fb.font['head'].created=fb.font['head'].modified=3875904000
         gasp=newTable('gasp');gasp.gaspRange={65535:0x000A};fb.font['gasp']=gasp
         path=root/'desktop'/f'CairnMono-{key}.ttf';fb.save(path)
