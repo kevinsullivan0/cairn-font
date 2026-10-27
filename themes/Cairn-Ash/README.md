@@ -1,0 +1,49 @@
+# Cairn Ash 1.10.1 — Everyday and Relic
+
+Hearthstone (dark) and Limestone (light), with a quiet Everyday edition and a
+more tactile Relic edition. Both editions share the same typography and control
+scale. Relic adds mineral texture, asymmetric stone chips, inset joints, and
+geometric tool marks. Prose and code surfaces remain flat.
+
+## Install
+
+1. Install the Cairn fonts from the repository’s `desktop/` directory.
+2. Copy either or both folders inside `obsidian/` into your vault’s `.obsidian/themes/`.
+3. Select **Cairn Ash** or **Cairn Ash Relic** in Settings → Appearance → Themes.
+4. Choose the Dark or Light base scheme.
+
+Choose **Cairn** as the Text font in Appearance to use it for prose. **Cairn Mono**
+is available as a Monospace font. The themes otherwise respect Appearance fonts
+and sizes; Cairn is used for the note title and H1/H2. Restart Obsidian if newly
+installed fonts are missing from the font picker.
+
+## Try without installing
+
+Open `compare-nord.html` for the same interactive workspace beside a Nord reference.
+The edition menu switches Everyday and Relic. `preview.html` includes light mode,
+body-font choices, search, tasks, a local draft, and terminal color previews.
+These are standalone mockups, not running Obsidian windows.
+
+On macOS with Kitty installed, double-click `Try Hearthstone.command` or
+`Try Limestone.command` in Finder. Each opens a separate trial window.
+
+## Files and validation
+
+- `obsidian/`: complete installable theme folders.
+- `kitty/`: softened terminal color configurations.
+- `material.css` and `material.json`: reusable color, spacing, typography, and material tokens.
+- `relic.css`: compiled material overlay, with embedded textures and ledges.
+- `materials/`: deterministic pigment tiles, vector geometry, and contrast measurements.
+- `source/`: theme builders, material generator, contrast checker, and palette evaluator.
+- `DESIGN-NOTES.md`: design decisions and critique history.
+- `edition-proof.png` and `edition-light-proof.png`: representative native font/material proofs.
+
+Dark prose contrast is 7.20:1. Tested material text remains at least 4.52:1 dark
+and 4.71:1 light. Offline DOM/CSS checks and native proofs were reviewed; live
+Obsidian layout and community plugins are not exhaustively verified.
+
+To rebuild themes: run `python source/build_theme.py`, then
+`python source/build_relic.py` from any working directory. Preview HTML is a
+frozen specimen of this release. `python source/check_material.py` verifies the
+material assets. No local installation records, personal vault paths, notes,
+preferences, or desktop painting are included.

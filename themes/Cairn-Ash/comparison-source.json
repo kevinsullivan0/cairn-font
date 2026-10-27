@@ -1,0 +1,13 @@
+{
+  "nord_stylesheet": "Obsidian Nord/theme.css",
+  "uses_installed_nord_css": true,
+  "includes_title_override": "Elbjorg",
+  "hearthstone_uses_delivered_theme_css": true,
+  "same_markup": true,
+  "editions": [
+    "Everyday",
+    "Relic"
+  ],
+  "relic_uses_delivered_overlay": true,
+  "scope": "Isolated srcdoc panes with shared lightweight mockup layout. Not live Obsidian."
+}

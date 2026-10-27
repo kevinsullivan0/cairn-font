@@ -1,0 +1,70 @@
+{
+  "method": "Conservative sRGB compositing extremes across quiet and structural pigment plus 4.5% broad wash. Black-only dark pigment and white-only light pigment. Mean opacity and variation measured from actual PNG pixels. Not a full app/plugin accessibility audit.",
+  "reading_surface": "No texture on markdown/editor/code backgrounds.",
+  "modes": {
+    "dark": {
+      "minimum_text_contrast": 4.517927786166461,
+      "pairs": {
+        "fg/bg": 7.196047478606893,
+        "fg/sidebar": 6.4066770204767165,
+        "fg/alt": 5.797278132999987,
+        "fg/raised": 4.9708693745776,
+        "muted/bg": 5.687749780363228,
+        "muted/sidebar": 5.063832044522454,
+        "muted/alt": 4.582163684397852,
+        "focus/bg": 6.079887180959205,
+        "focus/sidebar": 5.412953931327192,
+        "focus/alt": 4.898077327875732,
+        "button_label/button_face": 5.346144609477148,
+        "button_label/button_hover": 4.517927786166461,
+        "button_label/button_pressed": 6.807833281929932,
+        "button_primary_label/button_face": 5.490853334727155,
+        "button_primary_label/button_hover": 4.640218449525767,
+        "button_primary_label/button_pressed": 6.992106800120268
+      },
+      "texture_alpha_extrema": [
+        7,
+        60
+      ],
+      "structural_alpha_extrema": [
+        0,
+        65
+      ],
+      "structural_mean_alpha_change": -0.002780914306640625,
+      "structural_variation_ratio": 1.3631232005947413,
+      "reading_body_contrast_unchanged": 7.196047478606893
+    },
+    "light": {
+      "minimum_text_contrast": 4.707006877768845,
+      "pairs": {
+        "fg/bg": 8.609532858430212,
+        "fg/sidebar": 7.621964824317028,
+        "fg/alt": 7.996743121740887,
+        "fg/raised": 6.978604199350023,
+        "muted/bg": 5.3168876153451885,
+        "muted/sidebar": 4.707006877768845,
+        "muted/alt": 4.938454288544672,
+        "focus/bg": 5.477945293210443,
+        "focus/sidebar": 4.849590218300863,
+        "focus/alt": 5.088048569541162,
+        "button_label/button_face": 7.568215935003622,
+        "button_label/button_hover": 7.068281856374266,
+        "button_label/button_pressed": 6.3435403641584145,
+        "button_primary_label/button_face": 5.855404829144254,
+        "button_primary_label/button_hover": 5.468614012999455,
+        "button_primary_label/button_pressed": 4.907893379517705
+      },
+      "texture_alpha_extrema": [
+        7,
+        60
+      ],
+      "structural_alpha_extrema": [
+        0,
+        65
+      ],
+      "structural_mean_alpha_change": -0.002780914306640625,
+      "structural_variation_ratio": 1.3631232005947413,
+      "reading_body_contrast_unchanged": 8.609532858430212
+    }
+  }
+}

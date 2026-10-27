@@ -1,0 +1,463 @@
+/* Cairn Ash 1.6 — stone, bronze, patina. No plugin dependency.
+   Keep body/UI/code font preferences. Cairn is reserved for title, H1, H2.
+   Color roles and dimensions use Obsidian's native CSS variables.
+*/
+body.theme-dark {
+  --color-base-00: #2e3440;
+  --color-base-05: #343c49;
+  --color-base-10: #3b4252;
+  --color-base-20: #3b4252;
+  --color-base-25: #434c5e;
+  --color-base-30: #556273;
+  --color-base-35: #556273;
+  --color-base-40: #736b59;
+  --color-base-50: #8d826c;
+  --color-base-60: #b3afa1;
+  --color-base-70: #cac4b8;
+  --color-base-100: #cac4b8;
+  --color-red: #ed9a7f;
+  --color-red-rgb: 237, 154, 127;
+  --color-orange: #eeaf7d;
+  --color-orange-rgb: 238, 175, 125;
+  --color-yellow: #dbc08b;
+  --color-yellow-rgb: 219, 192, 139;
+  --color-green: #afcd92;
+  --color-green-rgb: 175, 205, 146;
+  --color-cyan: #89cec4;
+  --color-cyan-rgb: 137, 206, 196;
+  --color-blue: #93bce0;
+  --color-blue-rgb: 147, 188, 224;
+  --color-purple: #c0a4dc;
+  --color-purple-rgb: 192, 164, 220;
+  --color-pink: #de9fba;
+  --color-pink-rgb: 222, 159, 186;
+  --accent-h: 34;
+  --accent-s: 29%;
+  --accent-l: 69%;
+  --background-primary: #2e3440;
+  --background-primary-alt: #3b4252;
+  --background-secondary: #343c49;
+  --background-secondary-alt: #3b4252;
+  --background-modifier-hover: #434c5e;
+  --background-modifier-active-hover: #434c5e;
+  --background-modifier-border: #556273;
+  --background-modifier-border-hover: #c6b298;
+  --background-modifier-border-focus: #c6b298;
+  --background-modifier-form-field: #343c49;
+  --background-modifier-message: #434c5e;
+  --text-normal: #cac4b8;
+  --text-muted: #b3afa1;
+  --text-faint: #b3afa1;
+  --text-accent: #c6b298;
+  --text-accent-hover: #dbc08b;
+  --text-on-accent: #2e3440;
+  --text-selection: #4b4d49;
+  --text-highlight-bg: #514e44;
+  --text-success: #afcd92;
+  --text-warning: #dbc08b;
+  --text-error: #ed9a7f;
+  --caret-color: #c6b298;
+  --interactive-normal: #3b4252;
+  --interactive-hover: #434c5e;
+  --interactive-accent: #c6b298;
+  --interactive-accent-hover: #dbc08b;
+  --background-modifier-error: #49302b;
+  --background-modifier-error-rgb: 237, 154, 127;
+  --background-modifier-success: #303a2b;
+  --background-modifier-success-rgb: 175, 205, 146;
+  --h1-color: #ed9a7f;
+  --h2-color: #dbc08b;
+  --h3-color: #afcd92;
+  --h4-color: #c0a4dc;
+  --h5-color: #89cec4;
+  --h6-color: #93bce0;
+  --cursor-line-background: rgba(175, 205, 146, 0.08);
+  --cairn-cursor-rail: #c6b298;
+  --cairn-groove-light: #697078;
+  --cairn-groove-dark: #242a34;
+  --cairn-button-face: #3f4853;
+  --cairn-button-hover: #48535f;
+  --cairn-button-pressed: #303845;
+  --cairn-button-label: #cac4b8;
+  --cairn-button-primary-label: #d5c5ae;
+  --cairn-button-edge: #8d8f86;
+  --cairn-button-light: #6b747e;
+  --cairn-button-shadow: #202630;
+  --inline-title-color: #ed9a7f;
+  --bold-color: #d8adb3;
+  --italic-color: #89cec4;
+  --link-color: #c6b298;
+  --link-color-hover: #dbc08b;
+  --link-external-color: #93bce0;
+  --link-external-color-hover: #89cec4;
+  --link-unresolved-color: #c0a4dc;
+  --code-background: #343c49;
+  --code-normal: #cac4b8;
+  --code-comment: #b3afa1;
+  --code-function: #dbc08b;
+  --code-keyword: #c0a4dc;
+  --code-operator: #89cec4;
+  --code-property: #93bce0;
+  --code-string: #afcd92;
+  --code-value: #eeaf7d;
+  --code-important: #ed9a7f;
+  --code-punctuation: #b3afa1;
+  --code-tag: #ed9a7f;
+  --nav-item-color: #b3afa1;
+  --nav-item-color-hover: #cac4b8;
+  --nav-item-color-active: #c6b298;
+  --nav-item-color-selected: #cac4b8;
+  --nav-item-background-hover: #3b4252;
+  --nav-item-background-active: #434c5e;
+  --tab-background-active: #2e3440;
+  --tab-container-background: #343c49;
+  --tab-text-color: #b3afa1;
+  --tab-text-color-focused-active-current: #c6b298;
+  --tab-outline-color: #556273;
+  --tab-divider-color: #556273;
+  --titlebar-background: #343c49;
+  --titlebar-background-focused: #343c49;
+  --titlebar-text-color-focused: #b3afa1;
+  --ribbon-background: #343c49;
+  --ribbon-background-collapsed: #343c49;
+  --status-bar-background: #343c49;
+  --status-bar-text-color: #b3afa1;
+  --status-bar-border-color: #556273;
+  --icon-color: #b3afa1;
+  --icon-color-hover: #cac4b8;
+  --icon-color-active: #c6b298;
+  --icon-color-focused: #c6b298;
+  --input-placeholder-color: #b3afa1;
+  --search-clear-button-color: #b3afa1;
+  --search-result-background: #3b4252;
+  --metadata-label-text-color: #b3afa1;
+  --metadata-label-text-color-hover: #cac4b8;
+  --metadata-border-color: #556273;
+  --metadata-property-background-hover: #3b4252;
+  --tag-color: #89cec4;
+  --tag-background: #343c49;
+  --tag-color-hover: #cac4b8;
+  --tag-background-hover: #434c5e;
+  --tag-border-color: #556273;
+  --tag-border-color-hover: #c6b298;
+  --checkbox-color: #c6b298;
+  --checkbox-color-hover: #dbc08b;
+  --checkbox-border-color: #b3afa1;
+  --checkbox-border-color-hover: #c6b298;
+  --checkbox-marker-color: #2e3440;
+  --checklist-done-color: #b3afa1;
+  --table-border-color: #556273;
+  --table-header-background: #343c49;
+  --table-header-color: #cac4b8;
+  --table-row-alt-background: #3b4252;
+  --table-row-background-hover: #434c5e;
+  --table-selection: #4b4d49;
+  --blockquote-border-color: #c6b298;
+  --blockquote-background-color: #3b4252;
+  --blockquote-color: #cac4b8;
+  --hr-color: #556273;
+  --indentation-guide-color: #556273;
+  --indentation-guide-color-active: #c6b298;
+  --notice-color: #cac4b8;
+  --notice-background: #343c49;
+  --modal-background: #2e3440;
+  --modal-border-color: #c6b298;
+  --prompt-background: #2e3440;
+  --prompt-border-color: #c6b298;
+  --graph-text: #cac4b8;
+  --graph-line: #556273;
+  --graph-node: #b3afa1;
+  --graph-node-focused: #c6b298;
+  --graph-node-tag: #89cec4;
+  --graph-node-attachment: #afcd92;
+  --canvas-background: #343c49;
+  --canvas-dot-pattern: #556273;
+  --canvas-card-label-color: #cac4b8;
+}
+
+body.theme-light {
+  --color-base-00: #eee5d3;
+  --color-base-05: #e3d8c1;
+  --color-base-10: #e8ddc6;
+  --color-base-20: #e8ddc6;
+  --color-base-25: #dbcfb5;
+  --color-base-30: #b5a383;
+  --color-base-35: #b5a383;
+  --color-base-40: #b5a383;
+  --color-base-50: #95866b;
+  --color-base-60: #695a48;
+  --color-base-70: #463c30;
+  --color-base-100: #463c30;
+  --color-red: #934738;
+  --color-red-rgb: 147, 71, 56;
+  --color-orange: #805019;
+  --color-orange-rgb: 128, 80, 25;
+  --color-yellow: #745613;
+  --color-yellow-rgb: 116, 86, 19;
+  --color-green: #496333;
+  --color-green-rgb: 73, 99, 51;
+  --color-cyan: #2b655d;
+  --color-cyan-rgb: 43, 101, 93;
+  --color-blue: #3c5e83;
+  --color-blue-rgb: 60, 94, 131;
+  --color-purple: #76508a;
+  --color-purple-rgb: 118, 80, 138;
+  --color-pink: #874263;
+  --color-pink-rgb: 135, 66, 99;
+  --accent-h: 33;
+  --accent-s: 66%;
+  --accent-l: 30%;
+  --background-primary: #eee5d3;
+  --background-primary-alt: #e8ddc6;
+  --background-secondary: #e3d8c1;
+  --background-secondary-alt: #e8ddc6;
+  --background-modifier-hover: #dbcfb5;
+  --background-modifier-active-hover: #dbcfb5;
+  --background-modifier-border: #b5a383;
+  --background-modifier-border-hover: #7d511a;
+  --background-modifier-border-focus: #7d511a;
+  --background-modifier-form-field: #e3d8c1;
+  --background-modifier-message: #dbcfb5;
+  --text-normal: #463c30;
+  --text-muted: #695a48;
+  --text-faint: #695a48;
+  --text-accent: #7d511a;
+  --text-accent-hover: #745613;
+  --text-on-accent: #eee5d3;
+  --text-selection: #d7be8d;
+  --text-highlight-bg: #d9bc79;
+  --text-success: #496333;
+  --text-warning: #745613;
+  --text-error: #934738;
+  --caret-color: #7d511a;
+  --interactive-normal: #e8ddc6;
+  --interactive-hover: #dbcfb5;
+  --interactive-accent: #7d511a;
+  --interactive-accent-hover: #745613;
+  --background-modifier-error: #e9cbc0;
+  --background-modifier-error-rgb: 147, 71, 56;
+  --background-modifier-success: #d7dfc3;
+  --background-modifier-success-rgb: 73, 99, 51;
+  --h1-color: #934738;
+  --h2-color: #745613;
+  --h3-color: #496333;
+  --h4-color: #76508a;
+  --h5-color: #2b655d;
+  --h6-color: #3c5e83;
+  --cursor-line-background: rgba(73, 99, 51, 0.08);
+  --cairn-cursor-rail: #7d511a;
+  --cairn-groove-light: #f8f1e1;
+  --cairn-groove-dark: #b8a685;
+  --cairn-button-face: #e4d7bd;
+  --cairn-button-hover: #ded0b3;
+  --cairn-button-pressed: #d5c5a6;
+  --cairn-button-label: #463c30;
+  --cairn-button-primary-label: #69471d;
+  --cairn-button-edge: #88745b;
+  --cairn-button-light: #fff7e8;
+  --cairn-button-shadow: #b1a084;
+  --inline-title-color: #934738;
+  --bold-color: #83485c;
+  --italic-color: #2b655d;
+  --link-color: #7d511a;
+  --link-color-hover: #745613;
+  --link-external-color: #3c5e83;
+  --link-external-color-hover: #2b655d;
+  --link-unresolved-color: #76508a;
+  --code-background: #e3d8c1;
+  --code-normal: #463c30;
+  --code-comment: #695a48;
+  --code-function: #745613;
+  --code-keyword: #76508a;
+  --code-operator: #2b655d;
+  --code-property: #3c5e83;
+  --code-string: #496333;
+  --code-value: #805019;
+  --code-important: #934738;
+  --code-punctuation: #695a48;
+  --code-tag: #934738;
+  --nav-item-color: #695a48;
+  --nav-item-color-hover: #463c30;
+  --nav-item-color-active: #7d511a;
+  --nav-item-color-selected: #463c30;
+  --nav-item-background-hover: #e8ddc6;
+  --nav-item-background-active: #dbcfb5;
+  --tab-background-active: #eee5d3;
+  --tab-container-background: #e3d8c1;
+  --tab-text-color: #695a48;
+  --tab-text-color-focused-active-current: #7d511a;
+  --tab-outline-color: #b5a383;
+  --tab-divider-color: #b5a383;
+  --titlebar-background: #e3d8c1;
+  --titlebar-background-focused: #e3d8c1;
+  --titlebar-text-color-focused: #695a48;
+  --ribbon-background: #e3d8c1;
+  --ribbon-background-collapsed: #e3d8c1;
+  --status-bar-background: #e3d8c1;
+  --status-bar-text-color: #695a48;
+  --status-bar-border-color: #b5a383;
+  --icon-color: #695a48;
+  --icon-color-hover: #463c30;
+  --icon-color-active: #7d511a;
+  --icon-color-focused: #7d511a;
+  --input-placeholder-color: #695a48;
+  --search-clear-button-color: #695a48;
+  --search-result-background: #e8ddc6;
+  --metadata-label-text-color: #695a48;
+  --metadata-label-text-color-hover: #463c30;
+  --metadata-border-color: #b5a383;
+  --metadata-property-background-hover: #e8ddc6;
+  --tag-color: #2b655d;
+  --tag-background: #e3d8c1;
+  --tag-color-hover: #463c30;
+  --tag-background-hover: #dbcfb5;
+  --tag-border-color: #b5a383;
+  --tag-border-color-hover: #7d511a;
+  --checkbox-color: #7d511a;
+  --checkbox-color-hover: #745613;
+  --checkbox-border-color: #695a48;
+  --checkbox-border-color-hover: #7d511a;
+  --checkbox-marker-color: #eee5d3;
+  --checklist-done-color: #695a48;
+  --table-border-color: #b5a383;
+  --table-header-background: #e3d8c1;
+  --table-header-color: #463c30;
+  --table-row-alt-background: #e8ddc6;
+  --table-row-background-hover: #dbcfb5;
+  --table-selection: #d7be8d;
+  --blockquote-border-color: #7d511a;
+  --blockquote-background-color: #e8ddc6;
+  --blockquote-color: #463c30;
+  --hr-color: #b5a383;
+  --indentation-guide-color: #b5a383;
+  --indentation-guide-color-active: #7d511a;
+  --notice-color: #463c30;
+  --notice-background: #e3d8c1;
+  --modal-background: #eee5d3;
+  --modal-border-color: #7d511a;
+  --prompt-background: #eee5d3;
+  --prompt-border-color: #7d511a;
+  --graph-text: #463c30;
+  --graph-line: #b5a383;
+  --graph-node: #695a48;
+  --graph-node-focused: #7d511a;
+  --graph-node-tag: #2b655d;
+  --graph-node-attachment: #496333;
+  --canvas-background: #e3d8c1;
+  --canvas-dot-pattern: #b5a383;
+  --canvas-card-label-color: #463c30;
+}
+
+body {
+  --font-text-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-interface-theme: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-monospace-theme: "JetBrainsMono Nerd Font", "SFMono-Regular", Consolas, monospace;
+  --h1-font: "Cairn", var(--font-text); --h2-font: "Cairn", var(--font-text);
+  --h3-font: var(--font-text); --h4-font: var(--font-text); --h5-font: var(--font-text); --h6-font: var(--font-text);
+  --inline-title-font: "Cairn", var(--font-text); --inline-title-size: 2em; --inline-title-weight: 400;
+  --h1-size: 1.8em; --h2-size: 1.46em; --h3-size: 1.18em; --h4-size: 1.05em; --h5-size: 1em; --h6-size: 1em;
+  --h1-weight: 400; --h2-weight: 400; --h3-weight: 650; --h4-weight: 650; --h5-weight: 650; --h6-weight: 650;
+  --h1-line-height: 1.3; --h2-line-height: 1.35; --heading-spacing: 1.6em;
+  --line-height-normal: 1.65; --line-height-tight: 1.4; --file-line-width: 720px;
+  --file-margins: 28px 32px; --p-spacing: 1em; --code-size: 0.9em;
+  --code-radius: 3px; --code-border-width: 1px;
+  --radius-s: 3px; --radius-m: 4px; --radius-l: 6px; --radius-xl: 8px;
+  --input-radius: 3px; --button-radius: 4px; --button-corner-shape: bevel; --checkbox-radius: 3px; --input-height: 32px;
+  --callout-radius: 3px; --callout-border-width: 1px 1px 1px 3px;
+  --callout-border-opacity: 0.5; --callout-padding: 12px 16px; --callout-title-padding: 0;
+  --table-header-weight: 650;
+  --table-row-alt-background: var(--background-primary-alt);
+  --tag-radius: 3px; --tag-border-width: 1px; --tag-padding-x: 0.5em; --tag-padding-y: 0.1em;
+  --link-decoration: underline; --link-external-decoration: underline;
+  --link-unresolved-opacity: 1; --link-unresolved-decoration-style: dotted;
+  --blockquote-border-thickness: 2px; --blockquote-font-style: normal;
+  --nav-item-radius: 3px; --nav-item-padding: 5px 8px 5px 18px;
+  --nav-item-weight-active: 600; --tab-radius: 3px; --tab-radius-active: 3px 3px 0 0;
+  --tab-font-weight: 500; --status-bar-radius: 0; --status-bar-border-width: 1px 0 0 0;
+  --modal-radius: 6px;
+}
+/* More specific than the vault's existing Elbjorg inline-title snippet. */
+body.theme-dark .inline-title, body.theme-light .inline-title { font-family: "Cairn", var(--font-text) !important; }
+.inline-title { padding-bottom: 0.55em; border-bottom: 3px double var(--background-modifier-border); }
+.markdown-rendered h1 { padding-bottom: 0.3em; border-bottom: 1px solid var(--background-modifier-border); }
+.markdown-rendered h2 { padding-inline-start: 0.7em; border-inline-start: 3px double var(--cairn-groove-light); }
+.markdown-rendered hr { border: 0; border-top: 3px double var(--hr-color); }
+.markdown-rendered pre { border: 1px solid var(--background-modifier-border); }
+.markdown-rendered :is(td,th), .markdown-source-view.mod-cm6 .cm-table-widget .table-cell-wrapper { padding: 8px 12px; }
+.search-result-file-matched-text, .cm-s-obsidian span.obsidian-search-match-highlight { color: var(--text-normal); background-color: var(--text-highlight-bg); }
+.markdown-rendered code, .cm-inline-code { font-variant-ligatures: none; }
+.markdown-rendered a, .cm-link, .cm-hmd-internal-link { text-underline-offset: 0.2em; }
+.nav-file-title.is-active { box-shadow: inset 2px 0 var(--interactive-accent); }
+.workspace-tab-header.is-active .workspace-tab-header-inner-title { text-decoration: underline; text-decoration-color: var(--interactive-accent); text-underline-offset: 5px; }
+.metadata-container { border-bottom: 1px solid var(--background-modifier-border); padding-bottom: 12px; }
+.callout { box-shadow: none; }
+/* Never compete with the vault's theorem/math callout styles. */
+.callout:not(.theorem-callout) .callout-title { font-family: var(--font-interface); font-weight: 650; }
+input[type="text"]:focus-visible, input[type="search"]:focus-visible,
+textarea:focus-visible, select:focus-visible, button:focus-visible,
+a:focus-visible, [tabindex="0"]:focus-visible {
+  outline: 2px solid var(--background-modifier-border-focus); outline-offset: 2px;
+}
+/* A focused current line, including Vim normal mode. Transparent tint lets
+   native selections remain visible; an inset rail changes no line geometry. */
+.markdown-source-view.mod-cm6 .cm-editor.cm-focused .cm-line.cm-active {
+  background-color: var(--cursor-line-background);
+  box-shadow: inset 2px 0 var(--cairn-cursor-rail);
+  border-radius: 2px;
+}
+.cm-fat-cursor-mark, .cm-animate-fat-cursor { background-color: var(--interactive-accent); color: var(--text-on-accent); }
+/* Shallow stone/bevel cues stay in chrome and rules, away from body glyphs. */
+.inline-title { border-bottom-color: var(--cairn-groove-light); box-shadow: 0 1px var(--cairn-groove-dark); }
+.markdown-rendered blockquote { border-block: 1px solid var(--background-modifier-border); }
+.workspace-tab-header.is-active { box-shadow: inset 0 1px var(--cairn-groove-light), inset 1px 0 var(--cairn-groove-dark), inset -1px 0 var(--cairn-groove-dark); }
+.nav-folder-title-content { font-weight: 600; color: var(--text-normal); }
+.workspace-sidedock-vault-profile { border-top: 3px double var(--background-modifier-border); }
+.callout:not(.theorem-callout) { box-shadow: inset 0 1px var(--cairn-groove-light); }
+/* Filled stone controls: bevel above, recessed edge below, clear state change.
+   Native icons, tabs, warning buttons, and switches keep their own geometry. */
+button:not(.clickable-icon):not(.mod-warning):not([role="tab"]) {
+  background-color: var(--cairn-button-face); color: var(--cairn-button-label);
+  border: 1px solid var(--cairn-button-edge); border-radius: 4px 8px 4px 8px;
+  padding-inline: 14px; min-height: 34px; corner-shape: bevel;
+  box-shadow: inset 0 1px var(--cairn-button-light), inset 0 -2px var(--cairn-button-shadow), 0 1px var(--cairn-button-shadow);
+}
+button.mod-cta:not(.clickable-icon):not(.mod-warning):not([role="tab"]), button.primary:not(.clickable-icon):not(.mod-warning):not([role="tab"]) { color: var(--cairn-button-primary-label); border-color: var(--interactive-accent); }
+button:not(.clickable-icon):not(.mod-warning):not([role="tab"]):enabled:hover { background-color: var(--cairn-button-hover); }
+button:not(.clickable-icon):not(.mod-warning):not([role="tab"]):enabled:active {
+  background-color: var(--cairn-button-pressed); transform: translateY(1px);
+  box-shadow: inset 0 2px var(--cairn-button-shadow), inset 0 -1px var(--cairn-button-light);
+}
+button:not(.clickable-icon):not(.mod-warning):not([role="tab"]):disabled { box-shadow: none; }
+
+/* Recessed fields and stone ledges. Keep editor text and native focus outlines clear. */
+input[type="text"], input[type="search"], input[type="number"], select {
+  box-shadow: inset 0 2px var(--cairn-groove-dark), 0 1px var(--cairn-groove-light);
+}
+.markdown-rendered blockquote {
+  border-inline-start-color: var(--cairn-groove-light);
+  box-shadow: inset 0 1px var(--cairn-groove-dark), 0 1px var(--cairn-groove-dark);
+}
+.markdown-rendered pre { box-shadow: inset 0 2px var(--cairn-groove-dark); }
+/* Restrained tool marks: a small paired incision identifies the main action. */
+button.mod-cta:not(.clickable-icon):not(.mod-warning):not([role="tab"]),
+button.primary:not(.clickable-icon):not(.mod-warning):not([role="tab"]) { position: relative; padding-inline-start: 27px; }
+button.mod-cta:not(.clickable-icon):not(.mod-warning):not([role="tab"])::before,
+button.primary:not(.clickable-icon):not(.mod-warning):not([role="tab"])::before {
+  content: ""; position: absolute; left: 11px; top: calc(50% - 5px);
+  width: 4px; height: 10px; border-inline: 1px solid var(--interactive-accent);
+  transform: skewY(-25deg); pointer-events: none;
+}
+.workspace-tab-header.is-active { border-top: 1px solid var(--background-modifier-border); }
+/* Per-note escape hatches; no settings plugin required. */
+.cairn-plain { --h1-font: var(--font-text); --h2-font: var(--font-text); --inline-title-font: var(--font-text); }
+body .cairn-plain .inline-title { font-family: var(--font-text) !important; }
+.cairn-prose { --font-text: "Cairn", Georgia, serif; --line-height-normal: 1.7; }
+@media (max-width: 700px) { body { --file-margins: 20px 18px; } }
+@media (prefers-reduced-motion: reduce) { .workspace *, .modal *, .prompt * { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
+@media print {
+  body.theme-dark, body.theme-light { --text-normal: #28231d; --text-muted: #5f5445; --background-primary: white; --background-secondary: white; --background-primary-alt: #f1eee6; --inline-title-color: #28231d; }
+  .markdown-rendered { color: #28231d; background: white; }
+  .inline-title { border-bottom-color: #8a7860; }
+  .markdown-rendered :is(h1,h2,h3,h4,h5,h6,strong,em,a) { color: #463c30; }
+  .markdown-rendered pre, .markdown-rendered code { color: #28231d; background: #f1eee6; }
+}

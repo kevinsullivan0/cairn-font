@@ -1,0 +1,3 @@
+/* Optional: reading prose in Cairn; keep code monospaced. */
+.markdown-preview-view, .markdown-source-view.mod-cm6 .cm-scroller { font-family: "Cairn", serif; font-size: 18px; line-height: 1.65; }
+.markdown-preview-view code, .markdown-preview-view pre, .markdown-source-view.mod-cm6 .cm-inline-code, .markdown-source-view.mod-cm6 .HyperMD-codeblock { font-family: var(--font-monospace); }

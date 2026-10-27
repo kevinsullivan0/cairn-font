@@ -1,0 +1,287 @@
+/* Hearthstone / Relic. Apply after Cairn Ash. Stronger carved furniture;
+   typography and layout density are inherited from the base theme. */
+body {
+  --nav-item-radius: 2px 8px 2px 8px;
+  --tab-radius: 2px 9px 0 0;
+  --tab-radius-active: 2px 9px 0 0;
+  --modal-radius: 3px 14px 3px 14px;
+  --callout-radius: 2px 10px 2px 10px;
+  --nav-item-color-active: var(--text-normal);
+  --cairn-relic-edge: var(--cairn-groove-light);
+  --cairn-cut-corner: 2px 10px 2px 10px;
+  --cairn-seal: polygon(50% 0,100% 24%,65% 50%,100% 76%,50% 100%,0 76%,35% 50%,0 24%);
+  --cairn-incised-joint: inset 1px 0 var(--cairn-relic-edge), inset -2px 0 var(--cairn-groove-dark), inset -3px 0 var(--cairn-relic-edge);
+}
+/* Broad inscription tablets; the inner line and chisel mark carry no text. */
+button:not(.clickable-icon):not(.mod-warning):not([role="tab"]) {
+  position: relative; isolation: isolate;
+  border-width: 1px; border-radius: var(--cairn-cut-corner); corner-shape: bevel;
+  box-shadow: inset 0 1px var(--cairn-button-light), inset 0 -1px var(--cairn-button-shadow), 0 1px var(--cairn-groove-dark);
+}
+button.primary:not(.clickable-icon):not(.mod-warning):not([role="tab"])::after,
+button.mod-cta:not(.clickable-icon):not(.mod-warning):not([role="tab"])::after {
+  content: ""; position: absolute; inset: 4px; pointer-events: none;
+  border: 1px solid var(--cairn-relic-edge); opacity: 0.75;
+  mask-image: linear-gradient(115deg,#000 0 12%,#0005 13% 16%,#000 17% 55%,#0003 56% 61%,#000 62% 100%);
+  border-radius: 1px 8px 1px 8px; corner-shape: bevel;
+}
+button.mod-cta:not(.clickable-icon):not(.mod-warning):not([role="tab"]),
+button.primary:not(.clickable-icon):not(.mod-warning):not([role="tab"]) {
+  box-shadow: inset 0 2px var(--cairn-button-light), inset 0 -3px var(--cairn-button-shadow), 0 3px var(--cairn-groove-dark);
+  border-color: var(--interactive-accent);
+}
+button.mod-cta:not(.clickable-icon):not(.mod-warning):not([role="tab"])::before,
+button.primary:not(.clickable-icon):not(.mod-warning):not([role="tab"])::before {
+  content: ""; position: absolute; left: 11px; top: calc(50% - 5px);
+  width: 4px; height: 10px; background: var(--interactive-accent); opacity: 0.9;
+  clip-path: var(--cairn-seal);
+  transform: none; border: 0; pointer-events: none;
+}
+button:not(.clickable-icon):not(.mod-warning):not([role="tab"]):enabled:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 3px var(--cairn-button-shadow), inset 0 -1px var(--cairn-button-light), 0 1px var(--cairn-groove-dark);
+}
+button:not(.clickable-icon):not(.mod-warning):not([role="tab"]):disabled { box-shadow: none; }
+button:not(.clickable-icon):not(.mod-warning):not([role="tab"]):disabled::after { opacity: 0.25; }
+/* Tablet frames and stone joints. All cuts stay outside the text field. */
+.inline-title {
+  position: relative;
+  border-block: 1px solid var(--cairn-relic-edge); border-block-end-width: 3px;
+  box-shadow: 0 2px var(--cairn-groove-dark), 0 -1px var(--cairn-groove-dark);
+}
+.markdown-rendered h2 {
+  border-inline-start: 3px solid var(--interactive-accent);
+  border-block-end: 0; box-shadow: none;
+}
+.markdown-rendered hr { border-top: 1px solid var(--cairn-relic-edge); }
+.markdown-rendered blockquote {
+  border: 1px solid var(--background-modifier-border);
+  border-inline-start: 2px solid var(--cairn-relic-edge);
+  border-radius: var(--cairn-cut-corner); corner-shape: bevel;
+}
+.callout:not(.theorem-callout) {
+  box-shadow: inset 0 2px var(--cairn-groove-light), inset 0 -2px var(--cairn-groove-dark);
+}
+.nav-folder-title-content {
+  position: relative;
+  border-block-end: 2px solid var(--background-modifier-border);
+}
+.workspace-tab-header.is-active {
+  box-shadow: inset 0 3px var(--cairn-groove-light), inset 1px 0 var(--cairn-groove-dark), inset -1px 0 var(--cairn-groove-dark);
+}
+.nav-file-title.is-active {
+  box-shadow: inset 4px 0 var(--interactive-accent), inset 0 1px var(--cairn-groove-light), inset 0 -2px var(--cairn-groove-dark);
+  border-radius: 2px 8px 2px 8px; corner-shape: bevel;
+}
+.workspace-split.mod-left-split .workspace-leaf-content,
+.workspace-split.mod-right-split .workspace-leaf-content {
+  box-shadow: var(--cairn-incised-joint);
+}
+.modal, .prompt {
+  border: 1px solid var(--cairn-relic-edge);
+  box-shadow: inset 0 2px var(--cairn-groove-light), 0 12px 35px #0005;
+}
+input[type="text"], input[type="search"], input[type="number"], select {
+  border-radius: 2px 7px 2px 7px; corner-shape: bevel;
+  box-shadow: inset 2px 3px var(--cairn-groove-dark), 0 1px var(--cairn-groove-light);
+}
+@media print {
+  .inline-title, .markdown-rendered h2, .markdown-rendered blockquote { box-shadow: none; }
+}
+/* Material pass: static pigment and strata on the furniture, not the page.
+   Dark pigment only darkens dark UI; pale pigment only lightens light UI. */
+body.theme-dark {
+  --cairn-stone-grain: url("BASALT_GRAIN");
+  --cairn-stone-chrome: url("BASALT_CHROME");
+  --cairn-stone-vein: rgba(0, 0, 0, 0.045);
+  --cairn-iron: #68777d;
+  --cairn-relic-edge: var(--cairn-iron);
+}
+body.theme-light {
+  --cairn-stone-grain: url("LIMESTONE_GRAIN");
+  --cairn-stone-chrome: url("LIMESTONE_CHROME");
+  --cairn-stone-vein: rgba(255, 255, 255, 0.045);
+  --cairn-iron: #8c8374;
+  --cairn-relic-edge: var(--cairn-iron);
+}
+body {
+  --cairn-stone-strata: linear-gradient(128deg, transparent 12%, var(--cairn-stone-vein) 52%, transparent 88%);
+}
+.workspace-split:is(.mod-left-split, .mod-right-split) .workspace-leaf-content:not([data-type="markdown"]):not([data-type="canvas"]),
+.workspace-tab-header-container, .workspace-tab-header,
+.workspace-ribbon, .workspace-sidedock-vault-profile, .nav-header,
+.status-bar, .menu, .vertical-tab-header, .prompt-input-container,
+.modal .modal-title, .search-result-file-title, .nav-file-title.is-active,
+button:not(.clickable-icon):not(.mod-warning):not([role="tab"]) {
+  background-image: var(--cairn-stone-grain), var(--cairn-stone-strata);
+  background-size: 512px 512px, auto;
+  background-repeat: repeat;
+}
+.workspace-tab-header-container {
+  border-block-end: 1px solid var(--cairn-relic-edge);
+  box-shadow: inset 0 -5px var(--cairn-groove-dark);
+}
+.workspace-ribbon {
+  border-inline-end: 1px solid var(--cairn-relic-edge);
+  box-shadow: inset -2px 0 var(--cairn-groove-dark);
+}
+.workspace-ribbon .clickable-icon {
+  border: 1px solid transparent; border-radius: 2px 6px 2px 6px; corner-shape: bevel;
+}
+.workspace-ribbon .clickable-icon:hover,
+.workspace-ribbon .clickable-icon:focus-visible {
+  border-color: var(--cairn-relic-edge);
+  box-shadow: inset 0 1px var(--cairn-groove-light), inset 0 -2px var(--cairn-groove-dark);
+}
+.nav-header, .prompt-input-container {
+  border-block-end: 1px solid var(--cairn-relic-edge);
+  box-shadow: inset 0 -1px var(--cairn-groove-dark);
+}
+.nav-folder-title-content::before {
+  content: ""; position: absolute; left: -11px; top: calc(50% - 5px); width: 4px; height: 10px;
+  background: var(--interactive-accent); opacity: 0.7;
+  clip-path: var(--cairn-seal);
+  pointer-events: none;
+}
+.metadata-container {
+  position: relative;
+  border: 1px solid var(--background-modifier-border);
+  border-block-end: 1px solid var(--cairn-relic-edge);
+  border-radius: var(--cairn-cut-corner); corner-shape: bevel;
+  box-shadow: inset 0 1px var(--cairn-groove-dark);
+}
+.metadata-container::after {
+  content: ""; position: absolute; right: 8px; bottom: 5px; width: 5px; height: 9px;
+  background: var(--interactive-accent); opacity: 0.4; pointer-events: none;
+  clip-path: var(--cairn-seal);
+}
+.search-result-file-title {
+  border-block-end: 1px solid var(--cairn-relic-edge);
+  box-shadow: 0 1px var(--cairn-groove-dark);
+}
+.vertical-tab-header { border-inline-end: 1px solid var(--cairn-relic-edge); }
+.vertical-tab-nav-item.is-active {
+  box-shadow: inset 3px 0 var(--interactive-accent), inset 0 1px var(--cairn-groove-light);
+  border-radius: 2px 8px 2px 8px; corner-shape: bevel;
+}
+.status-bar {
+  border-block-start: 1px solid var(--cairn-relic-edge);
+  box-shadow: inset 0 1px var(--cairn-groove-dark);
+}
+.status-bar-item + .status-bar-item { border-inline-start: 1px solid var(--background-modifier-border); }
+.menu { border: 1px solid var(--cairn-relic-edge); box-shadow: 0 8px 24px #0005; }
+.menu-item.selected:not(.is-disabled) {
+  box-shadow: inset 2px 0 var(--interactive-accent), inset 0 1px var(--cairn-groove-light);
+}
+@media print {
+  .workspace-tab-header-container, .workspace-tab-header, .status-bar,
+  .menu, .metadata-container, button { background-image: none; box-shadow: none; }
+}
+
+/* A shared architectural grammar: inset joints, broad planes, and one seal.
+   Ornament remains outside editable content and never intercepts input. */
+.workspace-sidedock-vault-profile {
+  border-block: 4px double var(--cairn-relic-edge);
+  box-shadow: inset 0 2px var(--cairn-groove-dark), inset 0 -2px var(--cairn-groove-dark);
+}
+.workspace-tab-header.is-active {
+  border-radius: var(--cairn-cut-corner); corner-shape: bevel;
+  box-shadow: inset 0 2px var(--cairn-groove-light), inset 0 -3px var(--cairn-groove-dark), inset 3px 0 var(--cairn-groove-dark), inset -3px 0 var(--cairn-groove-dark);
+}
+.nav-folder-title-content { border-block-end: 1px solid var(--cairn-relic-edge); }
+.nav-file-title.is-active, .workspace-tab-header.is-active { background-position: 137px 79px, center; }
+.menu, .modal, .prompt { border-radius: var(--cairn-cut-corner); corner-shape: bevel; }
+.metadata-container { border-inline: 0; border-top: 0; border-radius: 0; box-shadow: none; }
+.inline-title::after {
+  content: ""; position: absolute; right: 2px; bottom: -8px; width: 7px; height: 14px;
+  background: var(--interactive-accent); clip-path: var(--cairn-seal); pointer-events: none;
+}
+@media print {
+  .inline-title::after, .metadata-container::after { display: none; }
+  .workspace-sidedock-vault-profile { box-shadow: none; }
+}
+
+/* The same iron edge and shallow recess connect secondary working surfaces.
+   Borders frame reading content; their interiors remain flat. */
+.tree-item-children { border-inline-start-color: var(--cairn-relic-edge); }
+.workspace-leaf-content[data-type="search"] .search-input-container,
+.workspace-leaf-content[data-type="backlink"] .search-input-container {
+  border-block-end: 1px solid var(--cairn-relic-edge);
+}
+.suggestion-container { border: 1px solid var(--cairn-relic-edge); border-radius: var(--cairn-cut-corner); }
+.suggestion-item.is-selected {
+  box-shadow: inset 3px 0 var(--interactive-accent), inset 0 -1px var(--cairn-groove-dark);
+}
+.markdown-rendered table { border: 1px solid var(--cairn-relic-edge); }
+.markdown-rendered th { border-bottom: 1px solid var(--cairn-relic-edge); }
+.markdown-rendered pre { border-inline-start: 1px solid var(--cairn-relic-edge); }
+.markdown-rendered a.tag { border-radius: 2px 6px 2px 6px; corner-shape: bevel; }
+.workspace-split.mod-right-split .workspace-leaf-content { background-position: 229px 113px, center; }
+.menu, .prompt-input-container, .vertical-tab-header { background-position: 73px 191px, center; }
+@media print {
+ .markdown-rendered table, .markdown-rendered th, .markdown-rendered pre { border-color: #888; box-shadow: none; }
+}
+
+/* Nested folders keep the base theme typography and density. */
+.nav-folder:not(.mod-root) .nav-folder .nav-folder-title-content::before { content: none; }
+.workspace-split.mod-right-split .workspace-leaf-content {
+  box-shadow: inset 2px 0 var(--cairn-groove-dark), inset 3px 0 var(--cairn-relic-edge), inset -1px 0 var(--cairn-relic-edge);
+}
+.workspace-sidedock-vault-profile {
+  border-block-start: 0;
+  background-image: linear-gradient(90deg,transparent 0 8%,var(--cairn-relic-edge) 8% 42%,transparent 42% 46%,var(--cairn-relic-edge) 46% 89%,transparent 89%),var(--cairn-stone-grain),var(--cairn-stone-strata);
+  background-size: 100% 1px,512px 512px,auto;
+  background-position: left top,73px 191px,center;
+  background-repeat: no-repeat,repeat,no-repeat;
+}
+
+/* LEDGE_TOKENS */
+/* Selective dressed-stone edges, with fixed-size asymmetric losses. Only the empty band is shaped; text, native
+   window controls, drag regions, and keyboard focus remain unobstructed. */
+.inline-title { border-block-end: 0; box-shadow: 0 -1px var(--cairn-groove-dark); }
+.inline-title::before {
+  content: ""; position: absolute; inset-inline: 0; bottom: 0; height: 4px;
+  background: var(--cairn-ledge-title) left bottom / 100% 4px no-repeat;
+  pointer-events: none;
+}
+.workspace-tab-header-container {
+  border-block-end: 2px solid transparent; box-shadow: none;
+  background-origin: border-box; background-clip: border-box;
+  background-image: var(--cairn-ledge-shelf),var(--cairn-stone-chrome),var(--cairn-stone-strata);
+  background-size: 100% 2px,512px 512px,auto;
+  background-position: left bottom,left top,center;
+  background-repeat: no-repeat,repeat,no-repeat;
+}
+.workspace-sidedock-vault-profile {
+  position: relative; border-block-end: 0; box-shadow: none;
+}
+.workspace-sidedock-vault-profile::before {
+  content: ""; position: absolute; inset-inline: 0; bottom: 0; height: 1px;
+  background: var(--cairn-ledge-vault) left bottom / 100% 1px no-repeat;
+  pointer-events: none;
+}
+/* A small loss in the primary inlay, not in its hit area or focus outline. */
+button.primary:not(.clickable-icon):not(.mod-warning):not([role="tab"])::after,
+button.mod-cta:not(.clickable-icon):not(.mod-warning):not([role="tab"])::after {
+  mask-image: linear-gradient(115deg,#000 0 18%,transparent 18% 20%,#000 20% 69%,#0005 69% 73%,#000 73% 100%);
+}
+@media print {
+  .inline-title::before, .workspace-sidedock-vault-profile::before { display: none; }
+  .workspace-tab-header-container { background-image: none; }
+}
+
+/* Structural stone gets broad variation; smaller controls retain quiet grain. */
+.workspace-split:is(.mod-left-split,.mod-right-split) .workspace-leaf-content:not([data-type="markdown"]):not([data-type="canvas"]),
+.workspace-ribbon, .workspace-sidedock-vault-profile {
+  background-image: var(--cairn-stone-chrome),var(--cairn-stone-strata);
+  background-size: 512px 512px,auto; background-repeat: repeat,no-repeat;
+}
+/* Weight is reserved for the title and primary action. */
+.inline-title { border-top: 0; box-shadow: none; }
+.nav-folder-title-content { border-block-end: 0; }
+.metadata-container { border-block-end-color: var(--background-modifier-border); }
+.workspace-tab-header.is-active { box-shadow: inset 0 1px var(--cairn-relic-edge),inset 0 -1px var(--cairn-groove-dark); }
+.workspace-sidedock-vault-profile { border-top: 0; }
+@media print {
+ .workspace-ribbon, .workspace-sidedock-vault-profile { background-image: none; }
+}

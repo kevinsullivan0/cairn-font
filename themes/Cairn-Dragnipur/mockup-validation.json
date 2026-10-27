@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "studies": 4,
+  "contrast": {
+    "original": {
+      "fg": 12.28,
+      "muted": 6.69,
+      "accent": 8.53,
+      "h1": 8.53,
+      "h2": 12.28,
+      "h3": 7.38,
+      "h4": 12.28,
+      "h5": 12.28,
+      "h6": 12.28,
+      "bold": 12.28,
+      "italic": 12.28,
+      "sidebar_label": 6.13
+    },
+    "amber": {
+      "fg": 8.08,
+      "muted": 5.76,
+      "accent": 7.35,
+      "h1": 6.16,
+      "h2": 7.85,
+      "h3": 7.52,
+      "h4": 6.55,
+      "h5": 7.29,
+      "h6": 7.3,
+      "bold": 7.98,
+      "italic": 8,
+      "sidebar_label": 5.31
+    },
+    "bronze": {
+      "fg": 7.23,
+      "muted": 5.47,
+      "accent": 6.96,
+      "h1": 5.93,
+      "h2": 7.51,
+      "h3": 7.27,
+      "h4": 6.18,
+      "h5": 7.01,
+      "h6": 6.97,
+      "bold": 7.68,
+      "italic": 7.4,
+      "sidebar_label": 5.03
+    },
+    "stone": {
+      "fg": 7.62,
+      "muted": 5.64,
+      "accent": 6.91,
+      "h1": 5.92,
+      "h2": 7.56,
+      "h3": 7.21,
+      "h4": 6.38,
+      "h5": 6.94,
+      "h6": 7.03,
+      "bold": 7.65,
+      "italic": 7.43,
+      "sidebar_label": 5.11
+    }
+  },
+  "checks": [
+    "both comparison selectors",
+    "swap",
+    "reading size",
+    "reading font",
+    "sidebar toggle",
+    "local links",
+    "no misleading command links",
+    "standard keyboard coverage in all eight styles"
+  ],
+  "scope": "Offline DOM, font coverage, color contrast, and native font proof. No browser screenshot or live Obsidian rendering claimed."
+}

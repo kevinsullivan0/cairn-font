@@ -1,0 +1,164 @@
+{
+  "files": [
+    {
+      "path": "DESIGN-NOTES.md",
+      "sha256": "7a3a35b99212707bd53be4704f41cf26b4f3ea370c108a98ee62c33942b517d6"
+    },
+    {
+      "path": "README.html",
+      "sha256": "017541cb302297ceb58bd0cba6f323a7350b419a04537dec0c7ddaef475ae4ab"
+    },
+    {
+      "path": "README.md",
+      "sha256": "7f3c4b22920c6e16d63fb849a5de1463e5a6de9c4acd89876f6f3f0527c3c3fc"
+    },
+    {
+      "path": "Try Hearthstone.command",
+      "sha256": "caa02f906469390bfdaa2cd642d6de0768f7bdd0b49c38894c00a10b75f91122"
+    },
+    {
+      "path": "Try Limestone.command",
+      "sha256": "f89e6c357040dd0cabd09f639a4f0445d2ae73ef50eee794690fbf70ecbb47d2"
+    },
+    {
+      "path": "compare-nord.html",
+      "sha256": "fcc46c793c1e695ceb49048838bfa7ac37f2db1aca3be0b900630eb8ac08712a"
+    },
+    {
+      "path": "comparison-source.json",
+      "sha256": "82d9d4bc33fef7adb0456e49b556e322186e9c29197cc3dc136d09bf35f64b69"
+    },
+    {
+      "path": "contrast.json",
+      "sha256": "f18ec635314d3453cf9d133f9292d37190b6151b0110e8824a7ed23ee8888254"
+    },
+    {
+      "path": "edition-light-proof.png",
+      "sha256": "eda1e387d6e923c0b6fb4fe387e96473cc06b42b598d272e0f6c18c56ef69203"
+    },
+    {
+      "path": "edition-proof.png",
+      "sha256": "640392d8f99424b821a19160e7f29973dc4c9eec4eb362256c571725c31fe377"
+    },
+    {
+      "path": "kitty/dark.conf",
+      "sha256": "1a84e47e18a6e9c8aa18b34b9d9a28dd3a48bfcf3910d149225e228a9dbfde16"
+    },
+    {
+      "path": "kitty/light.conf",
+      "sha256": "155ea01a88c3bca168903f0913ced120eae276f5bdb1ee61ac80414f075152c7"
+    },
+    {
+      "path": "material.css",
+      "sha256": "c90628415ad8a17510d10e458315b856d5cd1ff51649b7540b5cb100933db686"
+    },
+    {
+      "path": "material.json",
+      "sha256": "e62cf9af1e0e523123e038106b18123a41584e5f739bd52b36e14d8a5941c169"
+    },
+    {
+      "path": "materials/basalt-chrome.png",
+      "sha256": "8f215d824f1252db25537f75d43997b76cd9b4f101e137d5e8916965348f5cc7"
+    },
+    {
+      "path": "materials/basalt-grain.png",
+      "sha256": "2338bc21e523574aef6faf390bdde2f024f742ed313dadf34d1fa1bc954dc126"
+    },
+    {
+      "path": "materials/contrast.json",
+      "sha256": "4984b5f4ca42c58bdcc99c230445ce7a91e368166c10f9e70fcf9342ee7a7216"
+    },
+    {
+      "path": "materials/ledges.json",
+      "sha256": "dcc5a4b137ec5e999517bf3e9c336fe26be80ce5c604195f67c57966fb6a9c66"
+    },
+    {
+      "path": "materials/limestone-chrome.png",
+      "sha256": "abcdcf871bc487d5dc738bb3523edd5c429daa2bfb3ee3639527bd69b7d4d063"
+    },
+    {
+      "path": "materials/limestone-grain.png",
+      "sha256": "4d400bebcc4de53f69a4adef2e0133eead9a6e8f66dbac3ac1741249fe608818"
+    },
+    {
+      "path": "materials/texture.json",
+      "sha256": "1a1e4970dd63b12e2a853fcd79ed1b7cc865eb07d6ff887b77f6bcae744a76f8"
+    },
+    {
+      "path": "native-proof.png",
+      "sha256": "6fef738669a5aee558140426b5dab25d0d40bf1bce70002ce51e347529605d2d"
+    },
+    {
+      "path": "obsidian/Cairn Ash/manifest.json",
+      "sha256": "eddde967a6a932f564fb3fbb28cf250c4fcd456da7026e487d51dd8fb5aa0026"
+    },
+    {
+      "path": "obsidian/Cairn Ash/theme.css",
+      "sha256": "7eb1af3f8185b9b3e330b87b892c2214bfc19b8faebd069fcf9d8561d1049b5b"
+    },
+    {
+      "path": "obsidian/Cairn Ash Relic/manifest.json",
+      "sha256": "fc6259d7c2426a03d76854340edca804cad543ebe15ef1e6f761964cce34b8c8"
+    },
+    {
+      "path": "obsidian/Cairn Ash Relic/theme.css",
+      "sha256": "aa891c3481d809dd1aefdeccb93fc96d7b1440e4ff80508aee85eb209330cc85"
+    },
+    {
+      "path": "optimization.json",
+      "sha256": "3b27a6378d27f284c8b1c5a820d12c0d711c54a5b4c8198d0401cb7265a724fa"
+    },
+    {
+      "path": "palette.json",
+      "sha256": "63572707aedc54e766251aa79fe1ca32cf347c0642e7afd5347384e85478ac50"
+    },
+    {
+      "path": "preview.html",
+      "sha256": "85b7e5ab6b75d96742e8ca0a4cecc871ec354737624a442cac47631f8d0c8b8f"
+    },
+    {
+      "path": "quality.json",
+      "sha256": "0c20801984f8aa7a1a3f37280b99d28b7a2b2eecdde0aebf22d15eafb0f97efd"
+    },
+    {
+      "path": "relic.css",
+      "sha256": "dd0d97a2e00a876c4c50fbd662108907de660a0a8fcbff1017fd374df9893114"
+    },
+    {
+      "path": "source/build_relic.py",
+      "sha256": "09c1abfd2496b37807706c5557cf775560948276772c35f9635879dc542eef8f"
+    },
+    {
+      "path": "source/build_theme.py",
+      "sha256": "7868a28e319a496c7e9879d3a14bea4a35e9033e670e3483e1e7e019e603be79"
+    },
+    {
+      "path": "source/check_material.py",
+      "sha256": "98425338e564bdb63e5d13cd51632f038336dd01e5d9681bf2e2c2b59e830c2b"
+    },
+    {
+      "path": "source/evaluate_theme.py",
+      "sha256": "94552ffe7a79a6926149b9d306b7c3a12344766aadbb04eb1033f523d47b6277"
+    },
+    {
+      "path": "source/generate_stone.py",
+      "sha256": "c499b1c74e476f08fe01d8e955a0a2490a682d7dbc206fefd4d5ac5c087c0334"
+    },
+    {
+      "path": "source/relic-template.css",
+      "sha256": "38409f77338670e62f507b4b93bc9f74f0030db1fb9f821905e1a25f0ea229f1"
+    },
+    {
+      "path": "source/stone_ledge.py",
+      "sha256": "b31b7406ea2b4f979e46f45fab60ff4d811cc230b2ac28894adcb3eec2f3ee5f"
+    },
+    {
+      "path": "surface-studies.json",
+      "sha256": "179a29f47aa18f7189db8cbe50ef74d51b3a6982fac5a2b9206484bd8bd052dc"
+    },
+    {
+      "path": "validation.json",
+      "sha256": "ed609a2c4e2af97bf2549f3359ba05aafc6230d002c98b6fc33a75aef65e57c9"
+    }
+  ]
+}

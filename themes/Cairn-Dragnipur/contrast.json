@@ -1,0 +1,36 @@
+{
+  "minimum_target": 4.5,
+  "results": {
+    "ember": {
+      "fg": 12.28,
+      "muted": 6.69,
+      "accent": 8.53,
+      "red": 6.62,
+      "green": 8.1,
+      "yellow": 9.9,
+      "blue": 7.9,
+      "magenta": 7.33,
+      "cyan": 8.15,
+      "orange": 7.38,
+      "text_on_panel": 11.25,
+      "muted_on_panel": 6.13,
+      "selection": 6.78
+    },
+    "vellum": {
+      "fg": 10.87,
+      "muted": 5.18,
+      "accent": 5.36,
+      "red": 5.14,
+      "green": 5.29,
+      "yellow": 5.06,
+      "blue": 5.27,
+      "magenta": 5.04,
+      "cyan": 4.92,
+      "orange": 4.94,
+      "text_on_panel": 9.68,
+      "muted_on_panel": 4.61,
+      "selection": 7.5
+    }
+  },
+  "scope": "WCAG relative luminance for specified foreground/background pairs. Dark ANSI color0 intentionally equals the background; whole-application accessibility is not claimed."
+}

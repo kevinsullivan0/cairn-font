@@ -1,0 +1,77 @@
+{
+  "method": "Constraint-filtered candidate search; no aesthetic or clinical comfort score. Six-role minimum OKLab distance maximized subject to contrast constraints. Body ink chosen nearest a provisional 7.2:1 preference target.",
+  "candidate_count": 20,
+  "feasible_candidates": 20,
+  "selected": {
+    "saturation_multiplier": 1.35,
+    "lightness_lift": 0
+  },
+  "before": {
+    "name": "Ash",
+    "bg": "#282d2e",
+    "alt": "#2c3434",
+    "sidebar": "#202729",
+    "raised": "#374140",
+    "fg": "#c4b9a3",
+    "muted": "#aa9f8a",
+    "border": "#4b5a56",
+    "focus": "#c8a569",
+    "selection": "#4c432f",
+    "highlight": "#57472b",
+    "red": "#d6947c",
+    "orange": "#cfa16f",
+    "gold": "#cbb16e",
+    "green": "#a8bd8b",
+    "cyan": "#85b7b2",
+    "blue": "#8faed0",
+    "purple": "#b99bce",
+    "pink": "#cd99b1",
+    "active_line": "#323935"
+  },
+  "after": {
+    "name": "Hearthstone",
+    "bg": "#2e3440",
+    "alt": "#3b4252",
+    "sidebar": "#343c49",
+    "raised": "#434c5e",
+    "fg": "#cac4b8",
+    "muted": "#b3afa1",
+    "border": "#556273",
+    "focus": "#cfb07a",
+    "selection": "#4b4e45",
+    "highlight": "#56503b",
+    "red": "#ed9a7f",
+    "orange": "#eeaf7d",
+    "gold": "#e8c474",
+    "green": "#afcd92",
+    "cyan": "#89cec4",
+    "blue": "#93bce0",
+    "purple": "#c0a4dc",
+    "pink": "#de9fba",
+    "active_line": "#323935",
+    "button_face": "#3f4853",
+    "button_hover": "#48535f",
+    "button_pressed": "#303845",
+    "button_label": "#cac4b8",
+    "button_primary_label": "#e2cb9b",
+    "button_edge": "#8d8f86",
+    "button_light": "#6b747e",
+    "button_shadow": "#202630"
+  },
+  "minimum_text_contrast": 4.5659855510915595,
+  "accent_separation_before": {
+    "minimum_oklab_distance": 0.05560110550077926,
+    "closest_roles": [
+      "gold",
+      "green"
+    ]
+  },
+  "accent_separation_after": {
+    "minimum_oklab_distance": 0.07362136045663277,
+    "closest_roles": [
+      "green",
+      "cyan"
+    ]
+  },
+  "scope": "Historical 1.2 candidate search. Current 1.3 palette is a manual preference-led refinement; see quality.json for current measurements."
+}

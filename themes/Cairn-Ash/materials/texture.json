@@ -1,0 +1,19 @@
+{
+  "tile_pixels": 512,
+  "seed": 271828,
+  "alpha_range": [
+    7,
+    60
+  ],
+  "dark": "Black-only pigment, at most 64/255 opacity.",
+  "light": "White-only pigment, same opacity.",
+  "vein_opacity": 0.045,
+  "structure": "Warped mineral fields at three scales; sparse pits; four localized fractures with long planar runs, occasional angular turns, softened ends, and broad mineral patches. Periodic fields and wrapped fractures avoid tile-edge seams.",
+  "structural_variant": {
+    "broad_amplitude_increase": 14,
+    "mean_centered": true,
+    "alpha_cap": 80,
+    "scope": "Sidebars, ribbon and topbar only; same grit and fractures as the quiet tile."
+  },
+  "scope": "Static mineral pigment on UI furniture. Note/editor/code reading surfaces excluded. Embedded assets; no network images or animated filters."
+}

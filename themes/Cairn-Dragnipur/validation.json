@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "preview_modes": 2,
+  "swatches_per_mode": 16,
+  "cairn_toggle": "passed",
+  "local_links": "passed",
+  "kitty_configs": "validated by installed Kitty parser",
+  "launchers": "zsh syntax checked; not launched",
+  "obsidian": "installed inactive; appearance settings unchanged",
+  "scope": "Offline DOM, configuration parsing, and contrast checks; no browser or Obsidian visual automation",
+  "mono_toggle": "passed",
+  "code_font": "Cairn Mono"
+}

@@ -1,0 +1,132 @@
+{
+  "profiles": {
+    "title": {
+      "depth": 4,
+      "lip": 1,
+      "face": 1,
+      "chips": [
+        {
+          "anchor": 0.23,
+          "width": 12,
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0.6
+            ],
+            [
+              4,
+              0.4
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              8,
+              1.1
+            ],
+            [
+              10,
+              0.9
+            ],
+            [
+              12,
+              0
+            ]
+          ],
+          "facet": [
+            [
+              4,
+              0.9
+            ],
+            [
+              6,
+              2.5
+            ],
+            [
+              9,
+              1.5
+            ],
+            [
+              6,
+              2
+            ]
+          ]
+        },
+        {
+          "anchor": 0.81,
+          "width": 7,
+          "points": [
+            [
+              0,
+              4
+            ],
+            [
+              1.5,
+              3.6
+            ],
+            [
+              2,
+              2.9
+            ],
+            [
+              4.5,
+              3.5
+            ],
+            [
+              7,
+              4
+            ]
+          ],
+          "facet": []
+        }
+      ]
+    },
+    "shelf": {
+      "depth": 2,
+      "lip": 0.6,
+      "face": 0.4,
+      "chips": [
+        {
+          "anchor": 0.67,
+          "width": 5,
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0.3
+            ],
+            [
+              2.5,
+              0.9
+            ],
+            [
+              3.2,
+              0.4
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "facet": []
+        }
+      ]
+    },
+    "vault": {
+      "depth": 1,
+      "lip": 1,
+      "face": 0,
+      "chips": []
+    }
+  },
+  "chip_sizing": "Nested viewports retain 5\u201312px widths at every component width; only positions are proportional. Outer SVG has no viewBox.",
+  "placement": "Title bottom: 4px anchor. Tab shelf: 2px seam. Vault identity: 1px seam. Only empty bands are painted; no text or focus clipping."
+}

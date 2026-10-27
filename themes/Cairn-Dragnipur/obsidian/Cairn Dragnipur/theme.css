@@ -1,0 +1,105 @@
+/* Cairn Dragnipur — Ember dark / Vellum light. Body preferences are preserved; code uses Cairn Mono. */
+.theme-dark {
+  --background-primary: #1b1615;
+  --background-primary-alt: #251e1a;
+  --background-secondary: #251e1a;
+  --background-secondary-alt: #302720;
+  --background-modifier-border: #574437;
+  --background-modifier-hover: #302720;
+  --text-normal: #e3d4ba;
+  --text-muted: #af9b84;
+  --text-faint: #af9b84;
+  --text-accent: #d3ad73;
+  --text-accent-hover: #d49a70;
+  --text-selection: #51402e;
+  --text-highlight-bg: #51402e;
+  --interactive-normal: #251e1a;
+  --interactive-hover: #302720;
+  --interactive-accent: #d3ad73;
+  --interactive-accent-hover: #d49a70;
+  --text-on-accent: #1b1615;
+  --link-color: #d3ad73;
+  --link-color-hover: #d49a70;
+  --link-external-color: #9faebc;
+  --code-background: #251e1a;
+  --code-normal: #e3d4ba;
+  --code-comment: #af9b84;
+  --code-function: #dfbc79;
+  --code-keyword: #bd9dad;
+  --code-string: #acb28a;
+  --code-value: #d49a70;
+  --tag-color: #d3ad73;
+  --tag-background: #51402e;
+  --blockquote-border-color: #d3ad73;
+  --table-border-color: #574437;
+  --color-red: #d48b78;
+  --color-orange: #d49a70;
+  --color-yellow: #dfbc79;
+  --color-green: #acb28a;
+  --color-cyan: #94b6ad;
+  --color-blue: #9faebc;
+  --color-purple: #bd9dad;
+  --color-pink: #bd9dad;
+  --h1-color: #d3ad73;
+  --h2-color: #e3d4ba;
+  --h3-color: #d49a70;
+}
+.theme-light {
+  --background-primary: #f1e6cf;
+  --background-primary-alt: #e8d9bd;
+  --background-secondary: #e8d9bd;
+  --background-secondary-alt: #dfceb0;
+  --background-modifier-border: #ab9170;
+  --background-modifier-hover: #dfceb0;
+  --text-normal: #392c24;
+  --text-muted: #705b47;
+  --text-faint: #705b47;
+  --text-accent: #855021;
+  --text-accent-hover: #91521f;
+  --text-selection: #d9be8d;
+  --text-highlight-bg: #d9be8d;
+  --interactive-normal: #e8d9bd;
+  --interactive-hover: #dfceb0;
+  --interactive-accent: #855021;
+  --interactive-accent-hover: #91521f;
+  --text-on-accent: #f1e6cf;
+  --link-color: #855021;
+  --link-color-hover: #91521f;
+  --link-external-color: #3d6278;
+  --code-background: #e8d9bd;
+  --code-normal: #392c24;
+  --code-comment: #705b47;
+  --code-function: #7b5b17;
+  --code-keyword: #80536b;
+  --code-string: #52633b;
+  --code-value: #91521f;
+  --tag-color: #855021;
+  --tag-background: #d9be8d;
+  --blockquote-border-color: #855021;
+  --table-border-color: #ab9170;
+  --color-red: #9c4439;
+  --color-orange: #91521f;
+  --color-yellow: #7b5b17;
+  --color-green: #52633b;
+  --color-cyan: #376b64;
+  --color-blue: #3d6278;
+  --color-purple: #80536b;
+  --color-pink: #80536b;
+  --h1-color: #855021;
+  --h2-color: #392c24;
+  --h3-color: #91521f;
+}
+body {
+ --h1-font: "Cairn", serif; --h2-font: "Cairn", serif; --h3-font: "Cairn", serif;
+ --h4-font: "Cairn", serif; --h5-font: "Cairn", serif; --h6-font: "Cairn", serif;
+ --h1-weight: 400; --h2-weight: 400; --h3-weight: 700;
+ --inline-title-font: "Cairn", serif; --inline-title-weight: 400;
+ --radius-s: 3px; --radius-m: 4px; --radius-l: 5px;
+}
+body.theme-dark .inline-title, body.theme-light .inline-title { font-family: "Cairn", serif !important; }
+body .markdown-rendered pre, body .markdown-rendered code,
+body .markdown-source-view.mod-cm6 .HyperMD-codeblock,
+body .markdown-source-view.mod-cm6 .cm-inline-code {
+ font-family: "Cairn Mono", "JetBrainsMono Nerd Font", monospace !important;
+ font-kerning: none; font-variant-ligatures: none;
+}

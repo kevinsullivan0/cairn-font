@@ -1,0 +1,92 @@
+{
+  "files": [
+    {
+      "path": "README.html",
+      "sha256": "d0eb0adcc4dea178bfd105adbf291ee201e8c6ccb055b6ad8b868beb0c9fe25d"
+    },
+    {
+      "path": "README.md",
+      "sha256": "4a42489c79c4e72deb391b198b685d1bc0eae3def1b3c7532e53d8c8ab1b4587"
+    },
+    {
+      "path": "Try Ember.command",
+      "sha256": "9cf087ed1438687335e9390b2d57e11b40c46c0f9375c3afc78cd56edf97ecf1"
+    },
+    {
+      "path": "Try Vellum.command",
+      "sha256": "e0b43b47b1c3484f261636589b2bbbe631bc2ad55bb41dbdba4d7f77422c80d1"
+    },
+    {
+      "path": "aether-extraction.json",
+      "sha256": "d2e2ad1d76f8ea3a2e2a99ce96640f53dd3ab72a31e1fc245e72b712c4f686f8"
+    },
+    {
+      "path": "amber-studies.html",
+      "sha256": "1ce50e0fcd0a4718d9a9e672cf90b02eccdf8d41facce6bcf3c62dfd58e48d85"
+    },
+    {
+      "path": "contrast.json",
+      "sha256": "22c2589e6731a9f9366849800ccf7bf36b20bd1b1be7b9a16b374f0653a5051a"
+    },
+    {
+      "path": "kitty/ember.conf",
+      "sha256": "12cb819ad115598450878f0b9eb2e95050d227f61bf7bde7562df8c7120be23b"
+    },
+    {
+      "path": "kitty/vellum.conf",
+      "sha256": "85392e224a4f25dcb3550097b63f948c904cee5c793d9cdf83b15e8e26cfad24"
+    },
+    {
+      "path": "mockup-palettes.json",
+      "sha256": "abfd6eee8f3f17731e7490a26da0b5ccd2dcd20cacd4a2bf970f285d2d386f01"
+    },
+    {
+      "path": "mockup-validation.json",
+      "sha256": "4dedbeeae0c45eda2886a4c524e2717bc75031de32e256523a8e022e002b1aa8"
+    },
+    {
+      "path": "obsidian/Cairn Dragnipur/manifest.json",
+      "sha256": "d0271c0680b25e3d4cbc1c3e911427117ca9bdac2297cd0367d60bd896796499"
+    },
+    {
+      "path": "obsidian/Cairn Dragnipur/theme.css",
+      "sha256": "5d8d6802df6be1621024a1ad3b201a95ead4d099efcc050449337c33b2e06f45"
+    },
+    {
+      "path": "obsidian/cairn-reading.css",
+      "sha256": "8b8c1626256b4ca03e2dc3915ee4f01fc0796cff52d85f89b5d8c1f0f26120b0"
+    },
+    {
+      "path": "omarchy/ember-colors.toml",
+      "sha256": "c0bf395f06e558ad53bc6d1dfb7ce1558fd29ebda9479a30e76ea1d7e83971d5"
+    },
+    {
+      "path": "omarchy/vellum-colors.toml",
+      "sha256": "4aac2b9c7a63bccfef2c3e4e668cb7936cb336e4394c7795d350c690a584da71"
+    },
+    {
+      "path": "palette.json",
+      "sha256": "b68d556ccda37928d7c489ab693b78ef1219d5c3799636b597be6b8833fb212a"
+    },
+    {
+      "path": "preview.html",
+      "sha256": "cba03226618d2ab96dbaa441b3af8d39ee821c8dee5e64a4a9bc0bb0b622d04f"
+    },
+    {
+      "path": "source/aether-extract.go",
+      "sha256": "678e33c09b979fdd88a76955644647e94b8fdf639b0997c8ca6c6f72ee2c3e35"
+    },
+    {
+      "path": "source/palette-input.json",
+      "sha256": "d2e2ad1d76f8ea3a2e2a99ce96640f53dd3ab72a31e1fc245e72b712c4f686f8"
+    },
+    {
+      "path": "source/terminal-preview.zsh",
+      "sha256": "280648ba8b99c7d2800f070b92ad2a5ec905cae5d9719fe372711be98f45ce98"
+    },
+    {
+      "path": "validation.json",
+      "sha256": "66c280b9ea0b54fdd90049b3b4b07cca3c952e5ff36d84d108134d1c91e9fa34"
+    }
+  ]
+}
