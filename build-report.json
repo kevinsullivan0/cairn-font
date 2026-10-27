@@ -1,0 +1,58 @@
+[
+  {
+    "pair_count": 10234,
+    "minimum_tested_ink_gap": 140.0,
+    "tested_pairs": 12257,
+    "method": "body silhouette quantiles, bounded adjustments, exact outline clearance",
+    "lowercase_target": 265,
+    "other_alphanumeric_target": 225,
+    "minimum_source_gap": 140,
+    "style": "Regular",
+    "characters": 114,
+    "glyphs": 127,
+    "file": "Cairn-Regular.ttf",
+    "sha256": "ce704bf23f9e5849e93c38c3acd63b27897465fa2fde55acd9dc0f97110630b9"
+  },
+  {
+    "pair_count": 10462,
+    "minimum_tested_ink_gap": 140.0,
+    "tested_pairs": 12257,
+    "method": "body silhouette quantiles, bounded adjustments, exact outline clearance",
+    "lowercase_target": 265,
+    "other_alphanumeric_target": 225,
+    "minimum_source_gap": 140,
+    "style": "Italic",
+    "characters": 114,
+    "glyphs": 127,
+    "file": "Cairn-Italic.ttf",
+    "sha256": "16373aa315f327abb5b2d9188ad4cb2c2ba3d8b4eca48deb06aa22dcdac687bf"
+  },
+  {
+    "pair_count": 10448,
+    "minimum_tested_ink_gap": 140.0,
+    "tested_pairs": 12257,
+    "method": "body silhouette quantiles, bounded adjustments, exact outline clearance",
+    "lowercase_target": 275,
+    "other_alphanumeric_target": 235,
+    "minimum_source_gap": 140,
+    "style": "Bold",
+    "characters": 114,
+    "glyphs": 127,
+    "file": "Cairn-Bold.ttf",
+    "sha256": "ba47297350872782751ebdc73b15928d730cd9d093093bfdd3a0c04c1cd96c00"
+  },
+  {
+    "pair_count": 10631,
+    "minimum_tested_ink_gap": 140.0,
+    "tested_pairs": 12257,
+    "method": "body silhouette quantiles, bounded adjustments, exact outline clearance",
+    "lowercase_target": 275,
+    "other_alphanumeric_target": 235,
+    "minimum_source_gap": 140,
+    "style": "Bold Italic",
+    "characters": 114,
+    "glyphs": 127,
+    "file": "Cairn-BoldItalic.ttf",
+    "sha256": "de2293c8ab73aa6b26d031212a7b76bed365648ef675dd5297447ed8ab7522f3"
+  }
+]

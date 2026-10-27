@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "styles": 4,
+  "embedded_font_matches": 4,
+  "package_links": 18,
+  "controls": [
+    "text size",
+    "leading",
+    "theme",
+    "safe sample editing",
+    "coverage notice"
+  ],
+  "font_load_statuses": [
+    "success",
+    "failure",
+    "unavailable"
+  ],
+  "scope": "Offline DOM and package checks; no browser screenshot or visual layout claim"
+}

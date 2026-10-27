@@ -1,0 +1,34 @@
+[
+  {
+    "family" : "Cairn",
+    "glyphs" : 127,
+    "native_decode" : "passed",
+    "native_style_traits" : "passed",
+    "postscript_name" : "Cairn-Regular",
+    "style" : "Regular"
+  },
+  {
+    "family" : "Cairn",
+    "glyphs" : 127,
+    "native_decode" : "passed",
+    "native_style_traits" : "passed",
+    "postscript_name" : "Cairn-Italic",
+    "style" : "Italic"
+  },
+  {
+    "family" : "Cairn",
+    "glyphs" : 127,
+    "native_decode" : "passed",
+    "native_style_traits" : "passed",
+    "postscript_name" : "Cairn-Bold",
+    "style" : "Bold"
+  },
+  {
+    "family" : "Cairn",
+    "glyphs" : 127,
+    "native_decode" : "passed",
+    "native_style_traits" : "passed",
+    "postscript_name" : "Cairn-BoldItalic",
+    "style" : "BoldItalic"
+  }
+]
