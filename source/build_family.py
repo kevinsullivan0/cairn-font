@@ -53,7 +53,7 @@ PATHS.update({
 ADDITIONS={ord(ch):f'uni{ord(ch):04X}' for ch in '+<>@[]^_`{|}~–—−‘’…•\u00a0'}
 
 
-def draw(ch,bold=False,italic=False):
+def draw(ch,bold=False,italic=False,path_overrides=None):
     paths=dict(PATHS)
     if italic:
         # Purpose-drawn cursive construction, with firm feet and no swash.
@@ -67,6 +67,7 @@ def draw(ch,bold=False,italic=False):
         # Open e's eye and move the lower exit away from its crossbar.
         paths['e']=['M 145 440 L 915 700 L 840 930 L 615 1100 C 270 1100 90 815 145 480 C 200 175 410 20 665 100 L 925 220']
         paths['c']=['M 875 910 L 640 1080 C 280 1135 95 860 140 525 C 175 205 390 25 640 95 L 900 225']
+    if path_overrides: paths.update(path_overrides)
     contours=[]
     for svg in paths.get(ch,[]):
         pen=FlattenPen(step=7);parse_path(svg,pen);contours.extend(pen.contours)
@@ -104,7 +105,7 @@ def draw(ch,bold=False,italic=False):
     if ch=='…':
         d=draw('.',bold,False)
         g=unary_union([affinity.translate(d,xoff=x) for x in [0,455,910]])
-    if ch in 'hnm':
+    if ch in 'hnm' and not path_overrides:
         for offset in ([0,560] if ch=='m' else [0]):
             cut=Polygon([(350+offset,800),(475+offset,700),(545+offset,900)])
             g=g.difference(affinity.skew(cut,1,0,origin=(0,0)))

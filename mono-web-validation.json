@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": [
+    "embedded styles",
+    "size",
+    "weight and italic",
+    "light and dark",
+    "unsupported character warning",
+    "local links"
+  ],
+  "scope": "Offline DOM checks; browser layout not visually automated"
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "style": "Regular",
+    "characters": 114,
+    "glyphs": 117,
+    "cell": 1536,
+    "sha256": "6bc81aa394895eed1f4db79f4428ef5cc694a2cf2b52edaebc0a4f5eacccd497"
+  },
+  {
+    "style": "Italic",
+    "characters": 114,
+    "glyphs": 117,
+    "cell": 1536,
+    "sha256": "57e79d6e14ac8ba9c128845e7c8fd92c60147bc67fb4c8afe889ca0f276f68ac"
+  },
+  {
+    "style": "Bold",
+    "characters": 114,
+    "glyphs": 117,
+    "cell": 1536,
+    "sha256": "34b1c7228716b46f78f7ab789765651d6ab767a0d920e81a3df56e6557e111c9"
+  },
+  {
+    "style": "Bold Italic",
+    "characters": 114,
+    "glyphs": 117,
+    "cell": 1536,
+    "sha256": "fece9ef05f8e42e3f77a9a33e04e19a5c873a56a4e657815be72280756802f2f"
+  }
+]

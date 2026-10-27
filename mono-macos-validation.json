@@ -1,0 +1,30 @@
+[
+  {
+    "expected_advance" : 229.5,
+    "monospace_trait" : true,
+    "name" : "CairnMono-Regular",
+    "registered" : true,
+    "shaped_advance" : 229.5
+  },
+  {
+    "expected_advance" : 229.5,
+    "monospace_trait" : true,
+    "name" : "CairnMono-Italic",
+    "registered" : true,
+    "shaped_advance" : 229.5
+  },
+  {
+    "expected_advance" : 229.5,
+    "monospace_trait" : true,
+    "name" : "CairnMono-Bold",
+    "registered" : true,
+    "shaped_advance" : 229.5
+  },
+  {
+    "expected_advance" : 229.5,
+    "monospace_trait" : true,
+    "name" : "CairnMono-BoldItalic",
+    "registered" : true,
+    "shaped_advance" : 229.5
+  }
+]

@@ -2,7 +2,8 @@
 
 A carved, proportional type family for prose and interfaces. Four real styles:
 **Regular, Italic, Bold, and Bold Italic**. They share the family name **Cairn**.
-This package does not install anything or change font preferences.
+Its companion **Cairn Mono** provides the same four styles for code.
+The archive itself does not install anything or change font preferences.
 
 ## Start here
 
@@ -48,12 +49,39 @@ To make a single-file HTML document, put the contents of that embedded
 stylesheet inside a `<style>` element. **specimen.html** demonstrates this.
 No CDN, network service, JavaScript library, or installed font is needed.
 
+## Cairn Mono for code
+
+Open **mono-specimen.html** to edit a code sample and try all four styles.
+Every glyph advances **1536/2048 em (0.75 em)**. No kerning or ligatures alter
+columns. Narrow letters have purpose-drawn feet; wide letters use compact
+stroke skeletons instead of just stretching the proportional font. The zero
+is slashed and the `i/l/1` shapes remain distinct. Start at **18 px**.
+
+For HTML, add `web/cairn-mono.css` alongside the proportional stylesheet and
+use `<pre class="cairn-code"><code>your code</code></pre>`. The portable
+`web/cairn-mono-embedded.css` embeds all four Mono fonts. In an editor or
+terminal, select **Cairn Mono**. It has the same 114 encoded characters as
+Cairn, 117 total glyphs per style, and no Nerd Font icon patch.
+
+**mono-validation.json** checks cell metrics, outline bounds, open counters,
+separate dots, web-font round trips, and shaping at 14/16/18 px.
+**mono-macos-validation.json** verifies installed family recognition, native
+monospace traits, and equal Core Text advances for all four styles.
+**proofs/mono.png** shows actual rendered glyphs at several sizes.
+
+To rebuild Mono after installing the Python requirements:
+
+```sh
+python build_mono.py
+python validate_mono.py
+```
+
 ## Desktop use — when you choose to install
 
-The four files in **desktop/** are TrueType fonts with linked weight/style
-metadata. On macOS, open the four TTF files in Font Book, review its preview,
+The eight files in **desktop/** are TrueType fonts with linked weight/style
+metadata. On macOS, open the desired TTF files in Font Book, review its preview,
 then choose Install only when you are ready. In an application, choose
-**Cairn**, then Regular, Italic, Bold, or Bold Italic. Restart an application
+**Cairn** or **Cairn Mono**, then Regular, Italic, Bold, or Bold Italic. Restart an application
 if its font menu was already open. The same TTF files can be installed through
 the operating system font settings on other desktop systems.
 
@@ -65,7 +93,7 @@ menus of individual apps have not been tested.
 Start with **18 px / 1.65 line spacing for prose**, or **16 px for interfaces**.
 Use 14 px secondary text sparingly. Native 12–20 px proofs are included;
 12 px is a stress test, not the intended reading size. The sharp detail has
-more room at 18 px and above. The font is proportional, not monospaced.
+more room at 18 px and above. Cairn is proportional; choose **Cairn Mono** for fixed-width code.
 
 All printable ASCII characters are present, plus nonbreaking space, smart
 single/double quotes, low double quote, en/em dashes, ellipsis, bullet, minus,
@@ -102,9 +130,10 @@ leave room for the ascenders, dots, descenders, and italic shapes.
 
 ## Contents
 
-- **desktop/** — four installable TTF files.
-- **web/** — four compressed WOFF files, external/embedded CSS, example HTML.
-- **specimen.html** — standalone interactive preview, fonts embedded.
+- **desktop/** — eight installable TTF files: four Cairn and four Cairn Mono.
+- **web/** — eight WOFF files, separate external/embedded CSS for each family, example HTML.
+- **specimen.html** — proportional font preview.
+- **mono-specimen.html** — editable code preview with size, style, and background controls.
 - **proofs/** — raster proofs and punctuation.
 - **source/** — reusable builders, validators, and drawing definitions.
 - **manifest.json** — hashes for all other files in this edition.

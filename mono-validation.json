@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "styles": [
+    {
+      "style": "Regular",
+      "advance_units": 1536,
+      "character_count": 114,
+      "glyph_count": 117,
+      "all_cells_equal": true,
+      "no_kerning_or_ligatures": true,
+      "outline_bounds": "inside cell and line metrics",
+      "counters_and_dots": "passed",
+      "woff_roundtrip": "passed",
+      "shaped_advance_at_px": [
+        14,
+        16,
+        18
+      ]
+    },
+    {
+      "style": "Italic",
+      "advance_units": 1536,
+      "character_count": 114,
+      "glyph_count": 117,
+      "all_cells_equal": true,
+      "no_kerning_or_ligatures": true,
+      "outline_bounds": "inside cell and line metrics",
+      "counters_and_dots": "passed",
+      "woff_roundtrip": "passed",
+      "shaped_advance_at_px": [
+        14,
+        16,
+        18
+      ]
+    },
+    {
+      "style": "Bold",
+      "advance_units": 1536,
+      "character_count": 114,
+      "glyph_count": 117,
+      "all_cells_equal": true,
+      "no_kerning_or_ligatures": true,
+      "outline_bounds": "inside cell and line metrics",
+      "counters_and_dots": "passed",
+      "woff_roundtrip": "passed",
+      "shaped_advance_at_px": [
+        14,
+        16,
+        18
+      ]
+    },
+    {
+      "style": "BoldItalic",
+      "advance_units": 1536,
+      "character_count": 114,
+      "glyph_count": 117,
+      "all_cells_equal": true,
+      "no_kerning_or_ligatures": true,
+      "outline_bounds": "inside cell and line metrics",
+      "counters_and_dots": "passed",
+      "woff_roundtrip": "passed",
+      "shaped_advance_at_px": [
+        14,
+        16,
+        18
+      ]
+    }
+  ],
+  "scope": "Serialized outline/metric checks and FreeType/RAQM shaping. Manual TrueType hinting is not included."
+}

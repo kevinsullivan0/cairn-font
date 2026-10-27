@@ -1,0 +1,6 @@
+@font-face {font-family:"Cairn Mono";src:url("fonts/CairnMono-Regular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap;}
+@font-face {font-family:"Cairn Mono";src:url("fonts/CairnMono-Italic.woff") format("woff");font-weight:400;font-style:italic;font-display:swap;}
+@font-face {font-family:"Cairn Mono";src:url("fonts/CairnMono-Bold.woff") format("woff");font-weight:700;font-style:normal;font-display:swap;}
+@font-face {font-family:"Cairn Mono";src:url("fonts/CairnMono-BoldItalic.woff") format("woff");font-weight:700;font-style:italic;font-display:swap;}
+:root {--font-cairn-mono:"Cairn Mono","JetBrainsMono Nerd Font",ui-monospace,monospace;}
+.cairn-code {font-family:var(--font-cairn-mono);font-kerning:none;font-variant-ligatures:none;font-synthesis:none;tab-size:4;}
