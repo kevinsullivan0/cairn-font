@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "native_theme_variables": 228,
-  "css_rules": 49,
+  "native_theme_variables": 232,
+  "css_rules": 58,
   "checks": [
     "dark and light text contrast",
     "body font, size, display heading controls",
@@ -149,13 +149,16 @@
     "relic_native_variables_and_reading_font_preservation": "passed",
     "scope": "Offline DOM and CSS checks; no visual browser or live Obsidian automation."
   },
-  "version": "1.12.0",
-  "critic": "Independent design critic approved after transparent-gap and proof-fidelity corrections; see critique-1.12.json.",
-  "divider": "Fixed SVG paired lozenges; transparent center gap; native hr source-view flex layout retained; 180/400/900px geometry reviewed.",
-  "bronze": "Actual pigment extrema, text roles, active line, warm furniture and callout bodies tested. Code retains its flat base surface.",
-  "visual_scope": "Offline Core Text/material and geometry proofs reviewed; no browser or live app screenshot verification.",
+  "ui_states": {
+    "tab_states": "passed: native tab rules combined with delivered styles in offline DOM cascade checks",
+    "scope": "Flat tab header containers; native stacked tab spines and close visibility preserved. No live app screenshot."
+  },
+  "version": "1.13.0",
+  "critic": "Approved source and representative UI-state proof after native corner/connector corrections; see critique-1.13.json.",
+  "terminal": "All four configs parsed by Kitty; ANSI text slots 1-15, default text, selection and cursor checked in both schemes. Slot0 retained as an inset surface role; no global terminal changes.",
+  "visual_scope": "Representative native Core Text UI and terminal drawing reviewed; browser/live app rendering remains unverified.",
   "native_proof": "Reviewed native Core Text proof of fonts, colors, static mineral grain, and representative cut-stone controls. Not a browser or app screenshot.",
-  "kitty_configs": "Both parsed by Kitty at 12 pt.",
+  "kitty_configs": "All four configuration files parsed by Kitty; isolated trials at 12 pt.",
   "launchers": "Both pass zsh syntax checks.",
   "installed_theme_matches_deliverable": true
 }

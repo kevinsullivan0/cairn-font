@@ -1,4 +1,4 @@
-# Cairn Ash 1.12 — Everyday, Relic, and Bronze
+# Cairn Ash 1.13 — Everyday, Relic, and Bronze
 
 Hearthstone (dark) and Limestone (light), with a quiet Everyday edition and a
 more tactile Relic edition. All three editions share the same typography and control scale. Relic adds mineral texture, asymmetric stone chips, inset joints, and
@@ -90,3 +90,39 @@ whole-app or plugin accessibility audit, nor a measure of subjective comfort.
 defines the ledges, and `source/check_bronze.py` checks compositing bounds.
 The preview HTML is a frozen specimen; rebuilding styles does not regenerate
 its embedded frames.
+
+## 1.13: finished workspace states
+
+Inactive, hovered, current and keyboard-focused tabs retain one carved
+silhouette, including the tab immediately before the current one. Inner hover
+fills and native connector curves no longer contradict the shape. Inactive
+tabs have a quiet edge; hover brightens the label; the current tab keeps its
+accent underline and note-colored fill. Keyboard focus has an inset outline.
+Native close visibility, drag regions, stacked tab spines, font sizes and
+spacing are preserved.
+
+Relic and Bronze extend the same quiet grain and shallow bevel to note
+toolbars, notices, tooltips and navigation/settings states. Tooltips use the
+soft palette ink. Reading/code surfaces and control dimensions stay unchanged.
+`ui-proof.png` shows representative native drawings of these states in dark
+and light, and the Workbench comparison includes a functional toolbar and
+notification sample. These are offline specimens, not live app screenshots.
+
+## Terminal palettes
+
+Open `terminal.html` to compare Hearthstone and Limestone at a default 12 px
+preview size, with JetBrains Mono or embedded Cairn Mono. In Finder, the two
+trial launchers open separate Kitty windows at 12 pt without editing global
+configuration. Normal ANSI colors are quieter than the bright set. Selection
+and cursor ink remain distinct. The background stays opaque and flat.
+
+`kitty/dark-colors.conf` and `kitty/light-colors.conf` contain colors only.
+Include the chosen file from an existing Kitty configuration to retain your
+font and window settings. The original `dark.conf` and `light.conf` remain
+self-contained trial configurations. `terminal-palette.json` exports both
+schemes and contrast measurements for reuse elsewhere.
+
+Text slots 1–15 on the default background, selection text and cursor text
+measure at least 4.5:1. Slot 0 retains an inset/background role for TUI
+compatibility; dim text, application overrides and colored-background pairs
+are outside that check. All four configuration files are parsed by Kitty.

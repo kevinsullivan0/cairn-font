@@ -158,6 +158,8 @@ body.theme-dark {
   --hr-color: #556273;
   --indentation-guide-color: #556273;
   --indentation-guide-color-active: #c6b298;
+  --tooltip-color: #cac4b8;
+  --tooltip-background: #343c49;
   --notice-color: #cac4b8;
   --notice-background: #343c49;
   --modal-background: #2e3440;
@@ -331,6 +333,8 @@ body.theme-light {
   --hr-color: #b5a383;
   --indentation-guide-color: #b5a383;
   --indentation-guide-color-active: #7d511a;
+  --tooltip-color: #463c30;
+  --tooltip-background: #e3d8c1;
   --notice-color: #463c30;
   --notice-background: #e3d8c1;
   --modal-background: #eee5d3;
@@ -488,6 +492,45 @@ body .cairn-plain .inline-title { font-family: var(--font-text) !important; }
   .inline-title { border-bottom-color: #8a7860; }
   .markdown-rendered :is(h1,h2,h3,h4,h5,h6,strong,em,a) { color: #463c30; }
   .markdown-rendered pre, .markdown-rendered code { color: #28231d; background: #f1eee6; }
+}
+
+/* Flat tab strips share one silhouette in resting, hovered and current states.
+   Scope to the header container: stacked tab spines retain their native layout. */
+.workspace-tab-header-container {
+  --tab-corner-shape: bevel;
+  --tab-radius: var(--cairn-cut-corner, 2px 7px 2px 7px);
+  --tab-radius-active: var(--tab-radius);
+  --tab-inner-background-hover: transparent;
+}
+.workspace-tab-header-container .workspace-tab-header {
+  border-radius: var(--tab-radius-active);
+  corner-shape: var(--tab-corner-shape);
+}
+.workspace-tab-header-container .workspace-tab-header-inner,
+.workspace-tab-header-container .workspace-tab-header.is-before-active .workspace-tab-header-inner {
+  border-radius: var(--tab-radius);
+  corner-shape: var(--tab-corner-shape);
+}
+.workspace-tab-header-container .workspace-tab-header:not(.is-active) {
+  background-color: var(--background-secondary-alt);
+  box-shadow: inset 0 0 0 1px var(--background-modifier-border);
+}
+.workspace-tab-header-container .workspace-tab-header:not(.is-active):hover {
+  background-color: var(--background-modifier-hover);
+  box-shadow: inset 0 0 0 1px var(--cairn-groove-light);
+}
+.workspace-tab-header-container .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-title {
+  color: var(--text-normal);
+}
+.workspace-tab-header-container .workspace-tab-header:focus-visible {
+  outline: 2px solid var(--background-modifier-border-focus);
+  outline-offset: -2px;
+}
+.workspace-tab-header-container .workspace-tab-header::before,
+.workspace-tab-header-container .workspace-tab-header::after { content: none; display: none; }
+/* Keep the native close affordance and its visibility rules; dress its hover. */
+.workspace-tab-header-container .workspace-tab-header-inner-close-button {
+  border-radius: 2px 5px 2px 5px; corner-shape: bevel;
 }
 
 /* Hearthstone / Relic. Apply after Cairn Ash. Stronger carved furniture;
@@ -831,4 +874,34 @@ button.mod-cta:not(.clickable-icon):not(.mod-warning):not([role="tab"])::after {
 @media print {
   .markdown-rendered hr, .markdown-source-view.mod-cm6 hr { border-top: 1px solid #888; background: none; }
   .markdown-rendered hr::after, .markdown-source-view.mod-cm6 hr::after { display: none; }
+}
+
+/* The last working surfaces use the same mineral plane and shallow bevel.
+   Reading, code, canvas, native drag regions and control dimensions are untouched. */
+body {
+  --file-header-background: var(--background-secondary);
+  --file-header-background-focused: var(--background-secondary);
+  --notice-radius: var(--cairn-cut-corner);
+  --notice-corner-shape: bevel;
+  --tooltip-radius: var(--cairn-cut-corner);
+  --tooltip-corner-shape: bevel;
+}
+.view-header, .notice, .tooltip {
+  background-image: var(--cairn-stone-grain), var(--cairn-stone-strata);
+  background-size: 512px 512px, auto;
+  background-repeat: repeat, no-repeat;
+}
+.notice, .tooltip { box-shadow: inset 0 0 0 1px var(--cairn-relic-edge), 0 4px 14px #0003; }
+.nav-file-title, .nav-folder-title, .vertical-tab-nav-item {
+  border-radius: var(--nav-item-radius); corner-shape: bevel;
+}
+.view-header .clickable-icon:not(.is-disabled):not([aria-disabled="true"]):hover {
+  border-radius: 2px 5px 2px 5px; corner-shape: bevel;
+  box-shadow: inset 0 0 0 1px var(--cairn-relic-edge);
+}
+.vertical-tab-nav-item:not(.is-active):hover {
+  box-shadow: inset 0 0 0 1px var(--background-modifier-border);
+}
+@media print {
+ .view-header, .notice, .tooltip { background-image: none; box-shadow: none; }
 }

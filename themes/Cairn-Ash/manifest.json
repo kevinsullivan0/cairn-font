@@ -6,11 +6,11 @@
     },
     {
       "path": "README.html",
-      "sha256": "fa698421a3e68f618df208648abb49982c1d601bdc36af0b7c96a5fd2c31dce8"
+      "sha256": "a1923a88a6f602c068625b1ddaddd301cd9af7a20bd77fe30cddb156c1b5b1c7"
     },
     {
       "path": "README.md",
-      "sha256": "cdeb8672a2c6ddc21e76ead87b3c54914adb2d5b93ab6988bf9b73b21b6981b2"
+      "sha256": "e6b7e660595e0fdfe5405b9b23aa0ea73a6fc5d55c718af15e3b79ed43367e5f"
     },
     {
       "path": "Try Hearthstone.command",
@@ -34,7 +34,7 @@
     },
     {
       "path": "compare-nord.html",
-      "sha256": "f56d8cd7bc9879aa89e8175b35e882d283c91665c11ba898d5012e7ec8f0d332"
+      "sha256": "fe7f8284dabd6109e21b1eff288ed8cedd1f22237275a51cc1296f6a6ed515d6"
     },
     {
       "path": "comparison-source.json",
@@ -49,6 +49,10 @@
       "sha256": "d2af61f852ca82d87b1621eb827a913c2906fb64558170e15d9ee6fada3f3d79"
     },
     {
+      "path": "critique-1.13.json",
+      "sha256": "f8955b01d222d146c8a47728ebda39950b611de4fbea65aa86f77889d9b75080"
+    },
+    {
       "path": "divider-proof.png",
       "sha256": "d0242a141532cd23102ec408d492920d8f03ac496529044868777388b07a4a23"
     },
@@ -61,12 +65,20 @@
       "sha256": "2085c8c131114858fa3e72579cb84af519bdbf0c0399f7bceb00388daed3ad71"
     },
     {
+      "path": "kitty/dark-colors.conf",
+      "sha256": "b4faf7f96b201625853bb496402807f427e9c33f977c815af664929b1b9a12fa"
+    },
+    {
       "path": "kitty/dark.conf",
-      "sha256": "1a84e47e18a6e9c8aa18b34b9d9a28dd3a48bfcf3910d149225e228a9dbfde16"
+      "sha256": "a5404308e99e8e3d06af6fde7f2e08318f40b8785d65d097e3f910f00a31a996"
+    },
+    {
+      "path": "kitty/light-colors.conf",
+      "sha256": "c3c721c8e8fbf4c6f075c277d5b510e3b2ff5ac87b400f3d5b6f364afafd01b8"
     },
     {
       "path": "kitty/light.conf",
-      "sha256": "155ea01a88c3bca168903f0913ced120eae276f5bdb1ee61ac80414f075152c7"
+      "sha256": "838d5ec5ba0c2c9015f6f7bc04080647593fe9eaa292c7d4c66e553603de00b4"
     },
     {
       "path": "material.css",
@@ -74,7 +86,7 @@
     },
     {
       "path": "material.json",
-      "sha256": "f6368ce174ba72dae68861c49565f1a3f6cf3ac588b42252afa648462f2a35b6"
+      "sha256": "c0570fd498f7c1d5c24ce2820f6894a0c400f005bd6dd5d48558bcf009068a1c"
     },
     {
       "path": "materials/basalt-chrome.png",
@@ -122,27 +134,27 @@
     },
     {
       "path": "obsidian/Cairn Ash/manifest.json",
-      "sha256": "720ce325b89d9fe96a9166a035a002ada1d4d54d0cac20de469d92c6abcc3bd1"
+      "sha256": "5f0d18fab3a1913108609d4e0e192bcdd8c02c87237d59a043eab72031c858b8"
     },
     {
       "path": "obsidian/Cairn Ash/theme.css",
-      "sha256": "1d503aaaec433e065f12037eedf415e9c340f874d1fc2cab7fd2a3bbea1d6c26"
+      "sha256": "f4bb24ed67daa9214bddfb4886c202dae5e1ac1658f80c1cc7a2b15d7efc0676"
     },
     {
       "path": "obsidian/Cairn Ash Bronze/manifest.json",
-      "sha256": "e3cbd62f640ce931289206d314b627466879740339af19e73ba0f697c58bafbf"
+      "sha256": "8afe26b442dcc49d3f3923b77f27d7e54511ed993bace669f9a9b20d64225365"
     },
     {
       "path": "obsidian/Cairn Ash Bronze/theme.css",
-      "sha256": "c9d73ad3fefa2db31e3e9fb12fa7abff6cd218ceed21f66c4fc96f434f74b87e"
+      "sha256": "0cfae23abb839a60b48a0bbcfae94aa687548dfd3a7827aa6258191232ef3c3f"
     },
     {
       "path": "obsidian/Cairn Ash Relic/manifest.json",
-      "sha256": "13185645a0dcd6738ded9d6a1e68982b16a2fb4703aad7dfdb21b23575f8bd4c"
+      "sha256": "3bf96f39863d921ca37a93aec7c0a3039af93f47794c7b9bf1f8d8c628c42e1b"
     },
     {
       "path": "obsidian/Cairn Ash Relic/theme.css",
-      "sha256": "0be66da640bdcfa9fdab651b2fca38dd7b491584f86730f43a3e5c2d460d50ee"
+      "sha256": "8601cdfba9ba28ae8057bf2d9197325501c4e858e79ceabbdc8d85012ef03566"
     },
     {
       "path": "optimization.json",
@@ -154,7 +166,7 @@
     },
     {
       "path": "preview.html",
-      "sha256": "e5f7610d756714743425fd8ce8e28d54174f204a635e748fd2df7e2daab1c455"
+      "sha256": "ceff0a94fc4002dae2b4d296e97a4283b83982bf1a14b4efdb715402a7e038d6"
     },
     {
       "path": "quality.json",
@@ -162,7 +174,7 @@
     },
     {
       "path": "relic.css",
-      "sha256": "af4d3589b4cf97f1a951632834ada108164e1ec22bd4af75a29ced2dad60f538"
+      "sha256": "62535eab306931a15ebf15105765ca8472ca6cac6e5fa4acca400d87b7f7da9c"
     },
     {
       "path": "source/bronze-template.css",
@@ -174,7 +186,7 @@
     },
     {
       "path": "source/build_theme.py",
-      "sha256": "636ceccc6e0ddfe23bd9cc322e18be388d13ed192983032029b675da30aeba6b"
+      "sha256": "39820013439b3981fd94627a3778503c400fce3bac91067a0ccc9b6c2fe0c119"
     },
     {
       "path": "source/check_bronze.py",
@@ -194,7 +206,7 @@
     },
     {
       "path": "source/relic-template.css",
-      "sha256": "0cb676a1844bc46e8dbffe56e9d051eea60c84103b2a5ddbba5f35abcb9e127c"
+      "sha256": "90965273c0328bba8bcc4d785e3d6ae19a44f3697ee7d36011862446edfb6c5a"
     },
     {
       "path": "source/stone_ledge.py",
@@ -205,8 +217,20 @@
       "sha256": "179a29f47aa18f7189db8cbe50ef74d51b3a6982fac5a2b9206484bd8bd052dc"
     },
     {
+      "path": "terminal-palette.json",
+      "sha256": "18f8e6a8790943760bd1719dc28f3c52c642495c8fcc9461fdbd3a3d423251c6"
+    },
+    {
+      "path": "terminal.html",
+      "sha256": "7ea1020ecb757adfc2d6328909122bc790772d1d588b4a1870f7bfc20e26457a"
+    },
+    {
+      "path": "ui-proof.png",
+      "sha256": "149cc2cb1b86bcb10c122c57a9e8c76fe14683b730967ccfea94a48ac147b682"
+    },
+    {
       "path": "validation.json",
-      "sha256": "4f4469a27bb8784ea16ae6725b490b42c1f7cd099e9b604119bea2895c9b3b84"
+      "sha256": "82d777cfed15d82dcf41b0707ef6422533b0edab818225c5bf30610de994e120"
     }
   ]
 }

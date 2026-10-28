@@ -60,7 +60,7 @@ for mode,p in P.items():
  'table-border-color':p['border'],'table-header-background':p['sidebar'],'table-header-color':p['fg'],'table-row-alt-background':p['alt'],'table-row-background-hover':p['raised'],'table-selection':p['selection'],
  'blockquote-border-color':p['focus'],'blockquote-background-color':p['alt'],'blockquote-color':p['fg'],
  'hr-color':p['border'],'indentation-guide-color':p['border'],'indentation-guide-color-active':p['focus'],
- 'notice-color':p['fg'],'notice-background':p['sidebar'],'modal-background':p['bg'],'modal-border-color':p['focus'],'prompt-background':p['bg'],'prompt-border-color':p['focus'],
+ 'tooltip-color':p['fg'],'tooltip-background':p['sidebar'],'notice-color':p['fg'],'notice-background':p['sidebar'],'modal-background':p['bg'],'modal-border-color':p['focus'],'prompt-background':p['bg'],'prompt-border-color':p['focus'],
  'graph-text':p['fg'],'graph-line':p['border'],'graph-node':p['muted'],'graph-node-focused':p['focus'],'graph-node-tag':p['cyan'],'graph-node-attachment':p['green'],
  'canvas-background':p['sidebar'],'canvas-dot-pattern':p['border'],'canvas-card-label-color':p['fg'],
  'color-base-100':p['fg']})
@@ -207,15 +207,58 @@ body .cairn-plain .inline-title { font-family: var(--font-text) !important; }
   .markdown-rendered pre, .markdown-rendered code { color: #28231d; background: #f1eee6; }
 }
 ''')
+css.append('''/* Flat tab strips share one silhouette in resting, hovered and current states.
+   Scope to the header container: stacked tab spines retain their native layout. */
+.workspace-tab-header-container {
+  --tab-corner-shape: bevel;
+  --tab-radius: var(--cairn-cut-corner, 2px 7px 2px 7px);
+  --tab-radius-active: var(--tab-radius);
+  --tab-inner-background-hover: transparent;
+}
+.workspace-tab-header-container .workspace-tab-header {
+  border-radius: var(--tab-radius-active);
+  corner-shape: var(--tab-corner-shape);
+}
+.workspace-tab-header-container .workspace-tab-header-inner,
+.workspace-tab-header-container .workspace-tab-header.is-before-active .workspace-tab-header-inner {
+  border-radius: var(--tab-radius);
+  corner-shape: var(--tab-corner-shape);
+}
+.workspace-tab-header-container .workspace-tab-header:not(.is-active) {
+  background-color: var(--background-secondary-alt);
+  box-shadow: inset 0 0 0 1px var(--background-modifier-border);
+}
+.workspace-tab-header-container .workspace-tab-header:not(.is-active):hover {
+  background-color: var(--background-modifier-hover);
+  box-shadow: inset 0 0 0 1px var(--cairn-groove-light);
+}
+.workspace-tab-header-container .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner-title {
+  color: var(--text-normal);
+}
+.workspace-tab-header-container .workspace-tab-header:focus-visible {
+  outline: 2px solid var(--background-modifier-border-focus);
+  outline-offset: -2px;
+}
+.workspace-tab-header-container .workspace-tab-header::before,
+.workspace-tab-header-container .workspace-tab-header::after { content: none; display: none; }
+/* Keep the native close affordance and its visibility rules; dress its hover. */
+.workspace-tab-header-container .workspace-tab-header-inner-close-button {
+  border-radius: 2px 5px 2px 5px; corner-shape: bevel;
+}
+''')
 (ROOT/'obsidian/Cairn Ash/theme.css').write_text('\n'.join(css))
-(ROOT/'obsidian/Cairn Ash/manifest.json').write_text(json.dumps({'name':'Cairn Ash','version':'1.12.0','minAppVersion':'1.6.0','author':'Cairn contributors'},indent=2)+'\n')
+(ROOT/'obsidian/Cairn Ash/manifest.json').write_text(json.dumps({'name':'Cairn Ash','version':'1.13.0','minAppVersion':'1.6.0','author':'Cairn contributors'},indent=2)+'\n')
 (ROOT/'palette.json').write_text(json.dumps({'name':'Cairn Ash','modes':P},indent=2)+'\n')
 (ROOT/'contrast.json').write_text(json.dumps({'minimum_target':4.5,'pairs':contrast,'scope':'Specified text/background pairs only, including small labels, code roles, selections, highlights, and filled buttons. Does not establish readability or contrast for every plugin.'},indent=2)+'\n')
 # A calmer temporary terminal. Existing global Kitty settings are not edited.
 for mode,p in P.items():
- foreground='#b7ad98' if mode=='dark' else p['fg']
- colors=[p['sidebar'],p['red'],p['green'],p['gold'],p['blue'],p['purple'],p['cyan'],foreground,p['muted'],p['red'],p['green'],p['gold'],p['blue'],p['purple'],p['cyan'],foreground]
- assert cr(foreground,p['bg'])>=4.5
+ foreground='#b7b4a8' if mode=='dark' else p['fg']
+ colors=([p['sidebar'],'#d39482','#a6ba92','#c6b18b','#8faeca','#b09ac6','#86b9b0',foreground,
+          '#99a094','#e0a28c','#b4c89e','#d5c098','#a0c0dd','#c0abd4','#96cac0','#c6c1b4'] if mode=='dark' else
+         [p['sidebar'],p['red'],p['green'],p['gold'],p['blue'],p['purple'],p['cyan'],p['fg'],
+          '#695a48','#853e30','#3f592c','#664a0e','#304f72','#69437c','#235b52','#3e352b'])
+ assert min(cr(c,p['bg']) for c in colors[1:])>=4.5
+ assert cr(p['fg'],p['selection'])>=4.5
  conf=f'''# Cairn Ash / {p['name']} / isolated terminal trial
 font_family JetBrainsMono Nerd Font
 bold_font auto
@@ -225,7 +268,7 @@ font_size 12
 background {p['bg']}
 foreground {foreground}
 selection_background {p['selection']}
-selection_foreground {foreground}
+selection_foreground {p['fg']}
 cursor {p['focus']}
 cursor_text_color {p['bg']}
 url_color {p['blue']}
@@ -238,6 +281,8 @@ initial_window_width 105c
 initial_window_height 31c
 '''+''.join(f'color{i} {c}\n' for i,c in enumerate(colors))
  (ROOT/'kitty'/f'{mode}.conf').write_text(conf)
+ color_only='\n'.join(line for line in conf.splitlines() if line.split(' ',1)[0] in {'background','foreground','selection_background','selection_foreground','cursor','cursor_text_color','url_color','active_border_color','inactive_border_color'} or line.startswith('color'))+'\n'
+ (ROOT/'kitty'/f'{mode}-colors.conf').write_text('# Cairn Ash / '+p['name']+' / colors only; preserves font and window preferences\n'+color_only)
  launch=f'''#!/bin/zsh
 set -eu
 THEME_DIR="${{0:A:h}}"
