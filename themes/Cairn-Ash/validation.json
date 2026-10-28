@@ -149,17 +149,13 @@
     "relic_native_variables_and_reading_font_preservation": "passed",
     "scope": "Offline DOM and CSS checks; no visual browser or live Obsidian automation."
   },
-  "version": "1.11.0",
-  "material_pass": {
-    "editions": [
-      "Everyday",
-      "Relic",
-      "Bronze"
-    ],
-    "corner": "Native primary ribbon cap shares structural material; drag geometry retained.",
-    "structural_texture": "Mean-centered increase in broad mottling and restrained roughness.",
-    "bronze_editor": "Broad 1024px color field as a background only; no grain/fracture overlay above glyphs.",
-    "shared_typography_and_cursor": "Retained; mode and margin-rail checks passed.",
-    "verification": "Three-edition switching, portable rebuild, compositing extrema, native dark/light material proofs. Live Obsidian rendering unautomated."
-  }
+  "version": "1.12.0",
+  "critic": "Independent design critic approved after transparent-gap and proof-fidelity corrections; see critique-1.12.json.",
+  "divider": "Fixed SVG paired lozenges; transparent center gap; native hr source-view flex layout retained; 180/400/900px geometry reviewed.",
+  "bronze": "Actual pigment extrema, text roles, active line, warm furniture and callout bodies tested. Code retains its flat base surface.",
+  "visual_scope": "Offline Core Text/material and geometry proofs reviewed; no browser or live app screenshot verification.",
+  "native_proof": "Reviewed native Core Text proof of fonts, colors, static mineral grain, and representative cut-stone controls. Not a browser or app screenshot.",
+  "kitty_configs": "Both parsed by Kitty at 12 pt.",
+  "launchers": "Both pass zsh syntax checks.",
+  "installed_theme_matches_deliverable": true
 }

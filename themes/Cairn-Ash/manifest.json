@@ -6,11 +6,11 @@
     },
     {
       "path": "README.html",
-      "sha256": "017541cb302297ceb58bd0cba6f323a7350b419a04537dec0c7ddaef475ae4ab"
+      "sha256": "fa698421a3e68f618df208648abb49982c1d601bdc36af0b7c96a5fd2c31dce8"
     },
     {
       "path": "README.md",
-      "sha256": "cf64ce5721d4749459440aebfd9eb68614187113307e239a1371bf5e48daed31"
+      "sha256": "cdeb8672a2c6ddc21e76ead87b3c54914adb2d5b93ab6988bf9b73b21b6981b2"
     },
     {
       "path": "Try Hearthstone.command",
@@ -22,19 +22,19 @@
     },
     {
       "path": "bronze-light-proof.png",
-      "sha256": "bffcf1bb6cb9642694a071c95596b959740176e4ee17687cde71d1656677f620"
+      "sha256": "57795083073eb0742312af0eeb566def49e428a5aa76f388bb331cb19f0651f7"
     },
     {
       "path": "bronze-proof.png",
-      "sha256": "e3f84420c5c9af1d9250077d57ecaa87504645b7db9489e057b400ba3493916c"
+      "sha256": "a03349e7658b2bb88bc2e7a2896fd2b672f47c56a0fa13fb2acd66e1a9551ea9"
     },
     {
       "path": "bronze.css",
-      "sha256": "33163f247325f386ca43d5469b1599c914e59590ff4e37ad83bb970b41a9e19b"
+      "sha256": "161cb35f4c2337a41c44546ed84fbf11928f4a83526fdc7cbc315ee2451a7894"
     },
     {
       "path": "compare-nord.html",
-      "sha256": "c702aa4d74c0121c06b3f512804eba3f1c04a2c1fc99177cf83f4ed0a1f5b55a"
+      "sha256": "f56d8cd7bc9879aa89e8175b35e882d283c91665c11ba898d5012e7ec8f0d332"
     },
     {
       "path": "comparison-source.json",
@@ -45,12 +45,20 @@
       "sha256": "f18ec635314d3453cf9d133f9292d37190b6151b0110e8824a7ed23ee8888254"
     },
     {
+      "path": "critique-1.12.json",
+      "sha256": "d2af61f852ca82d87b1621eb827a913c2906fb64558170e15d9ee6fada3f3d79"
+    },
+    {
+      "path": "divider-proof.png",
+      "sha256": "d0242a141532cd23102ec408d492920d8f03ac496529044868777388b07a4a23"
+    },
+    {
       "path": "edition-light-proof.png",
-      "sha256": "eda1e387d6e923c0b6fb4fe387e96473cc06b42b598d272e0f6c18c56ef69203"
+      "sha256": "d189558b6da514f0011586dfd2f2f3db66fb1a7f0d156ea7a9a0a88828e2b781"
     },
     {
       "path": "edition-proof.png",
-      "sha256": "640392d8f99424b821a19160e7f29973dc4c9eec4eb362256c571725c31fe377"
+      "sha256": "2085c8c131114858fa3e72579cb84af519bdbf0c0399f7bceb00388daed3ad71"
     },
     {
       "path": "kitty/dark.conf",
@@ -62,15 +70,15 @@
     },
     {
       "path": "material.css",
-      "sha256": "cb174f4bd2ceae858b64c6381f92dd4e279862f17a433b23db6c2bfaf87aba67"
+      "sha256": "3fd35c67dcdf584811f3427eb4377e81017f331c1e6bfb5d51f32175b0a84565"
     },
     {
       "path": "material.json",
-      "sha256": "0c20f3c82b77942479f2999403b142c06ca1b51175c37539816fe3260739bcb8"
+      "sha256": "f6368ce174ba72dae68861c49565f1a3f6cf3ac588b42252afa648462f2a35b6"
     },
     {
       "path": "materials/basalt-chrome.png",
-      "sha256": "b6539becafeca765c26de9b361e225bb4fef158b3f5c6e1160f4b08729ed1211"
+      "sha256": "9b6131af01bfc27cb4324da805a2bc794bc0f0880bd0efe26f0de70da602a004"
     },
     {
       "path": "materials/basalt-grain.png",
@@ -78,27 +86,27 @@
     },
     {
       "path": "materials/bronze-contrast.json",
-      "sha256": "eaa9ed7ec408469a79bd8f49b8f7f26e110a1a54fd37e165a780d39b7f678b98"
+      "sha256": "e0e35d12851a5d21c54fe66bd835b2defe69ea0a79bacd3c514c4fa7647c6c7d"
     },
     {
       "path": "materials/bronze-editor.png",
-      "sha256": "d6b93a47ed9ffc33ba276dbfabd29327c6f420a9ac488d0ee30aab2f7b1eb539"
+      "sha256": "9dc31f597d8d6d7f2c724a58d65902765167b86769d0a25e89301b4c057641c8"
     },
     {
       "path": "materials/contrast.json",
-      "sha256": "3c9c595f851ba7d48678dbadf43f8c74c97a7cd5ce1e17d652ae8529574a69f7"
+      "sha256": "24dd728d55f64e4f4757461adecb6516dcbe177fe8470d7ff6b952a2a50a9628"
     },
     {
       "path": "materials/ledges.json",
-      "sha256": "dcc5a4b137ec5e999517bf3e9c336fe26be80ce5c604195f67c57966fb6a9c66"
+      "sha256": "8512e1cf40583b4cb645659b37e1dbc8b726de1fb42fabbfe848cbb1c991448e"
     },
     {
       "path": "materials/limestone-chrome.png",
-      "sha256": "57f907bffb792197fa192b7ec3c1b3691c84a231ec7763dfb2068782614bb36a"
+      "sha256": "28288dc587349b1ab5249478d4e31b60552517151b00a750cd7998e334c41337"
     },
     {
       "path": "materials/limestone-editor.png",
-      "sha256": "7117db36c0f1084d6bbf8e7f603a1bdffec7f2c0fef6ab0b159b1b7730d35d5a"
+      "sha256": "6e509c5c57795b92c1f25dcaa78f910688f1724038ca1bb689263d3fa5e502cf"
     },
     {
       "path": "materials/limestone-grain.png",
@@ -106,7 +114,7 @@
     },
     {
       "path": "materials/texture.json",
-      "sha256": "0c1c2536050a4483016678602f41ec778a5c4a8b91ce7875574f1b22ccf3214b"
+      "sha256": "d11c29c6545935043c146b637d8f76275f50baee2bca5ec5e6f8481e3ef24fa4"
     },
     {
       "path": "native-proof.png",
@@ -114,7 +122,7 @@
     },
     {
       "path": "obsidian/Cairn Ash/manifest.json",
-      "sha256": "0b7eaed27911f41f36314c941b699d21911301e6b8bf6ab132f19341f427b638"
+      "sha256": "720ce325b89d9fe96a9166a035a002ada1d4d54d0cac20de469d92c6abcc3bd1"
     },
     {
       "path": "obsidian/Cairn Ash/theme.css",
@@ -122,19 +130,19 @@
     },
     {
       "path": "obsidian/Cairn Ash Bronze/manifest.json",
-      "sha256": "978530f566db58e39e49c1fc11318e506c3ceb093373e0e805b4c979b9a972ef"
+      "sha256": "e3cbd62f640ce931289206d314b627466879740339af19e73ba0f697c58bafbf"
     },
     {
       "path": "obsidian/Cairn Ash Bronze/theme.css",
-      "sha256": "c0412509823bedf8420a327c8acccb5f23d496820fa4dfad676e114fe0516030"
+      "sha256": "c9d73ad3fefa2db31e3e9fb12fa7abff6cd218ceed21f66c4fc96f434f74b87e"
     },
     {
       "path": "obsidian/Cairn Ash Relic/manifest.json",
-      "sha256": "971c85528f4efdd8a99bfb5ed5552d96207dc47c9cf2a9660f0d06822a7968da"
+      "sha256": "13185645a0dcd6738ded9d6a1e68982b16a2fb4703aad7dfdb21b23575f8bd4c"
     },
     {
       "path": "obsidian/Cairn Ash Relic/theme.css",
-      "sha256": "242b04faf0c08a1cca86a84bc37f6cc1930f56f1a91063c253a54a25e528315f"
+      "sha256": "0be66da640bdcfa9fdab651b2fca38dd7b491584f86730f43a3e5c2d460d50ee"
     },
     {
       "path": "optimization.json",
@@ -146,7 +154,7 @@
     },
     {
       "path": "preview.html",
-      "sha256": "757511d5cfdf1be831166f00df25a869ab596d0a45af58f61b58446c6d2a593a"
+      "sha256": "e5f7610d756714743425fd8ce8e28d54174f204a635e748fd2df7e2daab1c455"
     },
     {
       "path": "quality.json",
@@ -154,11 +162,11 @@
     },
     {
       "path": "relic.css",
-      "sha256": "eb880291558318122083947b59469dd787328adaa08a99af6936952a872e4dab"
+      "sha256": "af4d3589b4cf97f1a951632834ada108164e1ec22bd4af75a29ced2dad60f538"
     },
     {
       "path": "source/bronze-template.css",
-      "sha256": "3a230465b9742e342960be88f062dab38af0020f15ba07f53c7609117271c337"
+      "sha256": "0a0eac62b45aa3f323f1cf98aecc8b942560a008b814c0118f36042aa48bb050"
     },
     {
       "path": "source/build_relic.py",
@@ -166,11 +174,11 @@
     },
     {
       "path": "source/build_theme.py",
-      "sha256": "6d023c4a9f66f6288e97eef80f7a199dbf0bd8c79fe5465c337fc8009cc63828"
+      "sha256": "636ceccc6e0ddfe23bd9cc322e18be388d13ed192983032029b675da30aeba6b"
     },
     {
       "path": "source/check_bronze.py",
-      "sha256": "88fe49122f2ff7e43f3231d59f32cce3c01a7e042523f7ccdc99f641ecb0cd10"
+      "sha256": "af3c572b5fe5f13ab057474911fb0b9778bc3ff21dfe750d69a9c32c5871b6c7"
     },
     {
       "path": "source/check_material.py",
@@ -182,15 +190,15 @@
     },
     {
       "path": "source/generate_stone.py",
-      "sha256": "ee760ca9ff9ac54c9b1ae9602e656ebbd4078a3999c746bf1260d022e6e2a6cd"
+      "sha256": "dfba0f4f14c7cd2b7cbb5135ca9976f922788bdc540a646d8fc76acf00a381c4"
     },
     {
       "path": "source/relic-template.css",
-      "sha256": "67bee83149485f1b6f7c4630656105cdfe53ea9b2c38d67d20b079dc579afe36"
+      "sha256": "0cb676a1844bc46e8dbffe56e9d051eea60c84103b2a5ddbba5f35abcb9e127c"
     },
     {
       "path": "source/stone_ledge.py",
-      "sha256": "b31b7406ea2b4f979e46f45fab60ff4d811cc230b2ac28894adcb3eec2f3ee5f"
+      "sha256": "a18d0b4f58fc0ca29cd9158768458634209691315b8c7281ed65186ed7dff64c"
     },
     {
       "path": "surface-studies.json",
@@ -198,7 +206,7 @@
     },
     {
       "path": "validation.json",
-      "sha256": "20a1dcc6a89dbb80fd3a0972449d0e9b6c59aab00046452ec6e939fe388f146b"
+      "sha256": "4f4469a27bb8784ea16ae6725b490b42c1f7cd099e9b604119bea2895c9b3b84"
     }
   ]
 }

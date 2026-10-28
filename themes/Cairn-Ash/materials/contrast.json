@@ -28,10 +28,10 @@
       ],
       "structural_alpha_extrema": [
         0,
-        70
+        73
       ],
-      "structural_mean_alpha_change": 0.00380706787109375,
-      "structural_variation_ratio": 1.5368040994874694,
+      "structural_mean_alpha_change": 0.017131805419921875,
+      "structural_variation_ratio": 1.6531634679221001,
       "reading_body_contrast_unchanged": 7.196047478606893
     },
     "light": {
@@ -60,10 +60,10 @@
       ],
       "structural_alpha_extrema": [
         0,
-        70
+        73
       ],
-      "structural_mean_alpha_change": 0.00380706787109375,
-      "structural_variation_ratio": 1.5368040994874694,
+      "structural_mean_alpha_change": 0.017131805419921875,
+      "structural_variation_ratio": 1.6531634679221001,
       "reading_body_contrast_unchanged": 8.609532858430212
     }
   }

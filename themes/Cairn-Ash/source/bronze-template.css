@@ -1,19 +1,21 @@
-/* Bronze: Relic furniture with a restrained, broad mineral field on the page. */
+/* Bronze: cool slate writing plane; oxidized bronze furniture and callout tablets. */
 body.theme-dark {
-  --background-primary: #30353c;
+  --background-primary: #2e3440;
   --cursor-line-background: rgba(175,205,146,0.06);
-  --background-secondary: #383c43;
-  --tab-background-active: #30353c;
-  --tab-container-background: #383c43;
-  --titlebar-background: #383c43;
-  --titlebar-background-focused: #383c43;
-  --ribbon-background: #383c43;
-  --ribbon-background-collapsed: #383c43;
-  --status-bar-background: #383c43;
+  --background-secondary: #3b3938;
+  --tab-background-active: #2e3440;
+  --tab-container-background: #3b3938;
+  --titlebar-background: #3b3938;
+  --titlebar-background-focused: #3b3938;
+  --ribbon-background: #3b3938;
+  --ribbon-background-collapsed: #3b3938;
+  --status-bar-background: #3b3938;
+  --cairn-bronze-tablet: #3c3937;
   --cairn-iron: #827b6e;
   --cairn-editor-mineral: url("BRONZE_EDITOR");
 }
 body.theme-light {
+  --cairn-bronze-tablet: #e6dbc6;
   --cairn-editor-mineral: url("LIMESTONE_EDITOR");
 }
 .workspace-leaf-content[data-type="markdown"] .markdown-source-view.mod-cm6 .cm-scroller,
@@ -23,7 +25,14 @@ body.theme-light {
   background-size: 1024px 1024px;
   background-repeat: repeat;
 }
+/* Semantic callout icons and titles keep their native colors; only the stone changes. */
+.callout:not(.theorem-callout) {
+  background-color: var(--cairn-bronze-tablet);
+  background-image: var(--cairn-stone-grain);
+  background-size: 512px 512px;
+}
 @media print {
   .workspace-leaf-content[data-type="markdown"] .markdown-source-view.mod-cm6 .cm-scroller,
-  .workspace-leaf-content[data-type="markdown"] .markdown-preview-view { background-image: none; }
+  .workspace-leaf-content[data-type="markdown"] .markdown-preview-view,
+  .callout:not(.theorem-callout) { background-image: none; }
 }

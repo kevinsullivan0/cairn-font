@@ -1,44 +1,68 @@
 {
-  "scope": "Bronze only: actual background PNG alpha extrema, sRGB compositing, all text roles and active line. No texture overlay above glyphs. Code panels retain the flat base-theme surface. Not a full app/plugin accessibility audit.",
+  "scope": "Bronze only: actual background PNG alpha extrema, sRGB compositing, all text roles, active line, warm side panes and callout bodies. Semantic callout titles retain their existing colors. No texture overlay above glyphs. Code panels retain the flat base-theme surface. Not a full app/plugin accessibility audit.",
   "modes": {
     "dark": {
-      "base": "#30353c",
-      "pigment": "#8c6945",
+      "base": "#2e3440",
+      "pigment": "#50637d",
       "alpha_range": [
         4,
-        14
+        28
       ],
       "editor_extremes": [
-        "#31363c",
-        "#35383c"
+        "#2f3541",
+        "#323947"
       ],
-      "body_contrast_minimum": 6.788674496450088,
-      "minimum_text_contrast": 4.706952039479266,
+      "body_contrast_minimum": 6.677902773440289,
+      "minimum_text_contrast": 4.631378312375541,
       "pairs": {
-        "fg/editor": 6.788674496450088,
-        "fg/active_line": 5.976258537443116,
-        "muted/editor": 5.3657625232367865,
-        "muted/active_line": 4.723629643188024,
-        "bold/editor": 5.918295544569893,
-        "bold/active_line": 5.210039794048539,
-        "focus/editor": 5.735700767591659,
-        "focus/active_line": 5.049296545071243,
-        "red/editor": 5.346817756665831,
-        "red/active_line": 4.706952039479266,
-        "orange/editor": 6.207474637115076,
-        "orange/active_line": 5.464612173616437,
-        "gold/editor": 6.69063453813787,
-        "gold/active_line": 5.889951241640329,
-        "green/editor": 6.716275967757872,
-        "green/active_line": 5.912524103656163,
-        "cyan/editor": 6.55856636090069,
-        "cyan/active_line": 5.773687960472411,
-        "blue/editor": 5.897037394491044,
-        "blue/active_line": 5.191325654643946,
-        "purple/editor": 5.377863152010366,
-        "purple/active_line": 4.734282162476487,
-        "pink/editor": 5.484057291226414,
-        "pink/active_line": 4.827767809998429
+        "fg/editor": 6.677902773440289,
+        "fg/active_line": 5.880305120450152,
+        "muted/editor": 5.2782086479889525,
+        "muted/active_line": 4.647788144358379,
+        "bold/editor": 5.82172591303195,
+        "bold/active_line": 5.126388606976207,
+        "focus/editor": 5.642110559808536,
+        "focus/active_line": 4.968226214215436,
+        "red/editor": 5.259573005745018,
+        "red/active_line": 4.631378312375541,
+        "orange/editor": 6.106186431081273,
+        "orange/active_line": 5.376873631631574,
+        "gold/editor": 6.58146254643228,
+        "gold/active_line": 5.795383554513604,
+        "green/editor": 6.606685581365524,
+        "green/active_line": 5.817593991907384,
+        "cyan/editor": 6.451549343565277,
+        "cyan/active_line": 5.6809869695451525,
+        "blue/editor": 5.800814635072756,
+        "blue/active_line": 5.107974937440965,
+        "purple/editor": 5.290111829160728,
+        "purple/active_line": 4.658269629274934,
+        "pink/editor": 5.394573184196204,
+        "pink/active_line": 4.750254292985127,
+        "fg/#3b3938": 6.6177912160279675,
+        "muted/#3b3938": 5.230696524356409,
+        "bold/#3b3938": 5.769321284912494,
+        "focus/#3b3938": 5.591322750469426,
+        "red/#3b3938": 5.212228632005917,
+        "orange/#3b3938": 6.051221213905284,
+        "gold/#3b3938": 6.522219101725298,
+        "green/#3b3938": 6.547215089939844,
+        "cyan/#3b3938": 6.39347532063901,
+        "blue/#3b3938": 5.748598241123257,
+        "purple/#3b3938": 5.242492558302076,
+        "pink/#3b3938": 5.34601359794908,
+        "fg/#3c3937": 6.602505723938907,
+        "muted/#3c3937": 5.2186148844657945,
+        "bold/#3c3937": 5.755995552507066,
+        "focus/#3c3937": 5.5784081514922494,
+        "red/#3c3937": 5.200189648465919,
+        "orange/#3c3937": 6.037244361058932,
+        "gold/#3c3937": 6.507154358032405,
+        "green/#3c3937": 6.5320926115787445,
+        "cyan/#3c3937": 6.378707943844387,
+        "blue/#3c3937": 5.735320373921122,
+        "purple/#3c3937": 5.23038367243502,
+        "pink/#3c3937": 5.333665603596894
       }
     },
     "light": {
@@ -46,11 +70,11 @@
       "pigment": "#fff9e3",
       "alpha_range": [
         4,
-        14
+        28
       ],
       "editor_extremes": [
         "#eee5d3",
-        "#efe6d4"
+        "#f0e7d5"
       ],
       "body_contrast_minimum": 8.609532858430212,
       "minimum_text_contrast": 4.612060962996251,
@@ -78,7 +102,19 @@
         "purple/editor": 5.109575813382856,
         "purple/active_line": 4.612060962996251,
         "pink/editor": 5.613989294925893,
-        "pink/active_line": 5.067360152674672
+        "pink/active_line": 5.067360152674672,
+        "fg/#e6dbc6": 7.854889401536028,
+        "muted/#e6dbc6": 4.850851360424206,
+        "bold/#e6dbc6": 5.0262324938253515,
+        "focus/#e6dbc6": 4.9977919979363845,
+        "red/#e6dbc6": 4.786685528459228,
+        "orange/#e6dbc6": 4.972704039811892,
+        "gold/#e6dbc6": 4.966608915485866,
+        "green/#e6dbc6": 4.914464330184953,
+        "cyan/#e6dbc6": 4.904358741458572,
+        "blue/#e6dbc6": 4.906403511754695,
+        "purple/#e6dbc6": 4.661710868968531,
+        "pink/#e6dbc6": 5.121911460024375
       }
     }
   }

@@ -1,4 +1,4 @@
-# Cairn Ash 1.11 — Everyday, Relic, and Bronze
+# Cairn Ash 1.12 — Everyday, Relic, and Bronze
 
 Hearthstone (dark) and Limestone (light), with a quiet Everyday edition and a
 more tactile Relic edition. All three editions share the same typography and control scale. Relic adds mineral texture, asymmetric stone chips, inset joints, and
@@ -7,7 +7,7 @@ geometric tool marks. Everyday and Relic keep prose and code surfaces flat.
 ## Install
 
 1. Install the Cairn fonts from the repository’s `desktop/` directory.
-2. Copy either or both folders inside `obsidian/` into your vault’s `.obsidian/themes/`.
+2. Copy any of the folders inside `obsidian/` into your vault’s `.obsidian/themes/`.
 3. Select **Cairn Ash**, **Cairn Ash Relic**, or **Cairn Ash Bronze** in Settings → Appearance → Themes.
 4. Choose the Dark or Light base scheme.
 
@@ -19,7 +19,7 @@ installed fonts are missing from the font picker.
 ## Try without installing
 
 Open `compare-nord.html` for the same interactive workspace beside a Nord reference.
-The edition menu switches Everyday and Relic. `preview.html` includes light mode,
+The edition menu switches Everyday, Relic, and Bronze. `preview.html` includes light mode,
 body-font choices, search, tasks, a local draft, and terminal color previews.
 These are standalone mockups, not running Obsidian windows.
 
@@ -56,22 +56,37 @@ rail sits in the margin with a six-pixel gap, rather than covering the first
 character, and adds no line padding. The selector structure was checked against
 the installed Obsidian 1.14.5 editor and exercised in offline state tests.
 
-## Bronze and stronger structural material
+## Bronze: blue slate and worn bronze
 
-Bronze is a third selectable edition with a warmer charcoal editor background
-and faint, broad mineral fields. There is no fine grit or fracture texture on
-the page and no overlay above glyphs; code panels remain flat. The bars share
-Relic’s slightly stronger mottling and restrained extra roughness. The native
-top-left ribbon cap now continues the same finish, preserving its drag area.
+Bronze keeps Nord’s cool `#2e3440` writing foundation, with more visible broad
+slate mottling. Side panes, bars, and ordinary callouts use warmer oxidized
+bronze stone. Semantic callout titles, icons, and colors retain their meaning;
+custom theorem callouts are excluded. Code panels remain flat blue.
+There is no grit or fracture overlay over the page text.
+
+Relic and Bronze share slightly rougher structural material and sparse,
+asymmetric chips with exposed fracture faces. Paired incised lozenges are
+centered geometrically in note-title rules and horizontal breaks, with a
+transparent gap that leaves the page mottling continuous. Decoration carries
+no text and does not clip controls, focus outlines, or hit areas. Typography,
+control dimensions, the native Vim block cursor, and clear margin rail are
+unchanged. Everyday keeps its quiet material.
 
 Use the edition menu in `compare-nord.html` to switch Bronze, Relic, and Everyday
-beside the same Nord sample. It starts with Bronze. `bronze-proof.png` and
-`bronze-light-proof.png` compare native representative renderings with Relic.
-These are font/material proofs, not live Obsidian screenshots.
+beside the same Nord sample. It starts with Bronze and includes long prose,
+section breaks, callouts, tables, search, tasks, and a local editor sample.
+`bronze-proof.png` and `bronze-light-proof.png` compare native representative
+renderings with Relic; `divider-proof.png` shows divider geometry at several
+widths and enlarged chip details. These are font/material proofs, not live
+Obsidian screenshots. The native proof’s warm note panel represents a callout.
 
-Bronze body contrast is at least 6.79:1 dark and 8.61:1 light across the measured
-texture range. Text roles on the page and active line stay over 4.5:1; details
-are in `materials/bronze-contrast.json`. `source/build_relic.py` builds both
-Relic and Bronze after the base builder; `source/check_bronze.py` checks the
-optional editor field. Surface changes preserve fonts, sizes, the native Vim
-cursor, and the clear margin rail.
+Measured Bronze body contrast is at least 6.67:1 dark and 8.60:1 light across
+the texture range. Tested text roles, warm panels/callouts, and active lines
+stay above 4.5:1; details are in `materials/bronze-contrast.json`. This is not a
+whole-app or plugin accessibility audit, nor a measure of subjective comfort.
+
+`source/build_relic.py` builds both Relic and Bronze after the base builder;
+`source/generate_stone.py` rebuilds material tiles, `source/stone_ledge.py`
+defines the ledges, and `source/check_bronze.py` checks compositing bounds.
+The preview HTML is a frozen specimen; rebuilding styles does not regenerate
+its embedded frames.

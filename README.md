@@ -27,7 +27,7 @@ either family. No distribution license has yet been selected.
 
 [Hearthstone / Cairn Ash](themes/Cairn-Ash/README.md) includes Everyday, Relic, and Bronze
 Obsidian editions, dark/light modes, a Nord comparison, Kitty palettes, and reusable
-stone material tokens. All three editions use the same type and control scale. Bronze adds a faintly mottled, warmer editor surface.
+stone material tokens. All three editions use the same type and control scale. Bronze adds a cool mineral writing field, bronze side panes and callouts, and worn stone details.
 [Earlier palette studies](themes/Cairn-Dragnipur/README.md) include Ember, Vellum,
 and the amber/stone mockups that led to Hearthstone.
 

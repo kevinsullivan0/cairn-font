@@ -10,7 +10,7 @@
   "vein_opacity": 0.045,
   "structure": "Warped mineral fields at three scales; sparse pits; four localized fractures with long planar runs, occasional angular turns, softened ends, and broad mineral patches. Periodic fields and wrapped fractures avoid tile-edge seams.",
   "structural_variant": {
-    "broad_amplitude_increase": 20,
+    "broad_amplitude_increase": 24,
     "roughness": "Mean-centered micrograin and slightly deeper existing pits/fractures",
     "mean_centered": true,
     "alpha_cap": 80,
@@ -18,9 +18,9 @@
   },
   "editor_variant": {
     "pigment_dark": [
-      140,
-      105,
-      69
+      80,
+      99,
+      125
     ],
     "pigment_light": [
       255,
@@ -29,10 +29,10 @@
     ],
     "alpha_range": [
       4,
-      14
+      28
     ],
     "display_tile_pixels": 1024,
-    "structure": "Broad periodic clouds only; no grit, pits, fractures, or texture overlay above text. Bronze edition only."
+    "structure": "Cool slate periodic clouds only; no grit, pits, fractures, or texture overlay above text. Bronze edition only."
   },
   "scope": "Relic furniture; Bronze additionally paints one low-opacity background behind reading/editor text. Embedded assets; no network images or animated filters."
 }

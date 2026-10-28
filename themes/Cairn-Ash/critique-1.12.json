@@ -1,0 +1,22 @@
+{
+  "edition": "1.12.0",
+  "reviewed": [
+    "bronze-proof.png",
+    "divider-proof.png",
+    "source templates and ledge geometry"
+  ],
+  "result": "Approved after corrections; no remaining material or readability blocker in reviewed sources/proofs.",
+  "observations": [
+    "Cool slate writing field and warm bronze furniture are distinct and cohesive.",
+    "Mottling remains subtle behind text.",
+    "Paired marks are centered at 180, 400 and 900 pixel widths with no opaque backing.",
+    "Chips retain physical size and expose fracture facets.",
+    "Code retains the original flat blue surface."
+  ],
+  "corrections": [
+    "Move fracture facets outside the wear mask.",
+    "Cut a transparent central gap in the ledge rather than painting a flat patch behind the mark.",
+    "Represent the warm panel as a callout in the native proof and restore code to its actual stylesheet color."
+  ],
+  "scope": "Independent read-only design critique of sources and offline native/geometry proofs. Browser and live Obsidian rendering remain unverified."
+}

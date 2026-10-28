@@ -308,3 +308,24 @@ button.mod-cta:not(.clickable-icon):not(.mod-warning):not([role="tab"])::after {
 @media print {
  .workspace-ribbon.mod-primary::before, .titlebar, .titlebar-button-container.mod-right { background-image: none; }
 }
+
+/* The divider mark has fixed geometry, independent of font metrics. Center its
+   box against the full rule/title, including Live Preview's flex child hr. */
+.inline-title::after {
+  right: auto; left: 50%; bottom: -3px; width: 34px; height: 10px; transform: translateX(-50%);
+  clip-path: none; background: var(--cairn-divider-mark) center / 22px 10px no-repeat;
+}
+.markdown-rendered hr, .markdown-source-view.mod-cm6 hr {
+  position: relative; height: 12px; border: 0;
+  background: var(--cairn-ledge-title) center / 100% 4px no-repeat;
+}
+.markdown-rendered hr::after, .markdown-source-view.mod-cm6 hr::after {
+  content: ""; position: absolute; left: 50%; top: 50%;
+  width: 34px; height: 10px;
+  transform: translate(-50%, -50%); pointer-events: none;
+  background: var(--cairn-divider-mark) center / 22px 10px no-repeat;
+}
+@media print {
+  .markdown-rendered hr, .markdown-source-view.mod-cm6 hr { border-top: 1px solid #888; background: none; }
+  .markdown-rendered hr::after, .markdown-source-view.mod-cm6 hr::after { display: none; }
+}

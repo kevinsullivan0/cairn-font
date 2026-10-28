@@ -208,7 +208,7 @@ body .cairn-plain .inline-title { font-family: var(--font-text) !important; }
 }
 ''')
 (ROOT/'obsidian/Cairn Ash/theme.css').write_text('\n'.join(css))
-(ROOT/'obsidian/Cairn Ash/manifest.json').write_text(json.dumps({'name':'Cairn Ash','version':'1.11.0','minAppVersion':'1.6.0','author':'Cairn contributors'},indent=2)+'\n')
+(ROOT/'obsidian/Cairn Ash/manifest.json').write_text(json.dumps({'name':'Cairn Ash','version':'1.12.0','minAppVersion':'1.6.0','author':'Cairn contributors'},indent=2)+'\n')
 (ROOT/'palette.json').write_text(json.dumps({'name':'Cairn Ash','modes':P},indent=2)+'\n')
 (ROOT/'contrast.json').write_text(json.dumps({'minimum_target':4.5,'pairs':contrast,'scope':'Specified text/background pairs only, including small labels, code roles, selections, highlights, and filled buttons. Does not establish readability or contrast for every plugin.'},indent=2)+'\n')
 # A calmer temporary terminal. Existing global Kitty settings are not edited.
