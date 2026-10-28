@@ -38,7 +38,7 @@
     },
     {
       "path": "compare-nord.html",
-      "sha256": "fe7f8284dabd6109e21b1eff288ed8cedd1f22237275a51cc1296f6a6ed515d6"
+      "sha256": "19b57c43ce8ca00ea9dd9632e0cb53789c639357f94e27d50d7659650c4a3bcf"
     },
     {
       "path": "comparison-source.json",
@@ -142,7 +142,7 @@
     },
     {
       "path": "obsidian/Cairn Ash/theme.css",
-      "sha256": "f4bb24ed67daa9214bddfb4886c202dae5e1ac1658f80c1cc7a2b15d7efc0676"
+      "sha256": "d397cf94580cf6f67a2986b142c430bf86c29681688034bbda56c0898af70c47"
     },
     {
       "path": "obsidian/Cairn Ash Bronze/manifest.json",
@@ -150,7 +150,7 @@
     },
     {
       "path": "obsidian/Cairn Ash Bronze/theme.css",
-      "sha256": "0cfae23abb839a60b48a0bbcfae94aa687548dfd3a7827aa6258191232ef3c3f"
+      "sha256": "f40163809ad62b444ef14f89089f230d817d728fc28ac879818817e09453a30e"
     },
     {
       "path": "obsidian/Cairn Ash Relic/manifest.json",
@@ -158,7 +158,7 @@
     },
     {
       "path": "obsidian/Cairn Ash Relic/theme.css",
-      "sha256": "8601cdfba9ba28ae8057bf2d9197325501c4e858e79ceabbdc8d85012ef03566"
+      "sha256": "6500390567ca0cee6c2b011e2d7528885f893bb63d794c8cf519add976bb76c8"
     },
     {
       "path": "optimization.json",
@@ -170,7 +170,7 @@
     },
     {
       "path": "preview.html",
-      "sha256": "ceff0a94fc4002dae2b4d296e97a4283b83982bf1a14b4efdb715402a7e038d6"
+      "sha256": "eddbbc05698336fa703d89fdf3f50f2e94c09a9d5ae9d635abdb1f9c11512805"
     },
     {
       "path": "quality.json",
@@ -190,7 +190,7 @@
     },
     {
       "path": "source/build_theme.py",
-      "sha256": "ec7159290ad8c17a93e15bacb6e3b03a96ea91f3f8a5713f16d9f8c1ba9d8f38"
+      "sha256": "a3b28027c5f54e8f97457d7d21186242ea83fe63e21904291655d33538bf32f3"
     },
     {
       "path": "source/check_bronze.py",

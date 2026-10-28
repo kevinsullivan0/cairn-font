@@ -241,6 +241,11 @@ css.append('''/* Flat tab strips share one silhouette in resting, hovered and cu
 }
 .workspace-tab-header-container .workspace-tab-header::before,
 .workspace-tab-header-container .workspace-tab-header::after { content: none; display: none; }
+/* Native inner separators sit half a pixel beyond the tab. The carved outline
+   already separates flat tabs; leave stacked spines and close controls alone. */
+.workspace-tab-header-container .workspace-tab-header .workspace-tab-header-inner::after {
+  content: none; display: none;
+}
 /* Keep the native close affordance and its visibility rules; dress its hover. */
 .workspace-tab-header-container .workspace-tab-header-inner-close-button {
   border-radius: 2px 5px 2px 5px; corner-shape: bevel;
