@@ -289,4 +289,7 @@ THEME_DIR="${{0:A:h}}"
 /usr/bin/open -na /Applications/kitty.app --args --config "$THEME_DIR/kitty/{mode}.conf" --title "Cairn Ash / {p['name']} trial" --directory "$THEME_DIR" /bin/zsh -l
 '''
  file=ROOT/f'Try {p["name"]}.command';file.write_text(launch);file.chmod(0o755)
+ if mode=='dark':
+  mono_launch=launch.replace('--title ', '--override "font_family=Cairn Mono" --title ',1).replace('Hearthstone trial','Hearthstone + Cairn Mono trial')
+  file=ROOT/'Try Hearthstone + Cairn Mono.command';file.write_text(mono_launch);file.chmod(0o755)
 print(json.dumps({m:{k:v for k,v in r.items() if k in ['fg_on_bg','muted_on_bg','fg_on_selection','accent_button']} for m,r in contrast.items()},indent=2))

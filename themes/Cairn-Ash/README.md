@@ -113,7 +113,9 @@ notification sample. These are offline specimens, not live app screenshots.
 Open `terminal.html` to compare Hearthstone and Limestone at a default 12 px
 preview size, with JetBrains Mono or embedded Cairn Mono. In Finder, the two
 trial launchers open separate Kitty windows at 12 pt without editing global
-configuration. Normal ANSI colors are quieter than the bright set. Selection
+configuration. Choose `Try Hearthstone.command` for JetBrains Mono, or
+`Try Hearthstone + Cairn Mono.command` for Cairn Mono. The font override applies
+only to that window; close the trial to return. Normal ANSI colors are quieter than the bright set. Selection
 and cursor ink remain distinct. The background stays opaque and flat.
 
 `kitty/dark-colors.conf` and `kitty/light-colors.conf` contain colors only.

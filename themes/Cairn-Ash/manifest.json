@@ -6,11 +6,15 @@
     },
     {
       "path": "README.html",
-      "sha256": "a1923a88a6f602c068625b1ddaddd301cd9af7a20bd77fe30cddb156c1b5b1c7"
+      "sha256": "8c228f05b57be03a63226cf20fd13e15fccc77bb98d589a6dfd06ebc768515bf"
     },
     {
       "path": "README.md",
-      "sha256": "e6b7e660595e0fdfe5405b9b23aa0ea73a6fc5d55c718af15e3b79ed43367e5f"
+      "sha256": "2decc1928d03e470c371e96dd9cb8f011d50d7440144bfab6e95fb3b0e0a966a"
+    },
+    {
+      "path": "Try Hearthstone + Cairn Mono.command",
+      "sha256": "ab7f4696f845204fcd02ec76fd0d8a62ccbffcc30d80e42c0bf044e1f1fb584d"
     },
     {
       "path": "Try Hearthstone.command",
@@ -186,7 +190,7 @@
     },
     {
       "path": "source/build_theme.py",
-      "sha256": "39820013439b3981fd94627a3778503c400fce3bac91067a0ccc9b6c2fe0c119"
+      "sha256": "ec7159290ad8c17a93e15bacb6e3b03a96ea91f3f8a5713f16d9f8c1ba9d8f38"
     },
     {
       "path": "source/check_bronze.py",
@@ -222,7 +226,7 @@
     },
     {
       "path": "terminal.html",
-      "sha256": "7ea1020ecb757adfc2d6328909122bc790772d1d588b4a1870f7bfc20e26457a"
+      "sha256": "5c28f2571ad986736c3fb326f5770bb797e331a01d61b7be72e45037b8948749"
     },
     {
       "path": "ui-proof.png",
