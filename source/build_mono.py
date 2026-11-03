@@ -11,6 +11,7 @@ from fontTools.svgLib.path import parse_path
 from fontTools.fontBuilder import FontBuilder
 from fontTools.ttLib import TTFont, newTable
 from fontTools.ttLib.tables.O_S_2f_2 import Panose
+from font_license import name_fields
 import build_family as base
 from build_fonts import to_glyph
 
@@ -93,9 +94,8 @@ def build(root):
         fb.setupNameTable({'familyName':'Cairn Mono','styleName':style,'typographicFamily':'Cairn Mono','typographicSubfamily':style,
           'uniqueFontIdentifier':f'Cairn Mono 1.001 {style}', 'fullName':f'Cairn Mono {style}',
           'psName':f'CairnMono-{key}','version':'Version 1.001',
-          'copyright':'Cairn design project, 2026. All included glyphs drawn for this project.',
           'description':f'Carved monospace companion for code. All advances {CELL}/2048 em; no kerning or ligatures.',
-          'licenseDescription':'No distribution license specified. All glyphs generated from included drawing source.'})
+          **name_fields()})
         bold=weight==700
         panose=Panose();panose.bFamilyType=2;panose.bProportion=9
         fb.setupOS2(version=4,sTypoAscender=1800,sTypoDescender=-600,sTypoLineGap=80,

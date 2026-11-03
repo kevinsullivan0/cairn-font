@@ -21,7 +21,10 @@ skeletons while preserving the carved stroke weight. It is a first monospace
 edition; no Nerd Font icon patch or manual TrueType hinting is included.
 
 Inherited ornaments have been removed. No reference font is required to build
-either family. No distribution license has yet been selected.
+either family. The fonts use the [SIL Open Font License 1.1](OFL.txt), with
+**Cairn** and **Cairn Mono** as Reserved Font Names. Original scripts and theme
+code use [MIT](LICENSE). [Licensing](LICENSING.md) explains the scope and
+preserved third-party notices.
 
 ## Themes and material
 

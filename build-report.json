@@ -11,7 +11,7 @@
     "characters": 114,
     "glyphs": 127,
     "file": "Cairn-Regular.ttf",
-    "sha256": "ce704bf23f9e5849e93c38c3acd63b27897465fa2fde55acd9dc0f97110630b9"
+    "sha256": "673c84b46d797d51a5ef0410afcd1df9d4c1eb1c4592cc4e61e87a3f814a7032"
   },
   {
     "pair_count": 10462,
@@ -25,7 +25,7 @@
     "characters": 114,
     "glyphs": 127,
     "file": "Cairn-Italic.ttf",
-    "sha256": "16373aa315f327abb5b2d9188ad4cb2c2ba3d8b4eca48deb06aa22dcdac687bf"
+    "sha256": "c1034f4b3ad3b4458a87bb742b1fb82e349476d65f25e5ae52c39ed39b0145c9"
   },
   {
     "pair_count": 10448,
@@ -39,7 +39,7 @@
     "characters": 114,
     "glyphs": 127,
     "file": "Cairn-Bold.ttf",
-    "sha256": "ba47297350872782751ebdc73b15928d730cd9d093093bfdd3a0c04c1cd96c00"
+    "sha256": "e5ce95898fa6c20416ef7b4c2ad6163b4fdcff88f9b1dc0ea962c0bb4f793e63"
   },
   {
     "pair_count": 10631,
@@ -53,6 +53,6 @@
     "characters": 114,
     "glyphs": 127,
     "file": "Cairn-BoldItalic.ttf",
-    "sha256": "de2293c8ab73aa6b26d031212a7b76bed365648ef675dd5297447ed8ab7522f3"
+    "sha256": "d2eb08de29b4bd1d810a35a44d7133fe9429c92e4c3be7555d6ccc90d363c2a3"
   }
 ]

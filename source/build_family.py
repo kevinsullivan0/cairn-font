@@ -11,6 +11,7 @@ from fontTools.ttLib import TTFont, newTable
 from fontTools.agl import UV2AGL
 from fontTools.feaLib.builder import addOpenTypeFeaturesFromString
 from fontTools.svgLib.path import parse_path
+from font_license import name_fields
 from build_fonts import FlattenPen, geometry, to_glyph, polygons
 import cairn, cairn_v, cairn_ii, cairn_iii, refine_relic
 
@@ -178,9 +179,8 @@ def build(root,styles):
         fb.setupNameTable({'familyName':'Cairn','styleName':style,'typographicFamily':'Cairn','typographicSubfamily':style,
             'uniqueFontIdentifier':f'Cairn 1.001 {style} personal edition','fullName':f'Cairn {style}',
             'psName':f'Cairn-{key}','version':'Version 1.001',
-            'copyright':'Cairn design project, 2026. All included glyphs drawn for this project.',
             'description':'Carved, proportional type for prose. Personal edition derived from the Cairn V study.',
-            'licenseDescription':'No distribution license specified. All included glyphs are generated from the included drawing source.'})
+            **name_fields()})
         selection=(0x20 if bold else 0)|(0x1 if italic else 0)|(0x40 if not bold and not italic else 0)|0x80
         fb.setupOS2(version=4,sTypoAscender=1800,sTypoDescender=-600,sTypoLineGap=80,
             usWinAscent=1900,usWinDescent=650,sxHeight=1110,sCapHeight=1510,usWeightClass=weight,usWidthClass=5,

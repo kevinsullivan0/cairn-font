@@ -1,48 +1,64 @@
 {
   "files": [
     {
+      "path": "LICENSE",
+      "sha256": "22b2231cae08aa9e6da71d4a36af7078d228f20e9acd744255920747d233f141"
+    },
+    {
+      "path": "LICENSING.md",
+      "sha256": "a3f8da59126ccba093aa21c2981d6f8e5c0875777b377fffd449d1845020d776"
+    },
+    {
+      "path": "OFL.txt",
+      "sha256": "e52d941835a489509fc03251a3125e1659676c5ac321582c9e5f8496bba9e0e0"
+    },
+    {
       "path": "README.html",
-      "sha256": "ad5dd7b2837f1ade5cc3db7d2b2537237eb92f7558f9f1e8572b6aa6d1461360"
+      "sha256": "ea4360837fb4aff051af9cf876f3a617fa92bb3c05d84b99ce1b6c1d873ca376"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "79e2c02c9c180d45f71f8e7f880a94283337447228d619a4c31e21671ccf6535"
     },
     {
       "path": "USAGE.md",
-      "sha256": "019f938ac2002dd3af067a4dceab8335daf7d3dc2928afe545ff0c29d2f02b36"
+      "sha256": "9a4763d0b9fbaee0ccd1e6d6bbbffafa47a24592ebd903fa733086aedc1513f4"
     },
     {
       "path": "build-report.json",
-      "sha256": "2550dc86b95f947c5313b6d77dc774bb7a668e49e49b5e75bb832c29fcb1524b"
+      "sha256": "e95bcc123a153569fbe6a57055dedb75c42aa41d467bab5e64f113d454ba13d7"
     },
     {
       "path": "desktop/Cairn-Bold.ttf",
-      "sha256": "ba47297350872782751ebdc73b15928d730cd9d093093bfdd3a0c04c1cd96c00"
+      "sha256": "e5ce95898fa6c20416ef7b4c2ad6163b4fdcff88f9b1dc0ea962c0bb4f793e63"
     },
     {
       "path": "desktop/Cairn-BoldItalic.ttf",
-      "sha256": "de2293c8ab73aa6b26d031212a7b76bed365648ef675dd5297447ed8ab7522f3"
+      "sha256": "d2eb08de29b4bd1d810a35a44d7133fe9429c92e4c3be7555d6ccc90d363c2a3"
     },
     {
       "path": "desktop/Cairn-Italic.ttf",
-      "sha256": "16373aa315f327abb5b2d9188ad4cb2c2ba3d8b4eca48deb06aa22dcdac687bf"
+      "sha256": "c1034f4b3ad3b4458a87bb742b1fb82e349476d65f25e5ae52c39ed39b0145c9"
     },
     {
       "path": "desktop/Cairn-Regular.ttf",
-      "sha256": "ce704bf23f9e5849e93c38c3acd63b27897465fa2fde55acd9dc0f97110630b9"
+      "sha256": "673c84b46d797d51a5ef0410afcd1df9d4c1eb1c4592cc4e61e87a3f814a7032"
     },
     {
       "path": "desktop/CairnMono-Bold.ttf",
-      "sha256": "c395f391a2174660a3b743e07c7bde0dd077494bb3aa8696d538e5e2e148a3c8"
+      "sha256": "fe16e7fe9f3425caeafb999c4d68eff51b5e44e882c2dfedb022519bb76d02f2"
     },
     {
       "path": "desktop/CairnMono-BoldItalic.ttf",
-      "sha256": "e5054a31842ff1911abfaf52ead2cc45204b3f258dbad49c5b135740c164742f"
+      "sha256": "73cb9b818e0baa7723b6050f06220c6b0c7143d86c4392d0756e2d5e607a4e28"
     },
     {
       "path": "desktop/CairnMono-Italic.ttf",
-      "sha256": "b707bc423030dfd90b62d40c1a65ab3027bd89f2b12c8a2d988f5c866ab81eed"
+      "sha256": "12ba6874e703ad5c1e8c4f2f861e9841db0cffacee609c34980960f105fc0587"
     },
     {
       "path": "desktop/CairnMono-Regular.ttf",
-      "sha256": "d18952cde56e1b90d71b83b2b34ae754627b30f9395ff2c64da0382c79694bfc"
+      "sha256": "c8b5d8fce8f594f2861562788d86989518aeefd0e9d908bd70dab9ec6c0bf8d9"
     },
     {
       "path": "macos-validation.json",
@@ -50,7 +66,7 @@
     },
     {
       "path": "mono-build-report.json",
-      "sha256": "89a9ed8c041062c2420089f87540352694cb208a53e9401911c4c0f97cb05ff5"
+      "sha256": "114316ad215e0bb2362b459c8a1599b0b44992dc5b8854c0e712fc6e1b4d2e77"
     },
     {
       "path": "mono-macos-validation.json",
@@ -66,11 +82,11 @@
     },
     {
       "path": "mono-spacing.html",
-      "sha256": "1ca9722ab2f29c7faca8d19dbe160a8f38bdbe89f23b81d171b1df6d36e66b91"
+      "sha256": "f393d89f112acf45ab4772b8dbf3b37034e15c2ebce2034e5cce0f5c58510d77"
     },
     {
       "path": "mono-specimen.html",
-      "sha256": "d3f222b14b295a17d0aaade7f25e21b752e2202762a1b2d6d3b93b082aab25e8"
+      "sha256": "5276482c9dde322aabbaafddaccc4768b5a897c69be2e02c48e85d56bcfbc9e6"
     },
     {
       "path": "mono-validation.json",
@@ -118,15 +134,15 @@
     },
     {
       "path": "source/build_family.py",
-      "sha256": "f8520c4e96b09564946939bcb8227d00dc89b2298096bc14139a35e386dbf086"
+      "sha256": "bb2bef06477e26daa25821c70d8818ed46a22e9b0f0faf4bdd6bd546e945669e"
     },
     {
       "path": "source/build_fonts.py",
-      "sha256": "551345cd79878723c2d8dc31e7c8359f0c0f5f033e5a73467ed9e8a7dae7ed40"
+      "sha256": "41fdaac596bb96fcae9cef2bdf99fe8f63efab2c85b0e61bf91911fb006faf80"
     },
     {
       "path": "source/build_mono.py",
-      "sha256": "63df38827b0ae0090ab06f1262caf76a10c47a47d9cb0a3d2eefb25bdaf7e34a"
+      "sha256": "c4cb0b6f323ebfdf0b2fb72915f352fd11d2b7e922be27dac1116df466606fec"
     },
     {
       "path": "source/cairn.py",
@@ -150,7 +166,11 @@
     },
     {
       "path": "source/carved_fonts.py",
-      "sha256": "0bd2680b96da6edae0ac18319fe4e37e113638a92af2d97835511029db927371"
+      "sha256": "68db85eab7bc3252daf714b0a6daaf66ecaea3ec2511a679c1f6ba2194ff5f84"
+    },
+    {
+      "path": "source/check_licensing.py",
+      "sha256": "83eebd58ebdf80b50798703077eacb475067937b2d04c7ea9b79c27f6b3e8eb1"
     },
     {
       "path": "source/check_package.cjs",
@@ -163,6 +183,14 @@
     {
       "path": "source/coretext_proof.swift",
       "sha256": "5685520b028c747df77da21e39ba5ca403c2ed10f5b72315e23e4f654d1cd44c"
+    },
+    {
+      "path": "source/font_license.py",
+      "sha256": "b4b0a1fd6e6fe7eada8b074b61b33e9d2d95c0a812e02faa4c5e425c535e6ece"
+    },
+    {
+      "path": "source/license_fonts.py",
+      "sha256": "7afedc167c7abee622757f22a754ac69c9bc44e56d8973875d8b72c1044832dc"
     },
     {
       "path": "source/package_mono.py",
@@ -202,19 +230,31 @@
     },
     {
       "path": "specimen.html",
-      "sha256": "ac7feedc97a4dd24a8cde9d6a9a714e66147483404fa3ddd0f95886b81da0258"
+      "sha256": "01229c3f0bd1d1afcdaea00bd5f107ec2e3ea8f23c8c6aad381fc7972cbf4f6a"
+    },
+    {
+      "path": "third-party/nord-LICENSE.txt",
+      "sha256": "25ac8188d670bd2ad2ce2f4f55ab88573010ee9f7a4502543cb1eea1e2274f8a"
+    },
+    {
+      "path": "third-party/obsidian-nord-LICENSE.txt",
+      "sha256": "ef38421ea2ecf0ad9f07cb938584f26252a8994f2fbf2726fc585bf65c3175f8"
     },
     {
       "path": "validation.json",
-      "sha256": "698a192d4a31ab89f361a8d08d03e83a3727756ba6dccff51614be764c72a5fa"
+      "sha256": "acfa1efd383dedbc094412429f3c22daff66c6fea816770649a5b16e5cef55d6"
+    },
+    {
+      "path": "web-validation.json",
+      "sha256": "08e7706cd0c5d5c81b5703dcb6ed625dd8650c51e91a00330c89a5a194bdc1bb"
     },
     {
       "path": "web/cairn-embedded.css",
-      "sha256": "83f8a68acfe64fa76ce6e350c2cc922b801ae51e241c803b655d762f575bb932"
+      "sha256": "d848f524f1e79dc88169db8f8f61a1244a97ee9b073cdead3f979dd4b0cc2c60"
     },
     {
       "path": "web/cairn-mono-embedded.css",
-      "sha256": "490b3d42d63eeaf1b4076f7e15487436edcddbd7ed0c3f35fefb1dc512a7a8ce"
+      "sha256": "bbefecf9e3f29bf57931a19919a3f60068b73b3e80abfce8ef174639bec82ea9"
     },
     {
       "path": "web/cairn-mono.css",
@@ -230,39 +270,35 @@
     },
     {
       "path": "web/fonts/Cairn-Bold.woff",
-      "sha256": "ee8ea9fec7e9876f2e128e12d28d2cee005a1b479da54098aa37abf81287719a"
+      "sha256": "3b1f26b943890613a1b1995c5cd3d5b0c1b9274c785b93e8d42deba4b1a98ce0"
     },
     {
       "path": "web/fonts/Cairn-BoldItalic.woff",
-      "sha256": "07f4c57410b99f7a9efba4f8ce3adee97c7480c34cf270201bb83b2d46ba64c9"
+      "sha256": "9edfad459f08aa8bc7dceeb17d6bb5f09e6ba50d620d8f59b921482f5c039cbc"
     },
     {
       "path": "web/fonts/Cairn-Italic.woff",
-      "sha256": "b8a51fe243bdf1ca058de7b94d00fd33c01b671f180705389619c2619562c341"
+      "sha256": "f4a94af556fb82dbb288ace0f3fd79aac13fba7bdc5e2b58628dfa10834b9a2c"
     },
     {
       "path": "web/fonts/Cairn-Regular.woff",
-      "sha256": "84044caaf5b1d6f352eda371845c22bd094147d7f651cfce7f0b21317ecf6fb2"
+      "sha256": "35dad3399aec57115b749ec5fffd681452f8f85bf71b93fb4b36f840fad68e3b"
     },
     {
       "path": "web/fonts/CairnMono-Bold.woff",
-      "sha256": "9de9e0e7be98c2ed97609b634efd577b8e983e9d8f784aaa8b7463418490f16a"
+      "sha256": "fb4fdabe5fb6c1c49d9aa0526026b415cfcbeb0617e94fba69529411b8aff78b"
     },
     {
       "path": "web/fonts/CairnMono-BoldItalic.woff",
-      "sha256": "00e45a12dfc71e0540399afd6f50920f545c0a5fcb16feac76ce69bf88e62bb9"
+      "sha256": "02025a918413ee2fe69b9c27aae182c39ceab863c97c1b621c5f99671d6ce996"
     },
     {
       "path": "web/fonts/CairnMono-Italic.woff",
-      "sha256": "38c502213501a8d66eb6882dcac4ba9b986d7d4a9b74cd8b612f6699736a5a69"
+      "sha256": "f55f3223798a4a11d442e6bc88b7ad2c4db058fd6afc6ddaaa6bb136b24be188"
     },
     {
       "path": "web/fonts/CairnMono-Regular.woff",
-      "sha256": "e990bb65eaf8df11fc53421b1090b8f1486151ac3ab48fcbe033df8ec6318779"
-    },
-    {
-      "path": "web-validation.json",
-      "sha256": "5a37dcac0cc766083fd235dbfc4d09acdb1f9d4bed44b6b0867d2cb19bc48df4"
+      "sha256": "545622e6ebd97945a928b1d74176674a5bb972fb3f4613be01b677f21afd96b8"
     }
   ]
 }

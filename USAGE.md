@@ -143,8 +143,12 @@ leave room for the ascenders, dots, descenders, and italic shapes.
 Cairn began as a readability study inspired by Elbjorg’s carved atmosphere.
 The shipped alphabet, figures, punctuation, and symbols are generated from
 Cairn’s drawing definitions. No original Elbjorg font file or ornament outlines
-are included or required to build this edition. No distribution license has
-yet been selected. The specimen prose is original, not a book excerpt.
+are included or required to build this edition. The current font binaries and
+embedded font copies use the [SIL Open Font License 1.1](OFL.txt), with Cairn
+and Cairn Mono as Reserved Font Names. Original build scripts and theme code
+use [MIT](LICENSE); third-party material retains its original licenses.
+See [LICENSING.md](LICENSING.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+The specimen prose is original, not a book excerpt.
 
 ## Rebuilding
 
@@ -155,6 +159,9 @@ reference font or installed Elbjorg. From **source/** with Python 3.12+:
 python -m pip install -r requirements.txt
 python build_family.py
 python validate_family.py
+python build_mono.py
+python license_fonts.py
+python check_licensing.py
 ```
 
 To choose a different output directory, pass `--output /path/to/output` to

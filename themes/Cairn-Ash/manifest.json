@@ -38,7 +38,7 @@
     },
     {
       "path": "compare-nord.html",
-      "sha256": "19b57c43ce8ca00ea9dd9632e0cb53789c639357f94e27d50d7659650c4a3bcf"
+      "sha256": "9a9fc1e8507ba75ee2e8cbfda3ab99c8fc5379334b5ad7e92194e9cf10c802e0"
     },
     {
       "path": "comparison-source.json",
@@ -137,14 +137,6 @@
       "sha256": "6fef738669a5aee558140426b5dab25d0d40bf1bce70002ce51e347529605d2d"
     },
     {
-      "path": "obsidian/Cairn Ash/manifest.json",
-      "sha256": "5f0d18fab3a1913108609d4e0e192bcdd8c02c87237d59a043eab72031c858b8"
-    },
-    {
-      "path": "obsidian/Cairn Ash/theme.css",
-      "sha256": "d397cf94580cf6f67a2986b142c430bf86c29681688034bbda56c0898af70c47"
-    },
-    {
       "path": "obsidian/Cairn Ash Bronze/manifest.json",
       "sha256": "8afe26b442dcc49d3f3923b77f27d7e54511ed993bace669f9a9b20d64225365"
     },
@@ -161,6 +153,14 @@
       "sha256": "6500390567ca0cee6c2b011e2d7528885f893bb63d794c8cf519add976bb76c8"
     },
     {
+      "path": "obsidian/Cairn Ash/manifest.json",
+      "sha256": "5f0d18fab3a1913108609d4e0e192bcdd8c02c87237d59a043eab72031c858b8"
+    },
+    {
+      "path": "obsidian/Cairn Ash/theme.css",
+      "sha256": "d397cf94580cf6f67a2986b142c430bf86c29681688034bbda56c0898af70c47"
+    },
+    {
       "path": "optimization.json",
       "sha256": "3b27a6378d27f284c8b1c5a820d12c0d711c54a5b4c8198d0401cb7265a724fa"
     },
@@ -170,7 +170,7 @@
     },
     {
       "path": "preview.html",
-      "sha256": "eddbbc05698336fa703d89fdf3f50f2e94c09a9d5ae9d635abdb1f9c11512805"
+      "sha256": "0628f160eab5581ffa734df3224f2de86adea06dbbf7c163773bd0f41dec1479"
     },
     {
       "path": "quality.json",
@@ -226,7 +226,7 @@
     },
     {
       "path": "terminal.html",
-      "sha256": "5c28f2571ad986736c3fb326f5770bb797e331a01d61b7be72e45037b8948749"
+      "sha256": "0b9a6d423788110d50823c7bcef0ada1a176dd4f4c9acec3b33a1aa161f00777"
     },
     {
       "path": "ui-proof.png",

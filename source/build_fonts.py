@@ -1,8 +1,7 @@
-"""Build three personal Elbjorg studies. Original font remains untouched.
+"""Geometry helpers retained from the early Cairn studies. Script code: MIT.
 
-Python 3.12+: fonttools, shapely, numpy, scipy, scikit-image, Pillow.
-Run: python build_fonts.py --source /path/to/ElbjorgScript.ttf
-The file is a design study: no claim of proven reading-speed improvement.
+The packaged version contains no external font or inherited ornament data.
+Current fonts are built by build_family.py and build_mono.py.
 """
 from pathlib import Path
 import argparse

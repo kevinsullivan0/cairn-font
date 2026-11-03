@@ -1,7 +1,7 @@
-"""Coherent, faceted alphabets for round two of the Elbjorg playground.
+"""Original faceted drawing definitions from the early Cairn studies.
 
-Uses the original character map and ornament glyphs, but draws all letters,
-figures, and common punctuation as one coordinated system.
+The packaged builders use these paths, not an external font or inherited
+ornaments. Drawing-source code: MIT; generated fonts: SIL OFL 1.1.
 """
 from pathlib import Path
 import argparse
