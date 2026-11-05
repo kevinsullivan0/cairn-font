@@ -1,4 +1,25 @@
-# Cairn & Cairn Mono
+# Cairn
+
+A design language, material system, themes, and carved typefaces for websites,
+reading tools, editors, and everyday work. The shared identity is recognizable
+without requiring every application to use the same layout or visual treatment.
+
+## Start here
+
+- **Design a website or tool:** [shared principles](DESIGN-LANGUAGE.md),
+  [web profiles](docs/web-profiles.md), and [implementation guide](docs/web-interface-guide.md).
+- **Use a desktop theme or palette:** [Cairn Ash](themes/Cairn-Ash/README.md),
+  including Everyday, Relic, Bronze, dark/light modes, Obsidian, and Kitty.
+- **Use the fonts:** [font quick start](README.html), [web CSS and fonts](web),
+  [desktop fonts](desktop), and [build/usage guide](USAGE.md).
+- **Find the right source or guide:** [documentation and repository map](docs/README.md).
+- **Redistribute assets:** [licensing and scope](LICENSING.md).
+
+The repository keeps its existing `cairn-font` address and distribution paths
+for compatibility. Its scope now includes more than the fonts. The map above
+organizes the broader project without breaking existing specimens or build paths.
+
+## Cairn and Cairn Mono fonts
 
 Carved typefaces for prose, interfaces, and code. **Cairn** is proportional;
 **Cairn Mono** uses equal-width cells. Both include Regular, Italic, Bold, and
