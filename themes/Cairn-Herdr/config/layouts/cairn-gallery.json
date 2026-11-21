@@ -1,0 +1,231 @@
+{
+  "id": "root",
+  "type": "row",
+  "children": [
+    {
+      "id": "sidebar",
+      "type": "column",
+      "children": [
+        {
+          "id": "brand",
+          "type": "block",
+          "content": {
+            "mod": "cairn-brand"
+          },
+          "size": {
+            "px": 42
+          },
+          "window_drag": true,
+          "background": {
+            "image": "backgrounds/cairn/beacon-brass.png",
+            "fit": "cover"
+          }
+        },
+        {
+          "id": "sidebar-lists",
+          "type": "column",
+          "children": [
+            {
+              "id": "spaces",
+              "type": "block",
+              "content": {
+                "mod": "cairn-spaces"
+              },
+              "size": {
+                "weight": 1
+              },
+              "min": 90
+            },
+            {
+              "id": "agents",
+              "type": "block",
+              "content": {
+                "mod": "cairn-agents"
+              },
+              "size": {
+                "weight": 1
+              },
+              "min": 90
+            }
+          ]
+        },
+        {
+          "id": "sidebar-footer",
+          "type": "block",
+          "content": {
+            "mod": "cairn-brand",
+            "props": {
+              "footer": true,
+              "galleryArt": true
+            }
+          },
+          "size": {
+            "px": 69
+          },
+          "background": {
+            "image": "backgrounds/cairn/beacon-brass.png",
+            "fit": "cover"
+          }
+        }
+      ],
+      "size": {
+        "px": 256
+      },
+      "min": 44,
+      "max": 480,
+      "background": {
+        "image": "backgrounds/cairn/the-last-beacon.png",
+        "fit": "cover"
+      },
+      "resizable": false
+    },
+    {
+      "id": "work-area",
+      "type": "column",
+      "children": [
+        {
+          "id": "work",
+          "type": "column",
+          "children": [
+            {
+              "id": "tabs",
+              "type": "block",
+              "content": {
+                "mod": "cairn-tabs"
+              },
+              "size": {
+                "px": 42
+              },
+              "background": {
+                "image": "backgrounds/cairn/beacon-brass.png",
+                "fit": "cover"
+              },
+              "window_drag": true
+            },
+            {
+              "id": "cairn-ledge",
+              "type": "row",
+              "children": [],
+              "size": {
+                "px": 2
+              },
+              "background": "#192f29"
+            },
+            {
+              "id": "work-body",
+              "type": "row",
+              "children": [
+                {
+                  "id": "main",
+                  "type": "block",
+                  "content": {
+                    "tab": "active",
+                    "pane": {
+                      "header": {
+                        "content": {
+                          "mod": "quiet-pane"
+                        },
+                        "reveal": "always",
+                        "height": 32,
+                        "position": "top"
+                      },
+                      "background": "#00000000",
+                      "border": {
+                        "width": 1,
+                        "color": "border"
+                      },
+                      "focus": {
+                        "width": 1,
+                        "color": "accent"
+                      },
+                      "radius": 0,
+                      "gap": 10,
+                      "lone": true
+                    }
+                  }
+                },
+                {
+                  "id": "panel",
+                  "type": "column",
+                  "children": [
+                    {
+                      "id": "panel-body",
+                      "type": "stack",
+                      "children": [
+                        {
+                          "id": "files",
+                          "type": "block",
+                          "content": {
+                            "mod": "files"
+                          }
+                        },
+                        {
+                          "id": "changes",
+                          "type": "block",
+                          "content": {
+                            "mod": "changes"
+                          }
+                        }
+                      ],
+                      "active": "files"
+                    }
+                  ],
+                  "size": {
+                    "px": 368
+                  },
+                  "min": 280,
+                  "max": 900,
+                  "hidden": true,
+                  "background": "surface"
+                }
+              ],
+              "padding": 10,
+              "gap": 10,
+              "background": "#192f29"
+            }
+          ],
+          "resizable": false
+        },
+        {
+          "id": "status",
+          "type": "block",
+          "content": {
+            "mod": "workspace-status",
+            "props": {
+              "codexShortcut": true
+            }
+          },
+          "size": {
+            "px": 28
+          },
+          "background": "surface"
+        }
+      ],
+      "resizable": false
+    }
+  ],
+  "background": "canvas",
+  "theme": "cairn-beacon",
+  "colors": {
+    "chrome": "#00000000"
+  },
+  "terminal_line_height": 1.0800000429153442,
+  "ui_font": "Geist",
+  "terminal_padding": [
+    12,
+    12
+  ],
+  "terminal_opacity": 1,
+  "divider": {
+    "width": 1,
+    "color": "border"
+  },
+  "titlebar": "none",
+  "traffic_lights": [
+    12,
+    16
+  ],
+  "toast": "cairn-toast",
+  "title": "Cairn Gallery",
+  "preview": "layouts/cairn-gallery.png"
+}

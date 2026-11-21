@@ -60,6 +60,8 @@ comparison. The previews contain original sample notes, embedded Cairn fonts, an
 synthetic interface examples. Local installation state, vault paths and notes,
 preferences, and the source desktop painting are excluded.
 
+[Cairn Gallery for Herdr](themes/Cairn-Herdr/README.md) pairs the Cairn palette with a timed sidebar painting cycle.
+
 ## Use Cairn in Obsidian
 
 On macOS, open the eight TrueType files in `desktop/` in Font Book and install
